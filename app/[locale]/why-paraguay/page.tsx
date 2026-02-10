@@ -83,7 +83,7 @@ export default function WhyParaguayPage() {
     const countries = ["py", "ar", "br", "uy"] as const;
 
     // Helper to get numeric values for charts (approximated for visualization)
-    const getNumericValue = (type: 'tax' | 'labor' | 'energy', country: string) => {
+    const getNumericValue = (type: 'tax' | 'labor' | 'energy' | 'climate', country: string) => {
         switch (type) {
             case 'tax':
                 if (country === 'py') return 10;
