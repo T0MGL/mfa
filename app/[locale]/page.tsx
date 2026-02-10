@@ -48,7 +48,7 @@ const fadeUp = {
   visible: (i: number) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: i * 0.12, duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] },
+    transition: { delay: i * 0.12, duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] as const },
   }),
 };
 
@@ -143,7 +143,7 @@ export default function HomePage() {
           <motion.h1
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
+            transition={{ delay: 0.2, duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] as const }}
             className="mt-8 text-[clamp(2.5rem,7vw,6rem)] leading-[0.95] font-serif tracking-[-0.02em] max-w-[900px]"
           >
             {t("hero.title")}
