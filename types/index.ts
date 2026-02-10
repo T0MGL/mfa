@@ -21,8 +21,9 @@ export interface ScrollConfig {
   infinite: boolean;
 }
 
-export interface ShaderUniforms {
-  u_time: { value: number };
-  u_resolution: { value: THREE.Vector2 };
-  u_color: { value: THREE.Color };
-}
+// Commented out for now - not using Three.js in MVP
+// export interface ShaderUniforms {
+//   u_time: { value: number };
+//   u_resolution: { value: THREE.Vector2 };
+//   u_color: { value: THREE.Color };
+// }

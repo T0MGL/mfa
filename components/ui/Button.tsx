@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
-  variant?: "primary" | "secondary" | "ghost";
+  variant?: "primary" | "secondary" | "ghost" | "cta";
   size?: "sm" | "md" | "lg";
 }
 
@@ -18,10 +18,11 @@ export function Button({
 
   const variants = {
     primary:
-      "group relative overflow-hidden bg-lime-500 text-black hover:scale-105",
+      "group relative overflow-hidden bg-mercosur-blue text-white hover:scale-105",
     secondary:
-      "border-2 border-lime-500/50 text-lime-400 hover:border-lime-500 hover:bg-lime-500/10",
-    ghost: "text-lime-400 hover:bg-lime-500/10",
+      "border-2 border-mercosur-blue/50 text-mercosur-blue hover:border-mercosur-blue hover:bg-mercosur-blue/10",
+    ghost: "text-mercosur-green hover:bg-mercosur-green/10",
+    cta: "group relative overflow-hidden bg-paraguay-red text-white hover:scale-105",
   };
 
   const sizes = {
@@ -32,13 +33,13 @@ export function Button({
 
   return (
     <motion.button
-      whileHover={{ scale: variant === "primary" ? 1.05 : 1.02 }}
+      whileHover={{ scale: variant === "primary" || variant === "cta" ? 1.05 : 1.02 }}
       whileTap={{ scale: 0.98 }}
       className={`${baseStyles} ${variants[variant]} ${sizes[size]} ${className}`}
-      {...props}
+      {...(props as any)}
     >
-      {variant === "primary" && (
-        <div className="absolute inset-0 bg-gradient-to-r from-lime-400 to-emerald-400 opacity-0 transition-opacity group-hover:opacity-100" />
+      {(variant === "primary" || variant === "cta") && (
+        <div className="absolute inset-0 bg-gradient-to-r from-eu-blue to-mercosur-green opacity-0 transition-opacity group-hover:opacity-100" />
       )}
       <span className="relative z-10">{children}</span>
     </motion.button>

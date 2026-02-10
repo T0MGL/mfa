@@ -1,0 +1,525 @@
+{
+  "nav": {
+    "about": "About",
+    "opportunity": "The Opportunity",
+    "whyParaguay": "Why Paraguay",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "badge": "Strategic Advisory & Capital Deployment",
+      "title": "The EU–Mercosur Agreement Is a Capital Repricing Event.",
+      "subtitle": "Paraguay is the execution layer.",
+      "ctaPrimary": "Start a Mandate",
+      "ctaSecondary": "The Opportunity"
+    },
+    "stats": {
+      "label": "The Numbers",
+      "items": {
+        "exports": {
+          "value": "€50B+",
+          "label": "Potential increase in EU exports annually"
+        },
+        "consumers": {
+          "value": "730M+",
+          "label": "Combined consumer market"
+        },
+        "tariffs": {
+          "value": "91%",
+          "label": "Tariff lines reduced or eliminated"
+        },
+        "tax": {
+          "value": "10%",
+          "label": "Paraguay flat corporate tax"
+        }
+      }
+    },
+    "opportunity": {
+      "label": "The Agreement",
+      "title": "A new era of transatlantic trade.",
+      "description": "The EU-Mercosur Partnership Agreement eliminates tariffs on ~91–95% of traded goods over 10–15 years. For European businesses, this means lower barriers on machinery, chemicals, automotive, and manufactured goods entering a market of 730 million consumers.",
+      "points": {
+        "trade": "Tariff reductions on ~91–95% of all bilateral trade",
+        "investment": "Enhanced investor protections and regulatory alignment",
+        "access": "Simplified customs procedures and mutual recognition",
+        "timeline": "Interim application possible in 2026 — full benefits phased over 10–15 years"
+      },
+      "cta": "Full Opportunity Overview"
+    },
+    "whyParaguay": {
+      "label": "Strategic Focus",
+      "title": "Paraguay: the smartest entry point into Mercosur.",
+      "subtitle": "Lower taxes, cheaper energy, lower labor costs — and full access to the entire bloc.",
+      "comparisons": {
+        "tax": {
+          "label": "Corporate Tax Rate",
+          "py": "10%",
+          "ar": "25–35%",
+          "br": "22–34%",
+          "uy": "25%"
+        },
+        "energy": {
+          "label": "Industrial Electricity (USD/kWh)",
+          "py": "$0.05",
+          "ar": "$0.08",
+          "br": "$0.16",
+          "uy": "$0.25"
+        },
+        "labor": {
+          "label": "Monthly Labor Cost (incl. Social Security)",
+          "py": "$550",
+          "ar": "$800+",
+          "br": "$900+",
+          "uy": "$1,200+"
+        }
+      },
+      "cta": "Explore Paraguay"
+    },
+    "services": {
+      "label": "What We Do",
+      "title": "Your bridge to Mercosur.",
+      "description": "We specialize in matchmaking EU companies with opportunities in Mercosur — driving investments, facilitating trade, and enabling market entry.",
+      "items": {
+        "matchmaking": {
+          "number": "01",
+          "title": "Business Matchmaking",
+          "description": "Connecting European companies with vetted Mercosur partners, suppliers, distributors, and clients."
+        },
+        "investment": {
+          "number": "02",
+          "title": "Investment Facilitation",
+          "description": "Structuring and deploying European capital into Paraguay — from corporate setup to Maquila licensing."
+        },
+        "market": {
+          "number": "03",
+          "title": "Market Entry",
+          "description": "End-to-end support for establishing operations: facility siting, permits, hiring, and supply chain."
+        },
+        "trade": {
+          "number": "04",
+          "title": "Trade Advisory",
+          "description": "Navigating customs regimes, tariff benefits, and regulatory frameworks under the new EU-Mercosur agreement."
+        }
+      }
+    },
+    "closing": {
+      "title": "Ready to enter Mercosur?",
+      "description": "The window is open. Connect with our team to explore how the EU-Mercosur agreement can work for your business.",
+      "cta": "Connect Your Business Today"
+    }
+  },
+  "about": {
+    "hero": {
+      "tagline": "About Us",
+      "title": "The premier facilitator for EU-Mercosur business growth."
+    },
+    "mission": {
+      "label": "Our Mission",
+      "text": "Mercosur First Agency specializes in matchmaking EU companies with opportunities in Mercosur, driving investments into the region — particularly Paraguay — and facilitating trade, client acquisition, and market entry following the landmark EU-Mercosur trade agreement."
+    },
+    "vision": {
+      "label": "Our Vision",
+      "text": "To become the premier facilitator for sustainable bilateral business growth between the European Union and Mercosur, with Paraguay as the strategic hub."
+    },
+    "values": {
+      "label": "Our Values",
+      "items": {
+        "expertise": {
+          "title": "Expertise",
+          "description": "Deep knowledge of both EU and Mercosur regulatory, fiscal, and business environments."
+        },
+        "trust": {
+          "title": "Trust",
+          "description": "Transparent, long-term partnerships built on integrity and proven results."
+        },
+        "efficiency": {
+          "title": "Efficiency",
+          "description": "Streamlined processes that accelerate market entry and reduce operational friction."
+        },
+        "local": {
+          "title": "Local Knowledge",
+          "description": "On-the-ground presence in Asunción and European operations base in Vienna."
+        }
+      }
+    },
+    "history": {
+      "label": "Our Story",
+      "text": "Founded to capitalize on the historic EU-Mercosur Partnership Agreement signed in January 2026, Mercosur First Agency operates a dual-presence structure between Vienna and Asunción. We bridge the gap between European capital seeking growth and a region offering unprecedented opportunity."
+    },
+    "presence": {
+      "label": "Dual Presence",
+      "vienna": {
+        "title": "Vienna, Austria",
+        "role": "European Operations & Client Relations",
+        "description": "Client interface, capital origination, EU regulatory coordination, and institutional partnerships."
+      },
+      "asuncion": {
+        "title": "Asunción, Paraguay",
+        "role": "Execution & Ground Operations",
+        "description": "Facility siting, licensing, local partnerships, and full operational deployment."
+      }
+    },
+    "team": {
+      "label": "Leadership",
+      "members": {
+        "sol": {
+          "name": "Sol Sandt",
+          "role": "CEO, Joy S.A.",
+          "bio": "Specialist in industrial production and design. Lecturer at Universidad Nacional de Asunción."
+        },
+        "andre": {
+          "name": "Andre Justin",
+          "role": "President, Relaciones Internacionales S.A.",
+          "bio": "Extensive network in the European corporate world, facilitating international relations."
+        },
+        "julian": {
+          "name": "Julian Sandt",
+          "role": "President, Park Lofts EAS",
+          "bio": "Developer with 350+ apartments sold/under construction. Portfolio manager in Paraguayan real estate and financial instruments."
+        }
+      }
+    }
+  },
+  "opportunity": {
+    "hero": {
+      "tagline": "The EU-Mercosur Opportunity",
+      "title": "One of the world's largest trade areas — now open."
+    },
+    "overview": {
+      "label": "The Agreement",
+      "title": "Creating a €750B+ trade corridor.",
+      "description": "Signed in January 2026, the EU-Mercosur Partnership Agreement unites 730+ million consumers across 31 countries. It creates one of the world's largest free trade areas, reducing or eliminating tariffs on ~91–95% of goods traded over the next 10–15 years.",
+      "points": {
+        "size": "730M+ combined population — larger than USMCA",
+        "tariffs": "~91–95% of tariff lines reduced or eliminated",
+        "timeline": "Interim application possible in 2026",
+        "scope": "Covers goods, services, investment, and government procurement"
+      }
+    },
+    "services": {
+      "label": "Our Services",
+      "title": "Comprehensive Execution Capabilities.",
+      "items": {
+        "matchmaking": {
+          "title": "Matchmaking",
+          "desc": "Connect EU investors/exporters with Paraguayan/Mercosur partners."
+        },
+        "entry": {
+          "title": "Market Entry Support",
+          "desc": "Feasibility studies, partner searches, regulatory guidance."
+        },
+        "invest": {
+          "title": "Investment Facilitation",
+          "desc": "Site selection, incentives navigation, setup assistance."
+        },
+        "trade": {
+          "title": "Trade Support",
+          "desc": "Client/supplier matching, export/import facilitation."
+        },
+        "advisory": {
+          "title": "Ongoing Advisory",
+          "desc": "Networking, due diligence, cultural/business bridging."
+        },
+        "price": {
+          "title": "Price Comparisons",
+          "desc": "Competitive analysis for procurement and logistics."
+        },
+        "translation": {
+          "title": "Certified Translations",
+          "desc": "Official translation services for legal and business documents."
+        },
+        "models": {
+          "title": "Cost-Saving Business Models",
+          "desc": "Strategy consulting to optimize operational efficiency."
+        },
+        "invest_consult": {
+          "title": "Investment Consulting",
+          "desc": "High yield property investments, secure land registration, and reliable ROI."
+        },
+        "driver": {
+          "title": "Driving Licence Assistance",
+          "desc": "Paraguayan driving licence without test (for foreign licence holders)."
+        },
+        "insider": {
+          "title": "Inside Information",
+          "desc": "Access to local intelligence on everything happening in the country."
+        }
+      },
+      "visit": {
+        "title": "Organizing and Accompanying your Visit",
+        "desc": "From the airport to the hotel to your meeting or sightseeing, we can always be with you. Pick-up available in German, Spanish, and English."
+      }
+    },
+    "benefits": {
+      "label": "Key Benefits",
+      "eu": {
+        "title": "For EU Companies",
+        "items": [
+          "Lower tariffs on machinery, chemicals, automotive exports",
+          "Access to 270M Mercosur consumers with rising purchasing power",
+          "Enhanced intellectual property protections",
+          "Simplified customs and mutual recognition agreements",
+          "New government procurement opportunities in Mercosur"
+        ]
+      },
+      "mercosur": {
+        "title": "For Mercosur Partners",
+        "items": [
+          "Preferential access to the world's largest single market (450M consumers)",
+          "Reduced tariffs on agricultural and manufactured exports to EU",
+          "Increased European FDI and technology transfer",
+          "Regulatory alignment reducing trade friction",
+          "Enhanced credibility and integration with global value chains"
+        ]
+      }
+    },
+    "timeline": {
+      "label": "Timeline",
+      "items": {
+        "signed": {
+          "date": "January 2026",
+          "event": "Agreement signed by EU and Mercosur leaders"
+        },
+        "ratification": {
+          "date": "2026–2027",
+          "event": "Ratification process across EU member states and Mercosur"
+        },
+        "interim": {
+          "date": "2026–2027",
+          "event": "Interim application of key trade provisions"
+        },
+        "full": {
+          "date": "2027–2040",
+          "event": "Full tariff elimination phased over 10–15 years"
+        }
+      }
+    },
+    "cta": {
+      "title": "Position your business now.",
+      "description": "The companies that move first will capture the most value. Let us show you how.",
+      "button": "Connect With Us"
+    }
+  },
+  "whyParaguay": {
+    "hero": {
+      "tagline": "The Economic Engine of South America",
+      "title": "Investment Grade Stability & Growth."
+    },
+    "macro": {
+      "label": "Macro Fundamentals",
+      "title": "A Beacon of Stability & Growth",
+      "subtitle": "While the region faces volatility, Paraguay stands as the fastest-growing economy in South America over the last 60 years, recently achieving Investment Grade status.",
+      "climate": {
+        "title": "Best Business Climate (FGV)",
+        "label": "Business Climate Index (Points)",
+        "items": {
+          "py": {
+            "country": "Paraguay",
+            "note": "#1 in South America"
+          },
+          "ec": {
+            "country": "Ecuador",
+            "note": ""
+          },
+          "pe": {
+            "country": "Peru",
+            "note": ""
+          },
+          "uy": {
+            "country": "Uruguay",
+            "note": ""
+          },
+          "br": {
+            "country": "Brazil",
+            "note": ""
+          }
+        }
+      },
+      "stats": {
+        "gdp": {
+          "value": "6%",
+          "label": "GDP Growth",
+          "desc": "Consistent YoY expansion"
+        },
+        "grade": {
+          "value": "Baa3",
+          "label": "Investment Grade",
+          "desc": "Moody's Credit Rating"
+        },
+        "age": {
+          "value": "28",
+          "label": "Median Age",
+          "desc": "Young, growing workforce"
+        },
+        "happy": {
+          "value": "#2",
+          "label": "Global Happiness",
+          "desc": "Source: Gallup Global Report"
+        },
+        "debt": {
+          "value": "40%",
+          "label": "Debt-to-GDP",
+          "desc": "Lowest leverage in region"
+        }
+      }
+    },
+    "overview": {
+      "label": "The Opportunity",
+      "description": "Paraguay combines the lowest operational costs in Latin America, the world's cheapest hydroelectric energy, a 10% flat corporate tax, and full Mercosur access. For European companies entering the bloc, it is the obvious base of operations."
+    },
+    "tax": {
+      "label": "Tax Advantage",
+      "title": "The lowest tax burden in Mercosur.",
+      "detail": "Paraguay's 10% flat corporate income tax is the lowest in the entire Mercosur bloc. Combined with 10% VAT and special regimes like Maquila (1% effective tax for licensed exporters), it creates the most competitive fiscal environment in the region.",
+      "comparison": {
+        "py": {
+          "country": "Paraguay",
+          "rate": "10%",
+          "note": "Flat rate + 8% dividend tax"
+        },
+        "ar": {
+          "country": "Argentina",
+          "rate": "25–35%",
+          "note": "Progressive rate"
+        },
+        "br": {
+          "country": "Brazil",
+          "rate": "22–34%",
+          "note": "Varies by structure"
+        },
+        "uy": {
+          "country": "Uruguay",
+          "rate": "25%",
+          "note": "Standard rate"
+        }
+      },
+      "maquila": {
+        "title": "Maquila Export Regime",
+        "description": "European companies establishing factories in Paraguay to serve Mercosur or other export markets can operate under the Maquila regime at just 1% effective tax. Import raw materials duty-free, export finished goods at minimal cost."
+      }
+    },
+    "labor": {
+      "label": "Labor Costs",
+      "title": "The lowest labor costs in Mercosur.",
+      "detail": "A worker in Paraguay costs approximately $550/month including social security — significantly lower than any other Mercosur country.",
+      "comparison": {
+        "py": {
+          "country": "Paraguay",
+          "cost": "$550",
+          "note": "Including social security"
+        },
+        "ar": {
+          "country": "Argentina",
+          "cost": "$800+",
+          "note": "High payroll taxes"
+        },
+        "br": {
+          "country": "Brazil",
+          "cost": "$900+",
+          "note": "Complex labor regulations"
+        },
+        "uy": {
+          "country": "Uruguay",
+          "cost": "$1,200+",
+          "note": "Highest in Mercosur"
+        }
+      }
+    },
+    "energy": {
+      "label": "Energy",
+      "title": "World's cheapest industrial electricity.",
+      "detail": "Paraguay generates 100% renewable hydroelectric energy from Itaipú and Yacyretá dams. Industrial electricity at ~$0.05/kWh — a fraction of regional competitors.",
+      "comparison": {
+        "py": {
+          "country": "Paraguay",
+          "cost": "$0.05",
+          "note": "Hydroelectric surplus"
+        },
+        "ar": {
+          "country": "Argentina",
+          "cost": "$0.08",
+          "note": "Subsidized rates"
+        },
+        "br": {
+          "country": "Brazil",
+          "cost": "$0.16",
+          "note": "Mixed energy matrix"
+        },
+        "uy": {
+          "country": "Uruguay",
+          "cost": "$0.25",
+          "note": "Highest in region"
+        }
+      }
+    },
+    "operational": {
+      "label": "Operational Costs",
+      "title": "50–70% lower than Buenos Aires or São Paulo.",
+      "items": [
+        "Commercial rents and land prices 50–70% lower than regional capitals",
+        "Low-cost water and utilities thanks to abundant natural resources",
+        "Growing infrastructure with improving logistics networks",
+        "Affordable professional services and office space"
+      ]
+    },
+    "advantages": {
+      "label": "Additional Advantages",
+      "items": [
+        "Macroeconomic stability — three decades of consistent monetary policy",
+        "Full repatriation of profits and capital — no restrictions",
+        "Tax exemptions on capital goods imports under investment laws",
+        "Strategic location for accessing Brazil and Argentina markets",
+        "Growing hub for nearshoring and European investment",
+        "Dollar-denominated economy with low inflation"
+      ]
+    },
+    "lifestyle": {
+      "label": "Quality of Life",
+      "title": "Pleasant Climate & Environment",
+      "description": "Paraguay offers a pleasant warm climate, especially in the transitional seasons of Spring and Autumn. Even winter is mild with an average daily high of 23°C. Summer can be hot, usually in the upper 30s."
+    },
+    "cta": {
+      "title": "Start your Paraguay operation.",
+      "description": "We handle everything — from corporate structuring to physical deployment.",
+      "button": "Get Started"
+    }
+  },
+  "contact": {
+    "hero": {
+      "tagline": "Contact",
+      "title": "Let's connect your business to Mercosur."
+    },
+    "form": {
+      "name": "Full Name",
+      "email": "Email",
+      "company": "Company / Organization",
+      "country": "Country",
+      "interest": "Area of Interest",
+      "interestOptions": {
+        "matchmaking": "Business Matchmaking",
+        "investment": "Investment in Paraguay",
+        "market": "Market Entry & Setup",
+        "trade": "Trade & Export Advisory",
+        "general": "General Inquiry"
+      },
+      "message": "Tell us about your project",
+      "submit": "Send Inquiry",
+      "success": "Your inquiry has been received. We will respond within 48 hours.",
+      "error": "Submission failed. Contact us directly at contact@mercosurfirstagency.com."
+    },
+    "direct": {
+      "label": "Direct Contact",
+      "asuncion": {
+        "title": "Asunción, Paraguay",
+        "email": "contact@mercosurfirstagency.com",
+        "role": "Headquarters. Miami Tower."
+      }
+    },
+    "note": "Contact us via email, WhatsApp (German, English, Spanish), or in person (German, English, and Spanish). We welcome inquiries from EU companies, Mercosur partners, and institutional investors. Response within 48 hours."
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "contactUs": "Connect Your Business",
+    "copyright": "Mercosur First Agency"
+  }
+}

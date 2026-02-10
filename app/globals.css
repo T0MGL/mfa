@@ -2,31 +2,73 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap');
+
 :root {
-  --background: #0a0a0a;
-  --foreground: #ededed;
+  --background: #08080a;
+  --foreground: #e8e6e1;
+  --text-secondary: #6b6961;
+  --text-tertiary: #4a4843;
+  --gold: #b8a06a;
+  --gold-dim: #8c7a4e;
+  --gold-bright: #d4c090;
+  --border: #1a1916;
+  --border-hover: #2a2820;
+  --surface: #0f0f11;
+  --surface-elevated: #141416;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --background: #ffffff;
-    --foreground: #171717;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* Serif headline font */
+.font-serif {
+  font-family: 'Cormorant Garamond', 'Georgia', serif;
 }
 
-/* Custom smooth scroll */
+/* Selection */
+::selection {
+  background: var(--gold);
+  color: var(--background);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-hover);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold-dim);
+}
+
+/* Custom smooth scroll (Lenis) */
 html.lenis,
 html.lenis body {
   height: auto;
@@ -46,4 +88,111 @@ html.lenis body {
 
 .lenis.lenis-smooth iframe {
   pointer-events: none;
+}
+
+/* Gold line accent */
+.gold-line {
+  width: 48px;
+  height: 1px;
+  background: var(--gold);
+}
+
+.gold-line-long {
+  width: 80px;
+  height: 1px;
+  background: var(--gold);
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes revealLine {
+  from { width: 0; }
+  to { width: 48px; }
+}
+
+@keyframes revealLineLong {
+  from { width: 0; }
+  to { width: 80px; }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  opacity: 0;
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  opacity: 0;
+}
+
+.animate-reveal-line {
+  animation: revealLine 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s forwards;
+  width: 0;
+}
+
+.animate-reveal-line-long {
+  animation: revealLineLong 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s forwards;
+  width: 0;
+}
+
+/* Delay utilities */
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
+.delay-600 { animation-delay: 0.6s; }
+.delay-700 { animation-delay: 0.7s; }
+.delay-800 { animation-delay: 0.8s; }
+.delay-1000 { animation-delay: 1s; }
+.delay-1200 { animation-delay: 1.2s; }
+.delay-1400 { animation-delay: 1.4s; }
+
+/* Text styles */
+.text-gold { color: var(--gold); }
+.text-gold-dim { color: var(--gold-dim); }
+.text-secondary { color: var(--text-secondary); }
+.text-tertiary { color: var(--text-tertiary); }
+.bg-surface { background: var(--surface); }
+.bg-surface-elevated { background: var(--surface-elevated); }
+.border-subtle { border-color: var(--border); }
+.border-hover { border-color: var(--border-hover); }
+
+/* Horizontal rule */
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+}
+
+/* Link reset */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Focus */
+:focus-visible {
+  outline: 1px solid var(--gold-dim);
+  outline-offset: 2px;
+}
+
+/* Form inputs */
+input, textarea, select {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
 }

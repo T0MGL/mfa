@@ -1,0 +1,467 @@
+{
+  "nav": {
+    "about": "Nosotros",
+    "opportunity": "La Oportunidad",
+    "whyParaguay": "¿Por qué Paraguay?",
+    "contact": "Contacto"
+  },
+  "home": {
+    "hero": {
+      "badge": "Asesoría Estratégica & Despliegue de Capital",
+      "title": "El Acuerdo UE-Mercosur es un Evento de Revalorización de Capital.",
+      "description": "Paraguay es la capa de ejecución.",
+      "ctaPrimary": "Iniciar Mandato",
+      "ctaSecondary": "La Oportunidad"
+    },
+    "stats": {
+      "label": "Las Cifras",
+      "items": {
+        "exports": {
+          "value": "€50B+",
+          "label": "Aumento potencial en exportaciones de la UE"
+        },
+        "consumers": {
+          "value": "730M+",
+          "label": "Mercado de consumidores combinado"
+        },
+        "tariffs": {
+          "value": "91%",
+          "label": "Líneas arancelarias reducidas o eliminadas"
+        },
+        "tax": {
+          "value": "10%",
+          "label": "Impuesto corporativo fijo de Paraguay"
+        }
+      }
+    },
+    "opportunity": {
+      "label": "El Acuerdo",
+      "title": "Una nueva era de comercio transatlántico.",
+      "description": "El Acuerdo de Asociación UE-Mercosur elimina aranceles sobre ~91–95% de los bienes comercializados en 10–15 años. Para empresas europeas, esto significa menores barreras en maquinaria, químicos, automotriz y manufactura hacia un mercado de 730 millones de consumidores.",
+      "points": {
+        "trade": "Reducciones arancelarias en ~91–95% del comercio bilateral",
+        "investment": "Protecciones reforzadas para inversores y alineación regulatoria",
+        "access": "Procedimientos aduaneros simplificados y reconocimiento mutuo",
+        "timeline": "Aplicación provisional posible en 2026 — beneficios plenos en 10–15 años"
+      },
+      "cta": "Resumen Completo de la Oportunidad"
+    },
+    "whyParaguay": {
+      "label": "Enfoque Estratégico",
+      "title": "Paraguay: el punto de entrada más inteligente al Mercosur.",
+      "subtitle": "Menos impuestos, energía más barata, menores costos laborales — y acceso completo a todo el bloque.",
+      "comparisons": {
+        "tax": {
+          "label": "Tasa de Impuesto Corporativo",
+          "py": "10%",
+          "ar": "25–35%",
+          "br": "22–34%",
+          "uy": "25%"
+        },
+        "energy": {
+          "label": "Electricidad Industrial (USD/kWh)",
+          "py": "$0.05",
+          "ar": "$0.08",
+          "br": "$0.16",
+          "uy": "$0.25"
+        },
+        "labor": {
+          "label": "Costo Laboral Mensual (incl. Seguridad Social)",
+          "py": "$550",
+          "ar": "$800+",
+          "br": "$900+",
+          "uy": "$1,200+"
+        }
+      },
+      "cta": "Explorar Paraguay"
+    },
+    "services": {
+      "label": "Qué Hacemos",
+      "title": "Tu puente hacia el Mercosur.",
+      "description": "Nos especializamos en conectar empresas de la UE con oportunidades en el Mercosur — impulsando inversiones, facilitando comercio y habilitando la entrada al mercado.",
+      "items": {
+        "matchmaking": {
+          "number": "01",
+          "title": "Matchmaking Empresarial",
+          "description": "Conectando empresas europeas con socios, proveedores, distribuidores y clientes verificados en el Mercosur."
+        },
+        "investment": {
+          "number": "02",
+          "title": "Facilitación de Inversiones",
+          "description": "Estructuración y despliegue de capital europeo en Paraguay — desde constitución corporativa hasta licenciamiento Maquila."
+        },
+        "market": {
+          "number": "03",
+          "title": "Entrada al Mercado",
+          "description": "Soporte integral para establecer operaciones: emplazamiento de instalaciones, permisos, contratación y cadena de suministro."
+        },
+        "trade": {
+          "number": "04",
+          "title": "Asesoría Comercial",
+          "description": "Navegando regímenes aduaneros, beneficios arancelarios y marcos regulatorios bajo el nuevo acuerdo UE-Mercosur."
+        }
+      }
+    },
+    "closing": {
+      "title": "¿Listo para entrar al Mercosur?",
+      "description": "La ventana está abierta. Conecta con nuestro equipo para explorar cómo el acuerdo UE-Mercosur puede funcionar para tu negocio.",
+      "cta": "Conecta Tu Negocio Hoy"
+    }
+  },
+  "about": {
+    "hero": {
+      "tagline": "Nosotros",
+      "title": "El facilitador líder para el crecimiento empresarial UE-Mercosur."
+    },
+    "mission": {
+      "label": "Nuestra Misión",
+      "text": "Mercosur First Agency se especializa en conectar empresas de la UE con oportunidades en el Mercosur, impulsando inversiones en la región — particularmente Paraguay — y facilitando comercio, adquisición de clientes y entrada al mercado tras el histórico acuerdo comercial UE-Mercosur."
+    },
+    "vision": {
+      "label": "Nuestra Visión",
+      "text": "Convertirnos en el facilitador líder para el crecimiento empresarial bilateral sostenible entre la Unión Europea y el Mercosur, con Paraguay como hub estratégico."
+    },
+    "values": {
+      "label": "Nuestros Valores",
+      "items": {
+        "expertise": {
+          "title": "Expertise",
+          "description": "Conocimiento profundo de los entornos regulatorios, fiscales y empresariales de la UE y el Mercosur."
+        },
+        "trust": {
+          "title": "Confianza",
+          "description": "Asociaciones transparentes y a largo plazo construidas sobre integridad y resultados comprobados."
+        },
+        "efficiency": {
+          "title": "Eficiencia",
+          "description": "Procesos ágiles que aceleran la entrada al mercado y reducen la fricción operativa."
+        },
+        "local": {
+          "title": "Conocimiento Local",
+          "description": "Presencia en terreno en Asunción y base de operaciones europeas en Viena."
+        }
+      }
+    },
+    "history": {
+      "label": "Nuestra Historia",
+      "text": "Fundada para capitalizar el histórico Acuerdo de Asociación UE-Mercosur firmado en enero de 2026, Mercosur First Agency opera una estructura de doble presencia entre Viena y Asunción. Conectamos capital europeo que busca crecimiento con una región que ofrece oportunidades sin precedentes."
+    },
+    "presence": {
+      "label": "Doble Presencia",
+      "vienna": {
+        "title": "Viena, Austria",
+        "role": "Operaciones Europeas y Relaciones con Clientes",
+        "description": "Interfaz con clientes, originación de capital, coordinación regulatoria UE y alianzas institucionales."
+      },
+      "asuncion": {
+        "title": "Asunción, Paraguay",
+        "role": "Ejecución y Operaciones en Terreno",
+        "description": "Emplazamiento de instalaciones, licenciamiento, asociaciones locales y despliegue operacional completo."
+      }
+    },
+    "team": {
+      "label": "Liderazgo",
+      "members": {
+        "sol": {
+          "name": "Sol Sandt",
+          "role": "CEO, Joy S.A.",
+          "bio": "Especialista en producción industrial y diseño. Docente en la Universidad Nacional de Asunción."
+        },
+        "andre": {
+          "name": "Andre Justin",
+          "role": "Presidente, Relaciones Internacionales S.A.",
+          "bio": "Amplia red en el mundo corporativo europeo. Facilita relaciones internacionales de alto nivel."
+        },
+        "julian": {
+          "name": "Julian Sandt",
+          "role": "Presidente, Park Lofts EAS",
+          "bio": "Desarrollador con más de 350 dptos vendidos y en construcción. Gestor de portafolio en bienes raíces e instrumentos financieros."
+        }
+      }
+    }
+  },
+  "opportunity": {
+    "hero": {
+      "tagline": "La Oportunidad UE-Mercosur",
+      "title": "Una de las áreas comerciales más grandes del mundo — ahora abierta."
+    },
+    "overview": {
+      "label": "El Acuerdo",
+      "title": "Creando un corredor comercial de €750B+.",
+      "description": "Firmado en enero de 2026, el Acuerdo de Asociación UE-Mercosur une a 730+ millones de consumidores en 31 países. Crea una de las áreas de libre comercio más grandes del mundo, reduciendo o eliminando aranceles sobre ~91–95% de los bienes comercializados en los próximos 10–15 años.",
+      "points": {
+        "size": "730M+ de población combinada — más grande que el T-MEC",
+        "tariffs": "~91–95% de líneas arancelarias reducidas o eliminadas",
+        "timeline": "Aplicación provisional posible en 2026",
+        "scope": "Cubre bienes, servicios, inversión y compras gubernamentales"
+      }
+    },
+    "services": {
+      "label": "Nuestros Servicios",
+      "title": "Capacidades de Ejecución Integral.",
+      "items": {
+        "matchmaking": {
+          "title": "Matchmaking",
+          "desc": "Conexión entre inversores/exportadores de la UE y socios paraguayos/Mercosur."
+        },
+        "entry": {
+          "title": "Soporte de Entrada al Mercado",
+          "desc": "Estudios de viabilidad, búsqueda de socios, orientación regulatoria."
+        },
+        "invest": {
+          "title": "Facilitación de Inversiones",
+          "desc": "Selección de sitios, navegación de incentivos, asistencia en configuración."
+        },
+        "trade": {
+          "title": "Soporte Comercial",
+          "desc": "Emparejamiento cliente/proveedor, facilitación de expo/impo."
+        },
+        "advisory": {
+          "title": "Asesoría Continua",
+          "desc": "Networking, debida diligencia, puente cultural y empresarial."
+        },
+        "price": {
+          "title": "Comparaciones de Precios",
+          "desc": "Análisis competitivo para adquisiciones y logística."
+        },
+        "translation": {
+          "title": "Traducciones Certificadas",
+          "desc": "Servicios oficiales de traducción para documentos legales y comerciales."
+        },
+        "models": {
+          "title": "Modelos de Negocio Eficientes",
+          "desc": "Consultoría estratégica para optimizar la eficiencia operativa."
+        },
+        "invest_consult": {
+          "title": "Consultoría de Inversiones",
+          "desc": "Inversiones inmobiliarias de alto rendimiento, registro seguro y ROI confiable."
+        },
+        "driver": {
+          "title": "Gestión Licencia de Conducir",
+          "desc": "Licencia de conducir paraguaya sin examen (para titulares de licencias extranjeras)."
+        },
+        "insider": {
+          "title": "Información Privilegiada",
+          "desc": "Acceso a inteligencia local sobre todo lo que sucede en el país."
+        }
+      },
+      "visit": {
+        "title": "Organización y Acompañamiento de su Visita",
+        "desc": "Desde el aeropuerto al hotel, hasta su reunión o turismo, podemos estar siempre con usted. Recogida disponible en alemán, español e inglés."
+      }
+    },
+    "benefits": {
+      "label": "Beneficios Clave",
+      "eu": {
+        "title": "Para Empresas de la UE",
+        "items": [
+          "Menores aranceles en exportaciones de maquinaria, químicos y automotriz",
+          "Acceso a 270M de consumidores del Mercosur con poder adquisitivo creciente",
+          "Protecciones de propiedad intelectual reforzadas",
+          "Aduanas simplificadas y acuerdos de reconocimiento mutuo",
+          "Nuevas oportunidades de compras gubernamentales en el Mercosur"
+        ]
+      },
+      "mercosur": {
+        "title": "Para Socios del Mercosur",
+        "items": [
+          "Acceso preferencial al mercado único más grande del mundo (450M consumidores)",
+          "Aranceles reducidos en exportaciones agrícolas y manufacturadas a la UE",
+          "Mayor IED europea y transferencia de tecnología",
+          "Alineación regulatoria que reduce fricción comercial",
+          "Mayor credibilidad e integración con cadenas de valor globales"
+        ]
+      }
+    },
+    "timeline": {
+      "label": "Cronología",
+      "items": {
+        "signed": {
+          "date": "Enero 2026",
+          "event": "Acuerdo firmado por líderes de la UE y el Mercosur"
+        },
+        "ratification": {
+          "date": "2026–2027",
+          "event": "Proceso de ratificación en estados miembros de la UE y el Mercosur"
+        },
+        "interim": {
+          "date": "2026–2027",
+          "event": "Aplicación provisional de disposiciones comerciales clave"
+        },
+        "full": {
+          "date": "2027–2040",
+          "event": "Eliminación total de aranceles en fases de 10–15 años"
+        }
+      }
+    },
+    "cta": {
+      "title": "Posiciona tu negocio ahora.",
+      "description": "Las empresas que actúen primero capturarán el mayor valor. Déjanos mostrarte cómo.",
+      "button": "Conecta Con Nosotros"
+    }
+  },
+  "whyParaguay": {
+    "hero": {
+      "tagline": "¿Por qué Paraguay?",
+      "title": "La puerta de entrada estratégica al Mercosur."
+    },
+    "overview": {
+      "label": "La Oportunidad",
+      "description": "Paraguay combina los costos operativos más bajos de América Latina, la energía hidroeléctrica más barata del mundo, un impuesto corporativo fijo del 10% y acceso pleno al Mercosur. Para empresas europeas que ingresan al bloque, es la base de operaciones obvia."
+    },
+    "tax": {
+      "label": "Ventaja Fiscal",
+      "title": "La carga impositiva más baja del Mercosur.",
+      "detail": "El impuesto corporativo fijo del 10% de Paraguay es el más bajo de todo el bloque Mercosur. Combinado con un IVA del 10% y regímenes especiales como Maquila (1% de impuesto efectivo para exportadores licenciados), crea el entorno fiscal más competitivo de la región.",
+      "comparison": {
+        "py": {
+          "country": "Paraguay",
+          "rate": "10%",
+          "note": "Tasa fija + 8% impuesto a dividendos"
+        },
+        "ar": {
+          "country": "Argentina",
+          "rate": "25–35%",
+          "note": "Tasa progresiva"
+        },
+        "br": {
+          "country": "Brazil",
+          "rate": "22–34%",
+          "note": "Varía según estructura"
+        },
+        "uy": {
+          "country": "Uruguay",
+          "rate": "25%",
+          "note": "Tasa estándar"
+        }
+      },
+      "maquila": {
+        "title": "Régimen de Exportación Maquila",
+        "description": "Empresas europeas que establezcan fábricas en Paraguay para servir al Mercosur u otros mercados de exportación pueden operar bajo el régimen Maquila con solo 1% de impuesto efectivo. Importar materias primas libres de aranceles, exportar productos terminados a costo mínimo."
+      }
+    },
+    "labor": {
+      "label": "Costos Laborales",
+      "title": "Los costos laborales más bajos del Mercosur.",
+      "detail": "Un trabajador en Paraguay cuesta aproximadamente $550/mes incluyendo seguridad social — significativamente menor que cualquier otro país del Mercosur.",
+      "comparison": {
+        "py": {
+          "country": "Paraguay",
+          "cost": "$550",
+          "note": "Incluyendo seguridad social"
+        },
+        "ar": {
+          "country": "Argentina",
+          "cost": "$800+",
+          "note": "Altos impuestos laborales"
+        },
+        "br": {
+          "country": "Brazil",
+          "cost": "$900+",
+          "note": "Regulaciones laborales complejas"
+        },
+        "uy": {
+          "country": "Uruguay",
+          "cost": "$1,200+",
+          "note": "El más alto del Mercosur"
+        }
+      }
+    },
+    "energy": {
+      "label": "Energía",
+      "title": "La electricidad industrial más barata del mundo.",
+      "detail": "Paraguay genera 100% de energía hidroeléctrica renovable de las represas de Itaipú y Yacyretá. Electricidad industrial a ~$0.05/kWh — una fracción de los competidores regionales.",
+      "comparison": {
+        "py": {
+          "country": "Paraguay",
+          "cost": "$0.05",
+          "note": "Excedente hidroeléctrico"
+        },
+        "ar": {
+          "country": "Argentina",
+          "cost": "$0.08",
+          "note": "Tarifas subsidiadas"
+        },
+        "br": {
+          "country": "Brazil",
+          "cost": "$0.16",
+          "note": "Matriz energética mixta"
+        },
+        "uy": {
+          "country": "Uruguay",
+          "cost": "$0.25",
+          "note": "El más alto de la región"
+        }
+      }
+    },
+    "operational": {
+      "label": "Costos Operativos",
+      "title": "50–70% más bajo que Buenos Aires o São Paulo.",
+      "items": [
+        "Alquileres y precios de tierra 50–70% menores que en capitales regionales",
+        "Bajo costo de agua y servicios gracias a abundantes recursos naturales",
+        "Infraestructura en crecimiento con redes logísticas en mejora",
+        "Servicios profesionales y oficinas accesibles"
+      ]
+    },
+    "advantages": {
+      "label": "Ventajas Adicionales",
+      "items": [
+        "Estabilidad macroeconómica — tres décadas de política monetaria consistente",
+        "Repatriación total de ganancias y capital — sin restricciones",
+        "Exenciones fiscales en importaciones de bienes de capital bajo leyes de inversión",
+        "Ubicación estratégica para acceder a mercados de Brasil y Argentina",
+        "Hub creciente para nearshoring e inversión europea",
+        "Economía dolarizada con baja inflación"
+      ]
+    },
+    "lifestyle": {
+      "label": "Calidad de Vida",
+      "title": "Clima y Ambiente Agradable",
+      "description": "Paraguay ofrece un clima cálido agradable, especialmente en las estaciones de transición de primavera y otoño. Incluso el invierno es suave con una máxima diaria promedio de 23°C. El verano puede ser caluroso, generalmente por encima de los 30°C."
+    },
+    "cta": {
+      "title": "Inicia tu operación en Paraguay.",
+      "description": "Nos encargamos de todo — desde la estructuración corporativa hasta el despliegue físico.",
+      "button": "Comenzar"
+    }
+  },
+  "contact": {
+    "hero": {
+      "tagline": "Contacto",
+      "title": "Conectemos tu negocio con el Mercosur."
+    },
+    "form": {
+      "name": "Nombre Completo",
+      "email": "Correo Electrónico",
+      "company": "Empresa / Organización",
+      "country": "País",
+      "interest": "Área de Interés",
+      "interestOptions": {
+        "matchmaking": "Matchmaking Empresarial",
+        "investment": "Inversión en Paraguay",
+        "market": "Entrada al Mercado y Setup",
+        "trade": "Asesoría Comercial y Exportación",
+        "general": "Consulta General"
+      },
+      "message": "Cuéntanos sobre tu proyecto",
+      "submit": "Enviar Consulta",
+      "success": "Tu consulta ha sido recibida. Responderemos dentro de 48 horas.",
+      "error": "Error en el envío. Contáctanos directamente en contact@mercosurfirstagency.com."
+    },
+    "direct": {
+      "label": "Contacto Directo",
+      "asuncion": {
+        "title": "Asunción, Paraguay",
+        "email": "contact@mercosurfirstagency.com",
+        "role": "Sede Central. Miami Tower."
+      }
+    },
+    "note": "Contáctenos vía email, WhatsApp (Alemán, Inglés, Español) o en persona. Recibimos consultas de empresas de la UE, socios del Mercosur e inversores institucionales. Respuesta dentro de 48 horas."
+  },
+  "common": {
+    "learnMore": "Más Información",
+    "contactUs": "Conecta Tu Negocio",
+    "copyright": "Mercosur First Agency"
+  }
+}
