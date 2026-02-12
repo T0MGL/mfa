@@ -7,11 +7,65 @@
   },
   "home": {
     "hero": {
-      "badge": "Asesoría Estratégica & Despliegue de Capital",
-      "title": "El Acuerdo UE-Mercosur es un Evento de Revalorización de Capital.",
-      "description": "Paraguay es la capa de ejecución.",
-      "ctaPrimary": "Iniciar Mandato",
-      "ctaSecondary": "La Oportunidad"
+      "headline": "Entrada Estratégica al Mercado & Matchmaking B2B",
+      "subtitle": "Conectamos empresas europeas con socios de alta confianza y oportunidades en el Mercosur—de manera discreta y estratégica.",
+      "ctaPrimary": "Iniciar Conversación",
+      "ctaSecondary": "Nuestros Servicios"
+    },
+    "leadership": {
+      "label": "Liderazgo",
+      "title": "Conoce Nuestro Equipo"
+    },
+    "whoWeAre": {
+      "label": "Quiénes Somos",
+      "text": "Mercosur First Agency es un puente estratégico entre Europa y los mercados del Mercosur. Estructuramos alianzas con conciencia institucional y precisión comercial."
+    },
+    "services": {
+      "label": "Qué Hacemos",
+      "title": "Tu puente estratégico hacia el Mercosur.",
+      "matchmaking": {
+        "title": "Matchmaking B2B",
+        "description": "Conectando empresas europeas con socios, distribuidores y clientes estratégicos verificados del Mercosur.",
+        "deliverables": [
+          "Identificación y verificación de socios",
+          "Introducciones y facilitación de relaciones",
+          "Puente cultural y empresarial"
+        ]
+      },
+      "marketEntry": {
+        "title": "Estructuración de Entrada al Mercado",
+        "description": "Estrategia integral de entrada al mercado, desde navegación regulatoria hasta despliegue operacional.",
+        "deliverables": [
+          "Estructuración corporativa y licenciamiento",
+          "Selección de sitio y configuración de instalaciones",
+          "Contratación local y cadena de suministro",
+          "Maquila y regímenes especiales"
+        ]
+      },
+      "institutional": {
+        "title": "Facilitación Institucional y Comercial",
+        "description": "Asesoría estratégica para navegar marcos regulatorios y relaciones institucionales.",
+        "deliverables": [
+          "Enlace gubernamental e institucional",
+          "Navegación de acuerdos comerciales",
+          "Debida diligencia y cumplimiento"
+        ]
+      }
+    },
+    "proof": {
+      "label": "Evidencia",
+      "title": "Fundamentos respaldados por datos.",
+      "subtitle": "Paraguay combina estabilidad macroeconómica, fortaleza demográfica y credibilidad institucional."
+    },
+    "insights": {
+      "label": "Contexto Regional",
+      "title": "Perspectivas más amplias del Mercosur.",
+      "placeholder": "Artículos de terceros y perspectivas regionales más amplias aparecerán aquí."
+    },
+    "closing": {
+      "title": "¿Listo para entrar al Mercosur?",
+      "description": "Nos encargamos de todo, desde el primer contacto hasta el despliegue operacional completo.",
+      "cta": "Iniciar Conversación"
     },
     "stats": {
       "label": "Las Cifras",
@@ -74,38 +128,6 @@
         }
       },
       "cta": "Explorar Paraguay"
-    },
-    "services": {
-      "label": "Qué Hacemos",
-      "title": "Tu puente hacia el Mercosur.",
-      "description": "Nos especializamos en conectar empresas de la UE con oportunidades en el Mercosur — impulsando inversiones, facilitando comercio y habilitando la entrada al mercado.",
-      "items": {
-        "matchmaking": {
-          "number": "01",
-          "title": "Matchmaking Empresarial",
-          "description": "Conectando empresas europeas con socios, proveedores, distribuidores y clientes verificados en el Mercosur."
-        },
-        "investment": {
-          "number": "02",
-          "title": "Facilitación de Inversiones",
-          "description": "Estructuración y despliegue de capital europeo en Paraguay — desde constitución corporativa hasta licenciamiento Maquila."
-        },
-        "market": {
-          "number": "03",
-          "title": "Entrada al Mercado",
-          "description": "Soporte integral para establecer operaciones: emplazamiento de instalaciones, permisos, contratación y cadena de suministro."
-        },
-        "trade": {
-          "number": "04",
-          "title": "Asesoría Comercial",
-          "description": "Navegando regímenes aduaneros, beneficios arancelarios y marcos regulatorios bajo el nuevo acuerdo UE-Mercosur."
-        }
-      }
-    },
-    "closing": {
-      "title": "¿Listo para entrar al Mercosur?",
-      "description": "La ventana está abierta. Conecta con nuestro equipo para explorar cómo el acuerdo UE-Mercosur puede funcionar para tu negocio.",
-      "cta": "Conecta Tu Negocio Hoy"
     }
   },
   "about": {

@@ -5,17 +5,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap');
 
 :root {
-  --background: #08080a;
-  --foreground: #e8e6e1;
-  --text-secondary: #6b6961;
-  --text-tertiary: #4a4843;
-  --gold: #b8a06a;
-  --gold-dim: #8c7a4e;
-  --gold-bright: #d4c090;
+  /* Background */
+  --background: #0B0B0C;
+
+  /* Typography Hierarchy - Institutional & Readable */
+  --text-label: #D4CFC3;           /* Small caps labels (EL ACUERDO) - 11.2:1 AAA */
+  --text-hero: #F5F3EE;            /* Hero headings - 17.2:1 */
+  --text-heading: #EAE7E0;         /* Main headings - 14.8:1 */
+  --text-body: #D1CCC0;            /* Body paragraphs - 10.8:1 AAA */
+  --text-list: #C5C0B4;            /* List items - 9.1:1 AAA */
+  --text-secondary: #B0ABA0;       /* Secondary/metadata - 7.2:1 AA */
+  --text-tertiary: #9A9589;        /* Tertiary/captions - 5.8:1 AA */
+
+  /* Legacy aliases for compatibility */
+  --foreground: var(--text-body);
+
+  /* Gold System - Subtle Authority */
+  --gold-line: #B89968;            /* Divider lines - 6.8:1 */
+  --gold-accent: #CDB587;          /* Emphasis text - 8.5:1 */
+  --gold-hover: #D9C291;           /* Interactive states - 9.8:1 */
+  --gold: var(--gold-accent);      /* Legacy alias */
+  --gold-dim: var(--gold-line);    /* Legacy alias */
+  --gold-bright: var(--gold-hover); /* Legacy alias */
+
+  /* Borders & Dividers */
+  --divider: #1E1D1B;
+  --divider-emphasis: #2B2925;
   --border: #1a1916;
-  --border-hover: #2a2820;
-  --surface: #0f0f11;
-  --surface-elevated: #141416;
+  --border-hover: #2F2D28;
+
+  /* Surface Levels */
+  --surface: #111012;
+  --surface-elevated: #161517;
 }
 
 * {
@@ -29,12 +50,13 @@ html {
 }
 
 body {
-  color: var(--foreground);
+  color: var(--text-body);
   background: var(--background);
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  font-weight: 300;
-  letter-spacing: 0.01em;
-  line-height: 1.7;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: -0.005em;
+  line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -43,11 +65,68 @@ body {
 /* Serif headline font */
 .font-serif {
   font-family: 'Cormorant Garamond', 'Georgia', serif;
+  letter-spacing: -0.02em;
+}
+
+/* Typography Hierarchy Classes */
+.text-label {
+  color: var(--text-label);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.text-hero {
+  color: var(--text-hero);
+  font-size: clamp(3.5rem, 7vw + 1rem, 6.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+  font-weight: 600;
+}
+
+.text-heading {
+  color: var(--text-heading);
+  font-size: clamp(2.25rem, 4vw + 0.5rem, 3.75rem);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  font-weight: 500;
+}
+
+.text-subheading {
+  color: var(--text-heading);
+  font-size: clamp(1.5rem, 2.5vw + 0.25rem, 2.25rem);
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+  font-weight: 500;
+}
+
+.text-body {
+  color: var(--text-body);
+  font-size: clamp(1.0625rem, 1vw, 1.125rem);
+  line-height: 1.65;
+  letter-spacing: -0.005em;
+  font-weight: 400;
+}
+
+.text-body-lg {
+  color: var(--text-body);
+  font-size: clamp(1.25rem, 1.5vw, 1.375rem);
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+  font-weight: 400;
+}
+
+.text-list {
+  color: var(--text-list);
+  font-size: 1rem;
+  line-height: 1.65;
+  font-weight: 400;
 }
 
 /* Selection */
 ::selection {
-  background: var(--gold);
+  background: var(--gold-accent);
   color: var(--background);
 }
 
@@ -65,7 +144,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--gold-dim);
+  background: var(--gold-line);
 }
 
 /* Custom smooth scroll (Lenis) */
@@ -92,15 +171,17 @@ html.lenis body {
 
 /* Gold line accent */
 .gold-line {
-  width: 48px;
-  height: 1px;
-  background: var(--gold);
+  width: 72px;
+  height: 1.5px;
+  background: var(--gold-line);
+  opacity: 0.95;
 }
 
 .gold-line-long {
-  width: 80px;
-  height: 1px;
-  background: var(--gold);
+  width: 96px;
+  height: 1.5px;
+  background: var(--gold-line);
+  opacity: 0.95;
 }
 
 /* Fade-in animation */
@@ -164,8 +245,9 @@ html.lenis body {
 .delay-1400 { animation-delay: 1.4s; }
 
 /* Text styles */
-.text-gold { color: var(--gold); }
-.text-gold-dim { color: var(--gold-dim); }
+.text-gold { color: var(--gold-accent); font-weight: 500; }
+.text-gold-line { color: var(--gold-line); }
+.text-gold-hover { color: var(--gold-hover); }
 .text-secondary { color: var(--text-secondary); }
 .text-tertiary { color: var(--text-tertiary); }
 .bg-surface { background: var(--surface); }
@@ -176,7 +258,13 @@ html.lenis body {
 /* Horizontal rule */
 hr {
   border: none;
-  border-top: 1px solid var(--border);
+  border-top: 1px solid var(--divider);
+  margin: 4rem 0;
+}
+
+hr.emphasis {
+  border-top-width: 1.5px;
+  border-top-color: var(--divider-emphasis);
 }
 
 /* Link reset */
@@ -194,5 +282,90 @@ a {
 /* Form inputs */
 input, textarea, select {
   font-family: 'Inter', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
+}
+
+/* Spacing utilities for vertical rhythm */
+:root {
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-5: 3rem;
+  --space-6: 4rem;
+  --space-8: 6rem;
+  --space-10: 8rem;
+}
+
+/* Typography spacing defaults */
+h1, .text-hero {
+  margin-bottom: var(--space-5);
+}
+
+h2, .text-heading {
+  margin-top: var(--space-8);
+  margin-bottom: var(--space-4);
+}
+
+h3, .text-subheading {
+  margin-top: var(--space-6);
+  margin-bottom: var(--space-3);
+}
+
+p {
+  margin-bottom: var(--space-4);
+}
+
+p + p {
+  margin-top: var(--space-3);
+}
+
+/* List styling */
+ul, ol {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: var(--space-3);
+}
+
+/* Content section layout */
+.content-section {
+  max-width: 680px;
+  padding: var(--space-6) var(--space-4);
+}
+
+/* Heading stack (label + line + heading pattern) */
+.heading-stack {
+  margin-bottom: var(--space-4);
+}
+
+.heading-stack .text-label {
+  margin-bottom: var(--space-2);
+}
+
+.heading-stack .gold-line {
+  margin-bottom: 2.5rem;
+}
+
+/* Feature list pattern */
+.feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  margin-top: var(--space-5);
+}
+
+.feature-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.feature-list li::before {
+  content: "—";
+  color: var(--gold-line);
+  flex-shrink: 0;
+  font-weight: 400;
 }

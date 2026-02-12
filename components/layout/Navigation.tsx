@@ -47,9 +47,14 @@ export function Navigation() {
         {/* Logo */}
         <Link
           href={`/${locale}`}
-          className="text-white font-sans font-semibold text-sm tracking-[0.3em] uppercase hover:text-[#c9a96e] transition-colors duration-300"
+          className="font-sans font-semibold text-sm tracking-[0.3em] uppercase transition-colors duration-300 group"
         >
-          Mercosur First
+          <span className="text-white group-hover:text-[#c9a96e] transition-colors duration-300">
+            Mercosur First
+          </span>
+          <span className="text-[#c9a96e] ml-1.5">
+            Agency
+          </span>
         </Link>
 
         {/* Desktop Nav */}

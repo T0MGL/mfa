@@ -7,11 +7,65 @@
   },
   "home": {
     "hero": {
-      "badge": "Strategic Advisory & Capital Deployment",
-      "title": "The EU–Mercosur Agreement Is a Capital Repricing Event.",
-      "subtitle": "Paraguay is the execution layer.",
-      "ctaPrimary": "Start a Mandate",
-      "ctaSecondary": "The Opportunity"
+      "headline": "Strategic Market Entry & B2B Matchmaking",
+      "subtitle": "We connect European companies with high-trust partners and opportunities across Mercosur—discreetly and strategically.",
+      "ctaPrimary": "Start a Conversation",
+      "ctaSecondary": "Our Services"
+    },
+    "leadership": {
+      "label": "Leadership",
+      "title": "Meet Our Team"
+    },
+    "whoWeAre": {
+      "label": "Who We Are",
+      "text": "Mercosur First Agency is a strategic bridge between Europe and Mercosur markets. We structure partnerships with institutional awareness and commercial precision."
+    },
+    "services": {
+      "label": "What We Do",
+      "title": "Your strategic bridge to Mercosur.",
+      "matchmaking": {
+        "title": "B2B Matchmaking",
+        "description": "Connecting European companies with vetted Mercosur partners, distributors, and strategic clients.",
+        "deliverables": [
+          "Partner identification and vetting",
+          "Introductions and relationship facilitation",
+          "Cultural and business bridging"
+        ]
+      },
+      "marketEntry": {
+        "title": "Market Entry Structuring",
+        "description": "End-to-end market entry strategy, from regulatory navigation to operational deployment.",
+        "deliverables": [
+          "Corporate structuring and licensing",
+          "Site selection and facility setup",
+          "Local hiring and supply chain",
+          "Maquila and special regimes"
+        ]
+      },
+      "institutional": {
+        "title": "Institutional & Commercial Facilitation",
+        "description": "Strategic advisory for navigating regulatory frameworks and institutional relationships.",
+        "deliverables": [
+          "Government and institutional liaisons",
+          "Trade agreement navigation",
+          "Due diligence and compliance"
+        ]
+      }
+    },
+    "proof": {
+      "label": "Evidence",
+      "title": "Data-driven fundamentals.",
+      "subtitle": "Paraguay combines macroeconomic stability, demographic strength, and institutional credibility."
+    },
+    "insights": {
+      "label": "Regional Context",
+      "title": "Broader Mercosur perspectives.",
+      "placeholder": "Third-party articles and broader regional insights will appear here."
+    },
+    "closing": {
+      "title": "Ready to enter Mercosur?",
+      "description": "We handle everything from first contact to full operational deployment.",
+      "cta": "Start a Conversation"
     },
     "stats": {
       "label": "The Numbers",
@@ -74,38 +128,6 @@
         }
       },
       "cta": "Explore Paraguay"
-    },
-    "services": {
-      "label": "What We Do",
-      "title": "Your bridge to Mercosur.",
-      "description": "We specialize in matchmaking EU companies with opportunities in Mercosur — driving investments, facilitating trade, and enabling market entry.",
-      "items": {
-        "matchmaking": {
-          "number": "01",
-          "title": "Business Matchmaking",
-          "description": "Connecting European companies with vetted Mercosur partners, suppliers, distributors, and clients."
-        },
-        "investment": {
-          "number": "02",
-          "title": "Investment Facilitation",
-          "description": "Structuring and deploying European capital into Paraguay — from corporate setup to Maquila licensing."
-        },
-        "market": {
-          "number": "03",
-          "title": "Market Entry",
-          "description": "End-to-end support for establishing operations: facility siting, permits, hiring, and supply chain."
-        },
-        "trade": {
-          "number": "04",
-          "title": "Trade Advisory",
-          "description": "Navigating customs regimes, tariff benefits, and regulatory frameworks under the new EU-Mercosur agreement."
-        }
-      }
-    },
-    "closing": {
-      "title": "Ready to enter Mercosur?",
-      "description": "The window is open. Connect with our team to explore how the EU-Mercosur agreement can work for your business.",
-      "cta": "Connect Your Business Today"
     }
   },
   "about": {

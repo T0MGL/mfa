@@ -26,7 +26,7 @@ export default function OpportunityPage() {
     const timelineKeys = ["signed", "ratification", "interim", "full"] as const;
 
     return (
-        <main className="bg-[#0a0a0f] text-white">
+        <main className="bg-background text-heading">
             {/* ── HERO ──────────────────────────────────────── */}
             <section className="pt-32 pb-20 md:pt-40 md:pb-28">
                 <div className="max-w-[1400px] mx-auto px-6 md:px-12">
@@ -34,16 +34,16 @@ export default function OpportunityPage() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.5 }}
-                        className="text-[11px] tracking-[0.25em] uppercase text-[#c9a96e]"
+                        className="text-label text-gold-accent"
                     >
                         {t("hero.tagline")}
                     </motion.span>
-                    <div className="w-12 h-px bg-[#c9a96e]/40 mt-4 mb-8" />
+                    <div className="gold-line mt-4 mb-8" />
                     <motion.h1
                         initial={{ opacity: 0, y: 40 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.2, duration: 0.8 }}
-                        className="text-[clamp(2rem,5vw,4.5rem)] font-serif leading-[1.05] max-w-[900px]"
+                        className="text-hero font-serif max-w-[900px]"
                     >
                         {t("hero.title")}
                     </motion.h1>
@@ -59,17 +59,17 @@ export default function OpportunityPage() {
                             whileInView={{ opacity: 1 }}
                             viewport={{ once: true }}
                         >
-                            <span className="text-[11px] tracking-[0.25em] uppercase text-[#c9a96e]">
+                            <span className="text-label text-gold-accent">
                                 {t("overview.label")}
                             </span>
-                            <div className="w-12 h-px bg-[#c9a96e]/40 mt-4" />
+                            <div className="gold-line mt-4" />
                         </motion.div>
                         <div>
                             <motion.h2
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
-                                className="text-[clamp(1.5rem,3vw,2.5rem)] font-serif leading-[1.1]"
+                                className="text-heading font-serif"
                             >
                                 {t("overview.title")}
                             </motion.h2>
@@ -78,7 +78,7 @@ export default function OpportunityPage() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.15 }}
-                                className="mt-6 text-[15px] text-white/50 leading-[1.8] max-w-[650px]"
+                                className="mt-6 text-body max-w-[650px]"
                             >
                                 {t("overview.description")}
                             </motion.p>
@@ -98,8 +98,8 @@ export default function OpportunityPage() {
                                         custom={i}
                                         className="flex items-start gap-4 py-3 border-b border-white/5"
                                     >
-                                        <span className="text-[#c9a96e] mt-0.5 shrink-0">—</span>
-                                        <span className="text-[14px] text-white/60 leading-relaxed">
+                                        <span className="text-gold-line mt-0.5 shrink-0">—</span>
+                                        <span className="text-list leading-relaxed">
                                             {t(`overview.points.${key}`)}
                                         </span>
                                     </motion.div>
@@ -119,17 +119,17 @@ export default function OpportunityPage() {
                             whileInView={{ opacity: 1 }}
                             viewport={{ once: true }}
                         >
-                            <span className="text-[11px] tracking-[0.25em] uppercase text-[#c9a96e]">
+                            <span className="text-label text-gold-accent">
                                 {t("services.label")}
                             </span>
-                            <div className="w-12 h-px bg-[#c9a96e]/40 mt-4" />
+                            <div className="gold-line mt-4" />
                         </motion.div>
                         <div>
                             <motion.h2
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
-                                className="text-[clamp(1.5rem,3vw,2.5rem)] font-serif leading-[1.1] mb-12"
+                                className="text-heading font-serif mb-12"
                             >
                                 {t("services.title")}
                             </motion.h2>
@@ -142,12 +142,12 @@ export default function OpportunityPage() {
                                         whileInView={{ opacity: 1, y: 0 }}
                                         viewport={{ once: true }}
                                         transition={{ delay: i * 0.1 }}
-                                        className="bg-white/5 p-8 border border-white/5 hover:border-[#c9a96e]/30 transition-colors duration-300 group"
+                                        className="bg-white/5 p-8 border border-white/5 hover:border-gold-accent/30 transition-colors duration-300 group"
                                     >
-                                        <h3 className="text-[16px] font-serif text-[#c9a96e] mb-3 group-hover:text-white transition-colors duration-300">
+                                        <h3 className="text-[16px] font-serif text-gold-accent mb-3 group-hover:text-heading transition-colors duration-300">
                                             {t(`services.items.${key}.title`)}
                                         </h3>
-                                        <p className="text-[14px] text-white/60 leading-relaxed">
+                                        <p className="text-list leading-relaxed">
                                             {t(`services.items.${key}.desc`)}
                                         </p>
                                     </motion.div>
@@ -158,12 +158,12 @@ export default function OpportunityPage() {
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true }}
                                     transition={{ delay: 0.5 }}
-                                    className="bg-[#c9a96e]/10 p-8 border border-[#c9a96e]/20 md:col-span-2 w-full"
+                                    className="bg-gold-line/10 p-8 border border-gold-line/20 md:col-span-2 w-full"
                                 >
-                                    <h3 className="text-[16px] font-serif text-white mb-3">
+                                    <h3 className="text-[16px] font-serif text-heading mb-3">
                                         {t("services.visit.title")}
                                     </h3>
-                                    <p className="text-[14px] text-white/70 italic leading-relaxed">
+                                    <p className="text-list italic leading-relaxed">
                                         "{t("services.visit.desc")}"
                                     </p>
                                 </motion.div>
@@ -182,10 +182,10 @@ export default function OpportunityPage() {
                             whileInView={{ opacity: 1 }}
                             viewport={{ once: true }}
                         >
-                            <span className="text-[11px] tracking-[0.25em] uppercase text-[#c9a96e]">
+                            <span className="text-label text-gold-accent">
                                 {t("benefits.label")}
                             </span>
-                            <div className="w-12 h-px bg-[#c9a96e]/40 mt-4" />
+                            <div className="gold-line mt-4" />
                         </motion.div>
                         <div className="grid md:grid-cols-2 gap-px bg-white/5">
                             {/* EU Benefits */}
@@ -195,14 +195,14 @@ export default function OpportunityPage() {
                                 viewport={{ once: true }}
                                 className="bg-[#0d0d14] p-8"
                             >
-                                <h3 className="text-[18px] font-serif text-white mb-6">
+                                <h3 className="text-[18px] font-serif text-heading mb-6">
                                     {t("benefits.eu.title")}
                                 </h3>
                                 <ul className="space-y-4">
                                     {[0, 1, 2, 3, 4].map((i) => (
                                         <li key={i} className="flex items-start gap-3">
-                                            <span className="text-[#c9a96e]/60 mt-0.5 shrink-0">—</span>
-                                            <span className="text-[13px] text-white/50 leading-[1.6]">
+                                            <span className="text-gold-line mt-0.5 shrink-0">—</span>
+                                            <span className="text-[13px] text-secondary leading-[1.6]">
                                                 {t(`benefits.eu.items.${i}`)}
                                             </span>
                                         </li>
@@ -218,14 +218,14 @@ export default function OpportunityPage() {
                                 transition={{ delay: 0.15 }}
                                 className="bg-[#0d0d14] p-8"
                             >
-                                <h3 className="text-[18px] font-serif text-white mb-6">
+                                <h3 className="text-[18px] font-serif text-heading mb-6">
                                     {t("benefits.mercosur.title")}
                                 </h3>
                                 <ul className="space-y-4">
                                     {[0, 1, 2, 3, 4].map((i) => (
                                         <li key={i} className="flex items-start gap-3">
-                                            <span className="text-[#c9a96e]/60 mt-0.5 shrink-0">—</span>
-                                            <span className="text-[13px] text-white/50 leading-[1.6]">
+                                            <span className="text-gold-line mt-0.5 shrink-0">—</span>
+                                            <span className="text-[13px] text-secondary leading-[1.6]">
                                                 {t(`benefits.mercosur.items.${i}`)}
                                             </span>
                                         </li>
@@ -246,10 +246,10 @@ export default function OpportunityPage() {
                             whileInView={{ opacity: 1 }}
                             viewport={{ once: true }}
                         >
-                            <span className="text-[11px] tracking-[0.25em] uppercase text-[#c9a96e]">
+                            <span className="text-label text-gold-accent">
                                 {t("timeline.label")}
                             </span>
-                            <div className="w-12 h-px bg-[#c9a96e]/40 mt-4" />
+                            <div className="gold-line mt-4" />
                         </motion.div>
                         <div className="relative">
                             {/* Timeline line */}
@@ -270,11 +270,11 @@ export default function OpportunityPage() {
                                         className="relative pl-8 py-8 border-b border-white/5 last:border-b-0"
                                     >
                                         {/* Dot */}
-                                        <div className="absolute left-0 top-10 w-2 h-2 -translate-x-[3.5px] rounded-full bg-[#c9a96e]" />
-                                        <span className="text-[12px] tracking-[0.15em] uppercase text-[#c9a96e] font-mono">
+                                        <div className="absolute left-0 top-10 w-2 h-2 -translate-x-[3.5px] rounded-full bg-gold-accent" />
+                                        <span className="text-[12px] tracking-[0.15em] uppercase text-gold-accent font-mono">
                                             {t(`timeline.items.${key}.date`)}
                                         </span>
-                                        <p className="mt-2 text-[15px] text-white/60 leading-relaxed">
+                                        <p className="mt-2 text-body leading-relaxed">
                                             {t(`timeline.items.${key}.event`)}
                                         </p>
                                     </motion.div>
