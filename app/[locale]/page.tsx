@@ -49,7 +49,7 @@ export default function HomePage() {
   // Proof gallery data with exact filenames
   const proofItems = [
     {
-      image: "/images/distribucion de poblacion.jpg",
+      image: "/images/distrubicion de poblacion.jpg",
       captionEN: "One of the few countries with a still intact demographic structure. The median age is 28, the birth rate positive. More people enter the worker force than retirements, and this for decades. The same is the case for demand for living space.",
       captionES: "Uno de los pocos países con una estructura demográfica aún intacta. La edad mediana es 28, la tasa de natalidad positiva. Más personas ingresan a la fuerza laboral que jubilaciones, y esto durante décadas. Lo mismo ocurre con la demanda de espacio habitacional.",
       alt: "Paraguay population distribution by age",

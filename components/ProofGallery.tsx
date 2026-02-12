@@ -80,13 +80,13 @@ export default function ProofGallery({ items }: ProofGalleryProps) {
             className="group relative bg-[#15151a] border border-[#ededed]/5 overflow-hidden hover:border-[#c9a96e]/20 transition-colors duration-500"
           >
             {/* Image */}
-            <div className="relative w-full min-h-[280px] overflow-hidden bg-[#0B0B0C]">
+            <div className="relative w-full aspect-[4/3] overflow-hidden bg-[#0B0B0C]">
               <Image
                 src={item.image}
                 alt={item.alt}
-                width={800}
-                height={600}
-                className="w-full h-auto object-contain group-hover:scale-[1.02] transition-transform duration-700"
+                fill
+                className="object-cover group-hover:scale-[1.05] transition-transform duration-700"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
               />
             </div>
 
