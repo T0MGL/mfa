@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useParams, usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { cn } from "@/lib/cn";
+import { useScroll, useMotionValueEvent } from "framer-motion";
 
 export function Navigation() {
   const params = useParams();
@@ -13,12 +14,11 @@ export function Navigation() {
   const t = useTranslations("nav");
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const { scrollY } = useScroll();
 
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    setScrolled(latest > 40);
+  });
 
   useEffect(() => {
     setMobileOpen(false);
@@ -49,10 +49,10 @@ export function Navigation() {
           href={`/${locale}`}
           className="font-sans font-semibold text-sm tracking-[0.3em] uppercase transition-colors duration-300 group"
         >
-          <span className="text-white group-hover:text-[#84cc16] transition-colors duration-300">
+          <span className="text-white group-hover:text-[#c9a96e] transition-colors duration-300">
             Mercosur First
           </span>
-          <span className="text-[#84cc16] ml-1.5">
+          <span className="text-[#c9a96e] ml-1.5">
             Agency
           </span>
         </Link>
@@ -67,7 +67,7 @@ export function Navigation() {
                 href={link.href}
                 className={cn(
                   "text-[11px] tracking-[0.2em] uppercase transition-colors duration-300",
-                  isActive ? "text-[#84cc16]" : "text-white/70 hover:text-white"
+                  isActive ? "text-[#c9a96e]" : "text-white/70 hover:text-white"
                 )}
               >
                 {link.label}
@@ -124,7 +124,7 @@ export function Navigation() {
                 href={link.href}
                 className={cn(
                   "text-[12px] tracking-[0.2em] uppercase transition-colors duration-300",
-                  isActive ? "text-[#84cc16]" : "text-white/70 hover:text-white"
+                  isActive ? "text-[#c9a96e]" : "text-white/70 hover:text-white"
                 )}
               >
                 {link.label}

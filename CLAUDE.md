@@ -27,7 +27,7 @@ Premium digital agency website with high-performance animations and smooth user 
 - Used for background shader animations
 - Always optimize: `setPixelRatio(Math.min(window.devicePixelRatio, 2))`
 - Clean up resources in useEffect return (dispose geometry, material, renderer)
-- Lime green theme: `#84cc16` (lime-500)
+- Gold theme: `#c9a96e`
 
 ### 4. Tailwind Animations
 - 16 custom keyframes available (see tailwind.config.ts)
@@ -37,15 +37,15 @@ Premium digital agency website with high-performance animations and smooth user 
 ## Design System
 
 ### Colors
-- **Primary**: Lime green (`#84cc16`, lime-500)
+- **Primary**: Gold (`#c9a96e`)
 - **Background**: Dark (`#0a0a0a`)
 - **Text**: Light gray (`#ededed`)
-- **Accents**: Emerald (`emerald-400`)
+- **Accents**: Lighter gold (`#d4b680`)
 
 ### Typography
 - Headings: Bold, large (6xl-8xl on desktop)
 - Body: 1xl-2xl for readability
-- Use gradient text for emphasis: `bg-gradient-to-r from-lime-400 to-emerald-400 bg-clip-text`
+- Use gradient text for emphasis: `bg-gradient-to-r from-yellow-600 to-amber-600 bg-clip-text`
 
 ### Spacing
 - Generous padding: minimum 6 units (24px)

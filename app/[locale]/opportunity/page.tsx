@@ -161,10 +161,10 @@ export default function OpportunityPage() {
                                             whileInView={{ opacity: 1, y: 0 }}
                                             viewport={{ once: true }}
                                             transition={{ delay: i * 0.08, duration: 0.6 }}
-                                            className="bg-[#0B0B0C] p-10 md:p-12 group hover:bg-[#0B0B0C] transition-all duration-500 border border-[#ededed]/5 hover:border-lime-500/30 relative overflow-hidden"
+                                            className="bg-[#0B0B0C] p-10 md:p-12 group hover:bg-[#0B0B0C] transition-all duration-500 border border-[#ededed]/5 hover:border-amber-600/30 relative overflow-hidden"
                                         >
                                             {/* Title */}
-                                            <h4 className="text-[clamp(1.35rem,2.2vw,1.65rem)] font-serif text-[#ededed] leading-tight group-hover:text-lime-400 transition-colors duration-300 mb-5">
+                                            <h4 className="text-[clamp(1.35rem,2.2vw,1.65rem)] font-serif text-[#ededed] leading-tight group-hover:text-amber-500 transition-colors duration-300 mb-5">
                                                 {t(`services.core.items.${key}.title`)}
                                             </h4>
 
@@ -174,7 +174,7 @@ export default function OpportunityPage() {
                                             </p>
 
                                             {/* Hover gradient effect */}
-                                            <div className="absolute inset-0 bg-gradient-to-br from-lime-500/0 via-lime-500/0 to-lime-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+                                            <div className="absolute inset-0 bg-gradient-to-br from-amber-600/0 via-amber-600/0 to-amber-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
                                         </motion.div>
                                     ))}
                                 </div>
@@ -198,10 +198,10 @@ export default function OpportunityPage() {
                                             whileInView={{ opacity: 1, y: 0 }}
                                             viewport={{ once: true }}
                                             transition={{ delay: i * 0.06, duration: 0.6 }}
-                                            className="bg-[#0B0B0C] p-8 md:p-10 group hover:bg-[#0B0B0C] transition-all duration-300 border border-[#ededed]/5 hover:border-lime-500/20 relative overflow-hidden"
+                                            className="bg-[#0B0B0C] p-8 md:p-10 group hover:bg-[#0B0B0C] transition-all duration-300 border border-[#ededed]/5 hover:border-amber-600/20 relative overflow-hidden"
                                         >
                                             {/* Title */}
-                                            <h4 className="text-[clamp(1.15rem,1.8vw,1.35rem)] font-serif text-[#ededed] leading-tight mb-4 group-hover:text-lime-400 transition-colors duration-300">
+                                            <h4 className="text-[clamp(1.15rem,1.8vw,1.35rem)] font-serif text-[#ededed] leading-tight mb-4 group-hover:text-amber-500 transition-colors duration-300">
                                                 {t(`services.additional.items.${key}.title`)}
                                             </h4>
 
@@ -211,7 +211,7 @@ export default function OpportunityPage() {
                                             </p>
 
                                             {/* Hover effect */}
-                                            <div className="absolute inset-0 bg-gradient-to-br from-lime-500/0 to-lime-500/3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+                                            <div className="absolute inset-0 bg-gradient-to-br from-amber-600/0 to-amber-600/3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
                                         </motion.div>
                                     ))}
                                 </div>
@@ -362,7 +362,7 @@ export default function OpportunityPage() {
                     >
                         <Link
                             href={`/${locale}/contact`}
-                            className="inline-flex items-center justify-center px-10 py-4 bg-lime-500 text-black text-[12px] tracking-[0.2em] uppercase font-semibold hover:bg-lime-400 transition-all duration-300 rounded-sm hover:scale-105 hover:shadow-lg hover:shadow-lime-500/20"
+                            className="inline-flex items-center justify-center px-10 py-4 bg-amber-600 text-black text-[12px] tracking-[0.2em] uppercase font-semibold hover:bg-amber-500 transition-all duration-300 rounded-sm hover:scale-105 hover:shadow-lg hover:shadow-amber-600/20"
                         >
                             {t("cta.button")}
                         </Link>

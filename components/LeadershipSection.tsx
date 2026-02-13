@@ -49,10 +49,10 @@ export default function LeadershipSection({ label, title }: LeadershipSectionPro
           transition={{ duration: 0.6 }}
           className="mb-16 text-center"
         >
-          <span className="text-[10px] tracking-[0.25em] uppercase text-[#84cc16]">
+          <span className="text-[10px] tracking-[0.25em] uppercase text-[#c9a96e]">
             {label}
           </span>
-          <div className="w-16 h-px bg-[#84cc16]/40 mt-4 mx-auto" />
+          <div className="w-16 h-px bg-[#c9a96e]/40 mt-4 mx-auto" />
           <h2 className="mt-8 text-[clamp(2rem,4vw,3.5rem)] font-serif leading-[1.1] text-[#ededed]">
             {title}
           </h2>
@@ -93,7 +93,7 @@ export default function LeadershipSection({ label, title }: LeadershipSectionPro
                   {leader.name}
                 </h3>
 
-                <p className="text-[13px] font-medium tracking-wide text-[#84cc16] uppercase leading-relaxed">
+                <p className="text-[13px] font-medium tracking-wide text-[#c9a96e] uppercase leading-relaxed">
                   {leader.title}
                 </p>
 
@@ -104,7 +104,7 @@ export default function LeadershipSection({ label, title }: LeadershipSectionPro
 
               {/* Decorative Line */}
               <motion.div
-                className="h-px bg-gradient-to-r from-[#84cc16] to-transparent mt-6 origin-left"
+                className="h-px bg-gradient-to-r from-[#c9a96e] to-transparent mt-6 origin-left"
                 initial={{ scaleX: 0 }}
                 whileInView={{ scaleX: 1 }}
                 viewport={{ once: true }}

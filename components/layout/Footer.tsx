@@ -32,7 +32,7 @@ export function Footer() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-[13px] text-white/40 hover:text-[#84cc16] transition-colors duration-300"
+                  className="text-[13px] text-white/40 hover:text-[#c9a96e] transition-colors duration-300"
                 >
                   {link.label}
                 </Link>
@@ -51,7 +51,7 @@ export function Footer() {
                 <p className="text-[11px] text-white/30 mb-1">Miami Tower</p>
                 <a
                   href="mailto:contact@mercosurfirstagency.com"
-                  className="text-[13px] text-white/40 hover:text-[#84cc16] transition-colors duration-300"
+                  className="text-[13px] text-white/40 hover:text-[#c9a96e] transition-colors duration-300"
                 >
                   contact@mercosurfirstagency.com
                 </a>

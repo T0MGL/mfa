@@ -18,11 +18,11 @@ export function Button({
 
   const variants = {
     primary:
-      "group relative overflow-hidden bg-mercosur-blue text-white hover:scale-105",
+      "group relative overflow-hidden bg-mercosur-blue text-white",
     secondary:
       "border-2 border-mercosur-blue/50 text-mercosur-blue hover:border-mercosur-blue hover:bg-mercosur-blue/10",
     ghost: "text-mercosur-green hover:bg-mercosur-green/10",
-    cta: "group relative overflow-hidden bg-paraguay-red text-white hover:scale-105",
+    cta: "group relative overflow-hidden bg-paraguay-red text-white",
   };
 
   const sizes = {

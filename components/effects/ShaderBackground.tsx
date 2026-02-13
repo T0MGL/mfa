@@ -17,14 +17,14 @@ export function ShaderBackground() {
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     containerRef.current.appendChild(renderer.domElement);
 
-    // Shader material with concentric circles in lime green
+    // Shader material with concentric circles in gold
     const material = new THREE.ShaderMaterial({
       uniforms: {
         u_time: { value: 0 },
         u_resolution: {
           value: new THREE.Vector2(window.innerWidth, window.innerHeight),
         },
-        u_color: { value: new THREE.Color(0x84cc16) }, // lime-500
+        u_color: { value: new THREE.Color(0xc9a96e) }, // gold
       },
       vertexShader: `
         varying vec2 vUv;
@@ -58,7 +58,7 @@ export function ShaderBackground() {
           // Fade out at edges
           pattern *= smoothstep(1.5, 0.0, dist);
 
-          // Apply lime green color with varying alpha
+          // Apply gold color with varying alpha
           vec3 color = u_color * pattern;
           float alpha = pattern * 0.15; // Subtle background effect
 
