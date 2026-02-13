@@ -129,44 +129,81 @@ export default function OpportunityPage() {
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
-                                className="text-heading font-serif mb-12"
+                                className="text-heading font-serif mb-4"
                             >
                                 {t("services.title")}
                             </motion.h2>
+                            <motion.p
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: 0.1 }}
+                                className="text-body mb-12 max-w-[700px]"
+                            >
+                                {t("services.subtitle")}
+                            </motion.p>
 
-                            <div className="grid md:grid-cols-2 gap-6">
-                                {(["matchmaking", "entry", "invest", "trade", "advisory", "price", "translation", "models", "invest_consult", "driver", "insider"] as const).map((key, i) => (
-                                    <motion.div
-                                        key={key}
-                                        initial={{ opacity: 0, y: 20 }}
-                                        whileInView={{ opacity: 1, y: 0 }}
-                                        viewport={{ once: true }}
-                                        transition={{ delay: i * 0.1 }}
-                                        className="bg-white/5 p-8 border border-white/5 hover:border-gold-accent/30 transition-colors duration-300 group"
-                                    >
-                                        <h3 className="text-[16px] font-serif text-gold-accent mb-3 group-hover:text-heading transition-colors duration-300">
-                                            {t(`services.items.${key}.title`)}
-                                        </h3>
-                                        <p className="text-list leading-relaxed">
-                                            {t(`services.items.${key}.desc`)}
-                                        </p>
-                                    </motion.div>
-                                ))}
-
-                                <motion.div
-                                    initial={{ opacity: 0, y: 20 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
+                            {/* Core Services */}
+                            <div className="mb-16">
+                                <motion.h3
+                                    initial={{ opacity: 0 }}
+                                    whileInView={{ opacity: 1 }}
                                     viewport={{ once: true }}
-                                    transition={{ delay: 0.5 }}
-                                    className="bg-gold-line/10 p-8 border border-gold-line/20 md:col-span-2 w-full"
+                                    className="text-[11px] tracking-[0.2em] uppercase text-gold-accent mb-6"
                                 >
-                                    <h3 className="text-[16px] font-serif text-heading mb-3">
-                                        {t("services.visit.title")}
-                                    </h3>
-                                    <p className="text-list italic leading-relaxed">
-                                        "{t("services.visit.desc")}"
-                                    </p>
-                                </motion.div>
+                                    {t("services.core.label")}
+                                </motion.h3>
+                                <div className="grid md:grid-cols-2 gap-6">
+                                    {(["matchmaking", "marketEntry", "investment", "trade"] as const).map((key, i) => (
+                                        <motion.div
+                                            key={key}
+                                            initial={{ opacity: 0, y: 20 }}
+                                            whileInView={{ opacity: 1, y: 0 }}
+                                            viewport={{ once: true }}
+                                            transition={{ delay: i * 0.08 }}
+                                            className="bg-white/5 p-8 border border-white/5 hover:border-gold-accent/30 transition-all duration-300 group relative overflow-hidden"
+                                        >
+                                            <h4 className="text-[17px] font-serif text-gold-accent mb-3 group-hover:text-heading transition-colors duration-300">
+                                                {t(`services.core.items.${key}.title`)}
+                                            </h4>
+                                            <p className="text-list leading-relaxed">
+                                                {t(`services.core.items.${key}.desc`)}
+                                            </p>
+                                            <div className="absolute inset-0 bg-gradient-to-br from-[#c9a96e]/0 to-[#c9a96e]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+                                        </motion.div>
+                                    ))}
+                                </div>
+                            </div>
+
+                            {/* Additional Services */}
+                            <div>
+                                <motion.h3
+                                    initial={{ opacity: 0 }}
+                                    whileInView={{ opacity: 1 }}
+                                    viewport={{ once: true }}
+                                    className="text-[11px] tracking-[0.2em] uppercase text-gold-accent/70 mb-6"
+                                >
+                                    {t("services.additional.label")}
+                                </motion.h3>
+                                <div className="grid md:grid-cols-2 gap-5">
+                                    {(["advisory", "translations", "intelligence", "relocation", "concierge"] as const).map((key, i) => (
+                                        <motion.div
+                                            key={key}
+                                            initial={{ opacity: 0, y: 20 }}
+                                            whileInView={{ opacity: 1, y: 0 }}
+                                            viewport={{ once: true }}
+                                            transition={{ delay: i * 0.06 }}
+                                            className="bg-white/[0.02] p-6 border border-white/5 hover:bg-white/5 transition-all duration-300"
+                                        >
+                                            <h4 className="text-[15px] font-serif text-heading mb-2">
+                                                {t(`services.additional.items.${key}.title`)}
+                                            </h4>
+                                            <p className="text-[13px] text-white/50 leading-relaxed">
+                                                {t(`services.additional.items.${key}.desc`)}
+                                            </p>
+                                        </motion.div>
+                                    ))}
+                                </div>
                             </div>
                         </div>
                     </div>

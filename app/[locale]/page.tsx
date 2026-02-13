@@ -27,7 +27,7 @@ export default function HomePage() {
   const params = useParams();
   const locale = params.locale as string;
 
-  // Services data
+  // Services data - 4 core services
   const services = [
     {
       title: t("services.matchmaking.title"),
@@ -40,9 +40,14 @@ export default function HomePage() {
       deliverables: t.raw("services.marketEntry.deliverables") || [],
     },
     {
-      title: t("services.institutional.title"),
-      description: t("services.institutional.description"),
-      deliverables: t.raw("services.institutional.deliverables") || [],
+      title: t("services.investment.title"),
+      description: t("services.investment.description"),
+      deliverables: t.raw("services.investment.deliverables") || [],
+    },
+    {
+      title: t("services.trade.title"),
+      description: t("services.trade.description"),
+      deliverables: t.raw("services.trade.deliverables") || [],
     },
   ];
 
@@ -175,7 +180,7 @@ export default function HomePage() {
       {/* ══════════════════════════════════════════════════════
           SECTION 5: PROOF (Data-Driven Evidence)
           ══════════════════════════════════════════════════ */}
-      <section className="py-20 md:py-28 bg-[#15151a] border-t border-[#ededed]/5">
+      <section className="py-20 md:py-28 bg-gradient-to-b from-[#0B0B0C] via-[#0B0B0C]/80 to-[#0B0B0C]/20 border-t border-[#ededed]/5">
         <div className="max-w-[1400px] mx-auto px-6 md:px-12">
           <div className="mb-16 text-center">
             <motion.div
@@ -254,7 +259,7 @@ export default function HomePage() {
             transition={{ delay: 0.3, duration: 0.7 }}
             className="space-y-6"
           >
-            <div className="p-6 border border-[#ededed]/5 bg-[#15151a]/30">
+            <div className="p-6 border border-[#ededed]/5 bg-[#0B0B0C]/30">
               <p className="text-[13px] text-[#ededed]/40 leading-relaxed text-center">
                 {t("insights.placeholder")}
               </p>
@@ -266,7 +271,7 @@ export default function HomePage() {
       {/* ══════════════════════════════════════════════════════
           CLOSING CTA
           ══════════════════════════════════════════════════ */}
-      <section className="py-28 md:py-36 bg-[#15151a] border-t border-[#ededed]/5">
+      <section className="py-28 md:py-36 bg-gradient-to-b from-[#0B0B0C] via-[#0B0B0C]/80 to-[#0B0B0C]/20 border-t border-[#ededed]/5">
         <div className="max-w-[1000px] mx-auto px-6 md:px-12 text-center">
           <motion.h2
             initial={{ opacity: 0, y: 30 }}

@@ -29,7 +29,8 @@
         "deliverables": [
           "Partner identification and vetting",
           "Introductions and relationship facilitation",
-          "Cultural and business bridging"
+          "Cultural and business bridging",
+          "Client and supplier matching"
         ]
       },
       "marketEntry": {
@@ -38,17 +39,28 @@
         "deliverables": [
           "Corporate structuring and licensing",
           "Site selection and facility setup",
-          "Local hiring and supply chain",
-          "Maquila and special regimes"
+          "Local hiring and supply chain development",
+          "Maquila and special regime navigation"
         ]
       },
-      "institutional": {
-        "title": "Institutional & Commercial Facilitation",
-        "description": "Strategic advisory for navigating regulatory frameworks and institutional relationships.",
+      "investment": {
+        "title": "Investment Facilitation",
+        "description": "Strategic advisory for European companies seeking to invest in Mercosur markets.",
         "deliverables": [
-          "Government and institutional liaisons",
-          "Trade agreement navigation",
+          "Feasibility studies and market analysis",
+          "Incentives navigation and structuring",
+          "High-yield property investments",
           "Due diligence and compliance"
+        ]
+      },
+      "trade": {
+        "title": "Trade & Export Support",
+        "description": "Comprehensive support for import/export operations and trade agreement utilization.",
+        "deliverables": [
+          "Export/import facilitation",
+          "Trade agreement navigation",
+          "Customs and regulatory compliance",
+          "Logistics and price optimization"
         ]
       }
     },
@@ -221,55 +233,52 @@
     "services": {
       "label": "Our Services",
       "title": "Comprehensive Execution Capabilities.",
-      "items": {
-        "matchmaking": {
-          "title": "Matchmaking",
-          "desc": "Connect EU investors/exporters with Paraguayan/Mercosur partners."
-        },
-        "entry": {
-          "title": "Market Entry Support",
-          "desc": "Feasibility studies, partner searches, regulatory guidance."
-        },
-        "invest": {
-          "title": "Investment Facilitation",
-          "desc": "Site selection, incentives navigation, setup assistance."
-        },
-        "trade": {
-          "title": "Trade Support",
-          "desc": "Client/supplier matching, export/import facilitation."
-        },
-        "advisory": {
-          "title": "Ongoing Advisory",
-          "desc": "Networking, due diligence, cultural/business bridging."
-        },
-        "price": {
-          "title": "Price Comparisons",
-          "desc": "Competitive analysis for procurement and logistics."
-        },
-        "translation": {
-          "title": "Certified Translations",
-          "desc": "Official translation services for legal and business documents."
-        },
-        "models": {
-          "title": "Cost-Saving Business Models",
-          "desc": "Strategy consulting to optimize operational efficiency."
-        },
-        "invest_consult": {
-          "title": "Investment Consulting",
-          "desc": "High yield property investments, secure land registration, and reliable ROI."
-        },
-        "driver": {
-          "title": "Driving Licence Assistance",
-          "desc": "Paraguayan driving licence without test (for foreign licence holders)."
-        },
-        "insider": {
-          "title": "Inside Information",
-          "desc": "Access to local intelligence on everything happening in the country."
+      "subtitle": "From initial contact to full operational deployment, we provide end-to-end support.",
+      "core": {
+        "label": "Core Services",
+        "items": {
+          "matchmaking": {
+            "title": "B2B Matchmaking",
+            "desc": "Connect EU investors and exporters with vetted Paraguayan and Mercosur partners, distributors, and strategic clients."
+          },
+          "marketEntry": {
+            "title": "Market Entry Structuring",
+            "desc": "End-to-end market entry strategy including corporate structuring, licensing, site selection, and regulatory navigation."
+          },
+          "investment": {
+            "title": "Investment Facilitation",
+            "desc": "Strategic advisory for European companies seeking to invest in Mercosur, including feasibility studies and incentives navigation."
+          },
+          "trade": {
+            "title": "Trade & Export Support",
+            "desc": "Comprehensive support for import/export operations, trade agreement utilization, and customs compliance."
+          }
         }
       },
-      "visit": {
-        "title": "Organizing and Accompanying your Visit",
-        "desc": "From the airport to the hotel to your meeting or sightseeing, we can always be with you. Pick-up available in German, Spanish, and English."
+      "additional": {
+        "label": "Additional Services",
+        "items": {
+          "advisory": {
+            "title": "Ongoing Advisory & Due Diligence",
+            "desc": "Continuous support for networking, compliance, and cultural/business bridging."
+          },
+          "translations": {
+            "title": "Certified Translations",
+            "desc": "Official translation services for legal and business documents in German, Spanish, and English."
+          },
+          "intelligence": {
+            "title": "Market Intelligence",
+            "desc": "Access to local insights, competitive analysis, and real-time information on regulatory and market developments."
+          },
+          "relocation": {
+            "title": "Relocation Support",
+            "desc": "Assistance with driving licenses, residency, and practical matters for executives relocating to Paraguay."
+          },
+          "concierge": {
+            "title": "Business Concierge",
+            "desc": "Airport pickup, meeting coordination, accommodation, and sightseeing support in German, Spanish, and English."
+          }
+        }
       }
     },
     "benefits": {

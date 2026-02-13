@@ -29,7 +29,8 @@
         "deliverables": [
           "Identificación y verificación de socios",
           "Introducciones y facilitación de relaciones",
-          "Puente cultural y empresarial"
+          "Puente cultural y empresarial",
+          "Emparejamiento de clientes y proveedores"
         ]
       },
       "marketEntry": {
@@ -38,17 +39,28 @@
         "deliverables": [
           "Estructuración corporativa y licenciamiento",
           "Selección de sitio y configuración de instalaciones",
-          "Contratación local y cadena de suministro",
-          "Maquila y regímenes especiales"
+          "Desarrollo de contratación local y cadena de suministro",
+          "Navegación de Maquila y regímenes especiales"
         ]
       },
-      "institutional": {
-        "title": "Facilitación Institucional y Comercial",
-        "description": "Asesoría estratégica para navegar marcos regulatorios y relaciones institucionales.",
+      "investment": {
+        "title": "Facilitación de Inversiones",
+        "description": "Asesoría estratégica para empresas europeas que buscan invertir en mercados del Mercosur.",
         "deliverables": [
-          "Enlace gubernamental e institucional",
-          "Navegación de acuerdos comerciales",
+          "Estudios de viabilidad y análisis de mercado",
+          "Navegación y estructuración de incentivos",
+          "Inversiones inmobiliarias de alto rendimiento",
           "Debida diligencia y cumplimiento"
+        ]
+      },
+      "trade": {
+        "title": "Soporte de Comercio y Exportación",
+        "description": "Soporte integral para operaciones de importación/exportación y utilización de acuerdos comerciales.",
+        "deliverables": [
+          "Facilitación de exportación/importación",
+          "Navegación de acuerdos comerciales",
+          "Cumplimiento aduanero y regulatorio",
+          "Optimización de logística y precios"
         ]
       }
     },
@@ -221,55 +233,52 @@
     "services": {
       "label": "Nuestros Servicios",
       "title": "Capacidades de Ejecución Integral.",
-      "items": {
-        "matchmaking": {
-          "title": "Matchmaking",
-          "desc": "Conexión entre inversores/exportadores de la UE y socios paraguayos/Mercosur."
-        },
-        "entry": {
-          "title": "Soporte de Entrada al Mercado",
-          "desc": "Estudios de viabilidad, búsqueda de socios, orientación regulatoria."
-        },
-        "invest": {
-          "title": "Facilitación de Inversiones",
-          "desc": "Selección de sitios, navegación de incentivos, asistencia en configuración."
-        },
-        "trade": {
-          "title": "Soporte Comercial",
-          "desc": "Emparejamiento cliente/proveedor, facilitación de expo/impo."
-        },
-        "advisory": {
-          "title": "Asesoría Continua",
-          "desc": "Networking, debida diligencia, puente cultural y empresarial."
-        },
-        "price": {
-          "title": "Comparaciones de Precios",
-          "desc": "Análisis competitivo para adquisiciones y logística."
-        },
-        "translation": {
-          "title": "Traducciones Certificadas",
-          "desc": "Servicios oficiales de traducción para documentos legales y comerciales."
-        },
-        "models": {
-          "title": "Modelos de Negocio Eficientes",
-          "desc": "Consultoría estratégica para optimizar la eficiencia operativa."
-        },
-        "invest_consult": {
-          "title": "Consultoría de Inversiones",
-          "desc": "Inversiones inmobiliarias de alto rendimiento, registro seguro y ROI confiable."
-        },
-        "driver": {
-          "title": "Gestión Licencia de Conducir",
-          "desc": "Licencia de conducir paraguaya sin examen (para titulares de licencias extranjeras)."
-        },
-        "insider": {
-          "title": "Información Privilegiada",
-          "desc": "Acceso a inteligencia local sobre todo lo que sucede en el país."
+      "subtitle": "Del contacto inicial al despliegue operacional completo, proporcionamos soporte integral.",
+      "core": {
+        "label": "Servicios Principales",
+        "items": {
+          "matchmaking": {
+            "title": "Matchmaking B2B",
+            "desc": "Conectamos inversores y exportadores de la UE con socios, distribuidores y clientes estratégicos verificados en Paraguay y el Mercosur."
+          },
+          "marketEntry": {
+            "title": "Estructuración de Entrada al Mercado",
+            "desc": "Estrategia integral de entrada al mercado, incluyendo estructuración corporativa, licenciamiento, selección de sitio y navegación regulatoria."
+          },
+          "investment": {
+            "title": "Facilitación de Inversiones",
+            "desc": "Asesoría estratégica para empresas europeas que buscan invertir en el Mercosur, incluyendo estudios de viabilidad y navegación de incentivos."
+          },
+          "trade": {
+            "title": "Soporte de Comercio y Exportación",
+            "desc": "Soporte integral para operaciones de importación/exportación, utilización de acuerdos comerciales y cumplimiento aduanero."
+          }
         }
       },
-      "visit": {
-        "title": "Organización y Acompañamiento de su Visita",
-        "desc": "Desde el aeropuerto al hotel, hasta su reunión o turismo, podemos estar siempre con usted. Recogida disponible en alemán, español e inglés."
+      "additional": {
+        "label": "Servicios Adicionales",
+        "items": {
+          "advisory": {
+            "title": "Asesoría y Debida Diligencia Continua",
+            "desc": "Soporte continuo para networking, cumplimiento y puente cultural/empresarial."
+          },
+          "translations": {
+            "title": "Traducciones Certificadas",
+            "desc": "Servicios oficiales de traducción para documentos legales y comerciales en alemán, español e inglés."
+          },
+          "intelligence": {
+            "title": "Inteligencia de Mercado",
+            "desc": "Acceso a perspectivas locales, análisis competitivo e información en tiempo real sobre desarrollos regulatorios y del mercado."
+          },
+          "relocation": {
+            "title": "Soporte de Reubicación",
+            "desc": "Asistencia con licencias de conducir, residencia y asuntos prácticos para ejecutivos que se reubican en Paraguay."
+          },
+          "concierge": {
+            "title": "Concierge Empresarial",
+            "desc": "Recogida en aeropuerto, coordinación de reuniones, alojamiento y soporte turístico en alemán, español e inglés."
+          }
+        }
       }
     },
     "benefits": {

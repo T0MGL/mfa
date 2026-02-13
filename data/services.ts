@@ -15,4 +15,4 @@ export const services = [
     id: "trade",
     icon: "🌐",
   },
-];
+] as const;
