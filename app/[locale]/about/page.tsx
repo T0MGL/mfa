@@ -25,11 +25,11 @@ export default function AboutPage() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.5 }}
-                        className="text-[11px] tracking-[0.25em] uppercase text-[#c9a96e]"
+                        className="text-[11px] tracking-[0.25em] uppercase text-[#84cc16]"
                     >
                         {t("hero.tagline")}
                     </motion.span>
-                    <div className="w-12 h-px bg-[#c9a96e]/40 mt-4 mb-8" />
+                    <div className="w-12 h-px bg-[#84cc16]/40 mt-4 mb-8" />
                     <motion.h1
                         initial={{ opacity: 0, y: 40 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -50,10 +50,10 @@ export default function AboutPage() {
                             whileInView={{ opacity: 1 }}
                             viewport={{ once: true }}
                         >
-                            <span className="text-[11px] tracking-[0.25em] uppercase text-[#c9a96e]">
+                            <span className="text-[11px] tracking-[0.25em] uppercase text-[#84cc16]">
                                 {t("mission.label")}
                             </span>
-                            <div className="w-12 h-px bg-[#c9a96e]/40 mt-4" />
+                            <div className="w-12 h-px bg-[#84cc16]/40 mt-4" />
                         </motion.div>
                         <motion.p
                             initial={{ opacity: 0, y: 20 }}
@@ -69,7 +69,7 @@ export default function AboutPage() {
             </section>
 
             {/* ── VISION ────────────────────────────────────── */}
-            <section className="py-20 border-t border-white/5 bg-[#0d0d14]">
+            <section className="py-20 border-t border-white/5 bg-[#0a0a0a]">
                 <div className="max-w-[1400px] mx-auto px-6 md:px-12">
                     <div className="grid md:grid-cols-[280px_1fr] gap-12 md:gap-20">
                         <motion.div
@@ -77,10 +77,10 @@ export default function AboutPage() {
                             whileInView={{ opacity: 1 }}
                             viewport={{ once: true }}
                         >
-                            <span className="text-[11px] tracking-[0.25em] uppercase text-[#c9a96e]">
+                            <span className="text-[11px] tracking-[0.25em] uppercase text-[#84cc16]">
                                 {t("vision.label")}
                             </span>
-                            <div className="w-12 h-px bg-[#c9a96e]/40 mt-4" />
+                            <div className="w-12 h-px bg-[#84cc16]/40 mt-4" />
                         </motion.div>
                         <motion.p
                             initial={{ opacity: 0, y: 20 }}
@@ -104,10 +104,10 @@ export default function AboutPage() {
                             whileInView={{ opacity: 1 }}
                             viewport={{ once: true }}
                         >
-                            <span className="text-[11px] tracking-[0.25em] uppercase text-[#c9a96e]">
+                            <span className="text-[11px] tracking-[0.25em] uppercase text-[#84cc16]">
                                 {t("values.label")}
                             </span>
-                            <div className="w-12 h-px bg-[#c9a96e]/40 mt-4" />
+                            <div className="w-12 h-px bg-[#84cc16]/40 mt-4" />
                         </motion.div>
                         <motion.div
                             initial="hidden"
@@ -136,7 +136,7 @@ export default function AboutPage() {
             </section>
 
             {/* ── HISTORY ───────────────────────────────────── */}
-            <section className="py-20 border-t border-white/5 bg-[#0d0d14]">
+            <section className="py-20 border-t border-white/5 bg-[#0a0a0a]">
                 <div className="max-w-[1400px] mx-auto px-6 md:px-12">
                     <div className="grid md:grid-cols-[280px_1fr] gap-12 md:gap-20">
                         <motion.div
@@ -144,10 +144,10 @@ export default function AboutPage() {
                             whileInView={{ opacity: 1 }}
                             viewport={{ once: true }}
                         >
-                            <span className="text-[11px] tracking-[0.25em] uppercase text-[#c9a96e]">
+                            <span className="text-[11px] tracking-[0.25em] uppercase text-[#84cc16]">
                                 {t("history.label")}
                             </span>
-                            <div className="w-12 h-px bg-[#c9a96e]/40 mt-4" />
+                            <div className="w-12 h-px bg-[#84cc16]/40 mt-4" />
                         </motion.div>
                         <motion.p
                             initial={{ opacity: 0, y: 20 }}
@@ -163,7 +163,7 @@ export default function AboutPage() {
             </section>
 
             {/* ── TEAM ──────────────────────────────────────── */}
-            <section className="py-24 border-t border-white/5 bg-[#0d0d14]">
+            <section className="py-24 border-t border-white/5 bg-[#0a0a0a]">
                 <div className="max-w-[1400px] mx-auto px-6 md:px-12">
                     <div className="grid md:grid-cols-[280px_1fr] gap-12 md:gap-20">
                         <motion.div
@@ -171,10 +171,10 @@ export default function AboutPage() {
                             whileInView={{ opacity: 1 }}
                             viewport={{ once: true }}
                         >
-                            <span className="text-[11px] tracking-[0.25em] uppercase text-[#c9a96e]">
+                            <span className="text-[11px] tracking-[0.25em] uppercase text-[#84cc16]">
                                 {t("team.label")}
                             </span>
-                            <div className="w-12 h-px bg-[#c9a96e]/40 mt-4" />
+                            <div className="w-12 h-px bg-[#84cc16]/40 mt-4" />
                         </motion.div>
                         <div className="grid md:grid-cols-3 gap-8 md:gap-12">
                             {/* Sol Sandt */}
@@ -194,7 +194,7 @@ export default function AboutPage() {
                                     />
                                 </div>
                                 <h3 className="text-[24px] font-serif text-white">{t("team.members.sol.name")}</h3>
-                                <p className="mt-2 text-[11px] tracking-[0.15em] uppercase text-[#c9a96e]/70 leading-relaxed">
+                                <p className="mt-2 text-[11px] tracking-[0.15em] uppercase text-[#84cc16]/70 leading-relaxed">
                                     {t("team.members.sol.role")}
                                 </p>
                                 <p className="mt-4 text-[14px] text-white/40 leading-[1.7]">
@@ -219,7 +219,7 @@ export default function AboutPage() {
                                     />
                                 </div>
                                 <h3 className="text-[24px] font-serif text-white">{t("team.members.andre.name")}</h3>
-                                <p className="mt-2 text-[11px] tracking-[0.15em] uppercase text-[#c9a96e]/70 leading-relaxed">
+                                <p className="mt-2 text-[11px] tracking-[0.15em] uppercase text-[#84cc16]/70 leading-relaxed">
                                     {t("team.members.andre.role")}
                                 </p>
                                 <p className="mt-4 text-[14px] text-white/40 leading-[1.7]">
@@ -244,7 +244,7 @@ export default function AboutPage() {
                                     />
                                 </div>
                                 <h3 className="text-[24px] font-serif text-white">{t("team.members.julian.name")}</h3>
-                                <p className="mt-2 text-[11px] tracking-[0.15em] uppercase text-[#c9a96e]/70 leading-relaxed">
+                                <p className="mt-2 text-[11px] tracking-[0.15em] uppercase text-[#84cc16]/70 leading-relaxed">
                                     {t("team.members.julian.role")}
                                 </p>
                                 <p className="mt-4 text-[14px] text-white/40 leading-[1.7]">
@@ -265,10 +265,10 @@ export default function AboutPage() {
                             whileInView={{ opacity: 1 }}
                             viewport={{ once: true }}
                         >
-                            <span className="text-[11px] tracking-[0.25em] uppercase text-[#c9a96e]">
+                            <span className="text-[11px] tracking-[0.25em] uppercase text-[#84cc16]">
                                 {t("presence.label")}
                             </span>
-                            <div className="w-12 h-px bg-[#c9a96e]/40 mt-4" />
+                            <div className="w-12 h-px bg-[#84cc16]/40 mt-4" />
                         </motion.div>
                         <div className="grid md:grid-cols-2 gap-px bg-white/5">
                             {(["vienna", "asuncion"] as const).map((office, i) => (
@@ -283,7 +283,7 @@ export default function AboutPage() {
                                     <h3 className="text-[20px] font-serif text-white">
                                         {t(`presence.${office}.title`)}
                                     </h3>
-                                    <p className="mt-2 text-[12px] tracking-[0.15em] uppercase text-[#c9a96e]/70">
+                                    <p className="mt-2 text-[12px] tracking-[0.15em] uppercase text-[#84cc16]/70">
                                         {t(`presence.${office}.role`)}
                                     </p>
                                     <p className="mt-4 text-[14px] text-white/40 leading-[1.7]">

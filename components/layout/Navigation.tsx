@@ -49,10 +49,10 @@ export function Navigation() {
           href={`/${locale}`}
           className="font-sans font-semibold text-sm tracking-[0.3em] uppercase transition-colors duration-300 group"
         >
-          <span className="text-white group-hover:text-[#c9a96e] transition-colors duration-300">
+          <span className="text-white group-hover:text-[#84cc16] transition-colors duration-300">
             Mercosur First
           </span>
-          <span className="text-[#c9a96e] ml-1.5">
+          <span className="text-[#84cc16] ml-1.5">
             Agency
           </span>
         </Link>
@@ -67,7 +67,7 @@ export function Navigation() {
                 href={link.href}
                 className={cn(
                   "text-[11px] tracking-[0.2em] uppercase transition-colors duration-300",
-                  isActive ? "text-[#c9a96e]" : "text-white/70 hover:text-white"
+                  isActive ? "text-[#84cc16]" : "text-white/70 hover:text-white"
                 )}
               >
                 {link.label}
@@ -124,7 +124,7 @@ export function Navigation() {
                 href={link.href}
                 className={cn(
                   "text-[12px] tracking-[0.2em] uppercase transition-colors duration-300",
-                  isActive ? "text-[#c9a96e]" : "text-white/70 hover:text-white"
+                  isActive ? "text-[#84cc16]" : "text-white/70 hover:text-white"
                 )}
               >
                 {link.label}

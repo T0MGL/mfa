@@ -43,11 +43,11 @@ export default function ContactPage() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="text-[11px] tracking-[0.25em] uppercase text-[#c9a96e]"
+            className="text-[11px] tracking-[0.25em] uppercase text-[#84cc16]"
           >
             {t("hero.tagline")}
           </motion.span>
-          <div className="w-12 h-px bg-[#c9a96e]/40 mt-4 mb-8" />
+          <div className="w-12 h-px bg-[#84cc16]/40 mt-4 mb-8" />
           <motion.h1
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
@@ -71,7 +71,7 @@ export default function ContactPage() {
             >
               {submitted ? (
                 <div className="py-16">
-                  <p className="text-[18px] font-serif text-[#c9a96e]">
+                  <p className="text-[18px] font-serif text-[#84cc16]">
                     {t("form.success")}
                   </p>
                 </div>
@@ -85,7 +85,7 @@ export default function ContactPage() {
                       </label>
                       <input
                         {...register("name")}
-                        className="w-full bg-transparent border-b border-white/10 pb-3 text-[15px] text-white placeholder-white/20 focus:border-[#c9a96e]/50 focus:outline-none transition-colors duration-300"
+                        className="w-full bg-transparent border-b border-white/10 pb-3 text-[15px] text-white placeholder-white/20 focus:border-[#84cc16]/50 focus:outline-none transition-colors duration-300"
                       />
                       {errors.name && (
                         <p className="mt-2 text-[11px] text-red-400/70">{errors.name.message}</p>
@@ -98,7 +98,7 @@ export default function ContactPage() {
                       <input
                         {...register("email")}
                         type="email"
-                        className="w-full bg-transparent border-b border-white/10 pb-3 text-[15px] text-white placeholder-white/20 focus:border-[#c9a96e]/50 focus:outline-none transition-colors duration-300"
+                        className="w-full bg-transparent border-b border-white/10 pb-3 text-[15px] text-white placeholder-white/20 focus:border-[#84cc16]/50 focus:outline-none transition-colors duration-300"
                       />
                       {errors.email && (
                         <p className="mt-2 text-[11px] text-red-400/70">{errors.email.message}</p>
@@ -114,7 +114,7 @@ export default function ContactPage() {
                       </label>
                       <input
                         {...register("company")}
-                        className="w-full bg-transparent border-b border-white/10 pb-3 text-[15px] text-white placeholder-white/20 focus:border-[#c9a96e]/50 focus:outline-none transition-colors duration-300"
+                        className="w-full bg-transparent border-b border-white/10 pb-3 text-[15px] text-white placeholder-white/20 focus:border-[#84cc16]/50 focus:outline-none transition-colors duration-300"
                       />
                       {errors.company && (
                         <p className="mt-2 text-[11px] text-red-400/70">{errors.company.message}</p>
@@ -126,7 +126,7 @@ export default function ContactPage() {
                       </label>
                       <input
                         {...register("country")}
-                        className="w-full bg-transparent border-b border-white/10 pb-3 text-[15px] text-white placeholder-white/20 focus:border-[#c9a96e]/50 focus:outline-none transition-colors duration-300"
+                        className="w-full bg-transparent border-b border-white/10 pb-3 text-[15px] text-white placeholder-white/20 focus:border-[#84cc16]/50 focus:outline-none transition-colors duration-300"
                       />
                       {errors.country && (
                         <p className="mt-2 text-[11px] text-red-400/70">{errors.country.message}</p>
@@ -142,7 +142,7 @@ export default function ContactPage() {
                     <textarea
                       {...register("message")}
                       rows={4}
-                      className="w-full bg-transparent border-b border-white/10 pb-3 text-[15px] text-white placeholder-white/20 focus:border-[#c9a96e]/50 focus:outline-none transition-colors duration-300 resize-none"
+                      className="w-full bg-transparent border-b border-white/10 pb-3 text-[15px] text-white placeholder-white/20 focus:border-[#84cc16]/50 focus:outline-none transition-colors duration-300 resize-none"
                     />
                     {errors.message && (
                       <p className="mt-2 text-[11px] text-red-400/70">{errors.message.message}</p>
@@ -157,7 +157,7 @@ export default function ContactPage() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="inline-flex items-center justify-center px-10 py-4 bg-[#c9a96e] text-[#0a0a0f] text-[12px] tracking-[0.2em] uppercase font-semibold hover:bg-[#d4b578] transition-colors duration-300 rounded-sm disabled:opacity-50"
+                    className="inline-flex items-center justify-center px-10 py-4 bg-[#84cc16] text-[#0a0a0f] text-[12px] tracking-[0.2em] uppercase font-semibold hover:bg-[#d4b578] transition-colors duration-300 rounded-sm disabled:opacity-50"
                   >
                     {isSubmitting ? "..." : t("form.submit")}
                   </button>
@@ -172,10 +172,10 @@ export default function ContactPage() {
               transition={{ delay: 0.5, duration: 0.7 }}
               className="border-l border-white/5 pl-8 hidden md:block"
             >
-              <span className="text-[10px] tracking-[0.2em] uppercase text-[#c9a96e]">
+              <span className="text-[10px] tracking-[0.2em] uppercase text-[#84cc16]">
                 {t("direct.label")}
               </span>
-              <div className="w-8 h-px bg-[#c9a96e]/40 mt-3 mb-8" />
+              <div className="w-8 h-px bg-[#84cc16]/40 mt-3 mb-8" />
 
 
 
@@ -189,7 +189,7 @@ export default function ContactPage() {
                 </p>
                 <a
                   href={`mailto:${t("direct.asuncion.email")}`}
-                  className="mt-2 block text-[13px] text-white/50 hover:text-[#c9a96e] transition-colors duration-300"
+                  className="mt-2 block text-[13px] text-white/50 hover:text-[#84cc16] transition-colors duration-300"
                 >
                   {t("direct.asuncion.email")}
                 </a>

@@ -41,12 +41,12 @@ export default function ProofGallery({ items }: ProofGalleryProps) {
         transition={{ duration: 0.6 }}
         className="flex justify-center mb-12"
       >
-        <div className="inline-flex items-center gap-1 p-1 bg-[#15151a] border border-[#ededed]/10 rounded-sm">
+        <div className="inline-flex items-center gap-1 p-1 bg-[#0B0B0C] border border-[#ededed]/10 rounded-sm">
           <button
             onClick={() => setLanguage("en")}
             className={`px-4 py-2 text-[10px] tracking-[0.15em] uppercase font-medium transition-all duration-300 ${
               language === "en"
-                ? "bg-[#c9a96e] text-[#0B0B0C]"
+                ? "bg-[#84cc16] text-[#0B0B0C]"
                 : "text-[#ededed]/50 hover:text-[#ededed]/80"
             }`}
           >
@@ -56,7 +56,7 @@ export default function ProofGallery({ items }: ProofGalleryProps) {
             onClick={() => setLanguage("es")}
             className={`px-4 py-2 text-[10px] tracking-[0.15em] uppercase font-medium transition-all duration-300 ${
               language === "es"
-                ? "bg-[#c9a96e] text-[#0B0B0C]"
+                ? "bg-[#84cc16] text-[#0B0B0C]"
                 : "text-[#ededed]/50 hover:text-[#ededed]/80"
             }`}
           >
@@ -77,7 +77,7 @@ export default function ProofGallery({ items }: ProofGalleryProps) {
           <motion.div
             key={i}
             variants={fadeUp}
-            className="group relative bg-[#15151a] border border-[#ededed]/5 overflow-hidden hover:border-[#c9a96e]/20 transition-colors duration-500"
+            className="group relative bg-[#0B0B0C] border border-[#ededed]/5 overflow-hidden hover:border-[#84cc16]/20 transition-colors duration-500"
           >
             {/* Image */}
             <div className="relative w-full aspect-[4/3] overflow-hidden bg-[#0B0B0C]">

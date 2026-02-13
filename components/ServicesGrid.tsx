@@ -38,15 +38,15 @@ export default function ServicesGrid({ services }: ServicesGridProps) {
         <motion.div
           key={i}
           variants={fadeUp}
-          className="bg-[#0B0B0C] p-10 md:p-12 group hover:bg-[#15151a] transition-all duration-500 border border-[#ededed]/5 hover:border-[#c9a96e]/20 relative overflow-hidden"
+          className="bg-[#0B0B0C] p-10 md:p-12 group hover:bg-[#0B0B0C] transition-all duration-500 border border-[#ededed]/5 hover:border-[#84cc16]/20 relative overflow-hidden"
         >
           {/* Number indicator */}
-          <span className="text-[10px] tracking-[0.2em] uppercase text-[#c9a96e]/50 font-mono">
+          <span className="text-[10px] tracking-[0.2em] uppercase text-[#84cc16]/50 font-mono">
             {String(i + 1).padStart(2, "0")}
           </span>
 
           {/* Title */}
-          <h3 className="mt-5 text-[clamp(1.35rem,2.2vw,1.65rem)] font-serif text-[#ededed] leading-tight group-hover:text-[#c9a96e] transition-colors duration-300">
+          <h3 className="mt-5 text-[clamp(1.35rem,2.2vw,1.65rem)] font-serif text-[#ededed] leading-tight group-hover:text-[#84cc16] transition-colors duration-300">
             {service.title}
           </h3>
 
@@ -58,14 +58,14 @@ export default function ServicesGrid({ services }: ServicesGridProps) {
           {/* Deliverables */}
           {service.deliverables.length > 0 && (
             <div className="mt-8">
-              <div className="w-12 h-px bg-[#c9a96e]/30 mb-5" />
+              <div className="w-12 h-px bg-[#84cc16]/30 mb-5" />
               <ul className="space-y-3">
                 {service.deliverables.map((item, idx) => (
                   <li
                     key={idx}
                     className="flex items-start gap-3 text-[13px] text-[#ededed]/50 leading-relaxed group-hover:text-[#ededed]/60 transition-colors duration-300"
                   >
-                    <span className="text-[#c9a96e]/40 mt-0.5 shrink-0">—</span>
+                    <span className="text-[#84cc16]/40 mt-0.5 shrink-0">—</span>
                     <span>{item}</span>
                   </li>
                 ))}
@@ -74,7 +74,7 @@ export default function ServicesGrid({ services }: ServicesGridProps) {
           )}
 
           {/* Hover gradient effect */}
-          <div className="absolute inset-0 bg-gradient-to-br from-[#c9a96e]/0 via-[#c9a96e]/0 to-[#c9a96e]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#84cc16]/0 via-[#84cc16]/0 to-[#84cc16]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
         </motion.div>
       ))}
     </motion.div>

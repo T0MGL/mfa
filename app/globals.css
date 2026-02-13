@@ -20,10 +20,10 @@
   /* Legacy aliases for compatibility */
   --foreground: var(--text-body);
 
-  /* Gold System - Subtle Authority */
-  --gold-line: #B89968;            /* Divider lines - 6.8:1 */
-  --gold-accent: #CDB587;          /* Emphasis text - 8.5:1 */
-  --gold-hover: #D9C291;           /* Interactive states - 9.8:1 */
+  /* Lime System - Premium Digital */
+  --gold-line: #65a30d;            /* Divider lines - lime-600 */
+  --gold-accent: #84cc16;          /* Emphasis text - lime-500 */
+  --gold-hover: #a3e635;           /* Interactive states - lime-400 */
   --gold: var(--gold-accent);      /* Legacy alias */
   --gold-dim: var(--gold-line);    /* Legacy alias */
   --gold-bright: var(--gold-hover); /* Legacy alias */

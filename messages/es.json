@@ -333,8 +333,66 @@
   },
   "whyParaguay": {
     "hero": {
-      "tagline": "¿Por qué Paraguay?",
-      "title": "La puerta de entrada estratégica al Mercosur."
+      "tagline": "El Motor Económico de Sudamérica",
+      "title": "Estabilidad y Crecimiento con Grado de Inversión."
+    },
+    "macro": {
+      "label": "Fundamentos Macro",
+      "title": "Un Faro de Estabilidad y Crecimiento",
+      "subtitle": "Mientras la región enfrenta volatilidad, Paraguay se destaca como la economía de más rápido crecimiento en Sudamérica durante los últimos 60 años, alcanzando recientemente el estatus de Grado de Inversión.",
+      "climate": {
+        "title": "Mejor Clima Empresarial (FGV)",
+        "label": "Índice de Clima Empresarial (Puntos)",
+        "items": {
+          "py": {
+            "country": "Paraguay",
+            "note": "#1 en Sudamérica"
+          },
+          "ec": {
+            "country": "Ecuador",
+            "note": ""
+          },
+          "pe": {
+            "country": "Perú",
+            "note": ""
+          },
+          "uy": {
+            "country": "Uruguay",
+            "note": ""
+          },
+          "br": {
+            "country": "Brasil",
+            "note": ""
+          }
+        }
+      },
+      "stats": {
+        "gdp": {
+          "value": "6%",
+          "label": "Crecimiento del PIB",
+          "desc": "Expansión consistente año tras año"
+        },
+        "grade": {
+          "value": "Baa3",
+          "label": "Grado de Inversión",
+          "desc": "Calificación Crediticia de Moody's"
+        },
+        "age": {
+          "value": "28",
+          "label": "Edad Media",
+          "desc": "Fuerza laboral joven y creciente"
+        },
+        "happy": {
+          "value": "#2",
+          "label": "Felicidad Global",
+          "desc": "Fuente: Reporte Global Gallup"
+        },
+        "debt": {
+          "value": "40%",
+          "label": "Deuda/PIB",
+          "desc": "Menor apalancamiento de la región"
+        }
+      }
     },
     "overview": {
       "label": "La Oportunidad",

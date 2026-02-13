@@ -79,7 +79,7 @@ export default function HeroSunSlider({
           <button
             onClick={prevSlide}
             aria-label="Previous image"
-            className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-30 w-12 h-12 flex items-center justify-center border border-white/20 hover:border-[#c9a96e]/60 hover:bg-[#c9a96e]/10 transition-all duration-300 backdrop-blur-sm"
+            className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-30 w-12 h-12 flex items-center justify-center border border-white/20 hover:border-[#84cc16]/60 hover:bg-[#84cc16]/10 transition-all duration-300 backdrop-blur-sm"
           >
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="text-white/70">
               <path d="M12 4L6 10L12 16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="square" />
@@ -88,7 +88,7 @@ export default function HeroSunSlider({
           <button
             onClick={nextSlide}
             aria-label="Next image"
-            className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-30 w-12 h-12 flex items-center justify-center border border-white/20 hover:border-[#c9a96e]/60 hover:bg-[#c9a96e]/10 transition-all duration-300 backdrop-blur-sm"
+            className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-30 w-12 h-12 flex items-center justify-center border border-white/20 hover:border-[#84cc16]/60 hover:bg-[#84cc16]/10 transition-all duration-300 backdrop-blur-sm"
           >
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="text-white/70">
               <path d="M8 4L14 10L8 16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="square" />
@@ -106,10 +106,10 @@ export default function HeroSunSlider({
           transition={{ duration: 0.8, delay: 0.2 }}
           className="mb-12"
         >
-          <h2 className="text-[clamp(1.5rem,2.5vw,2rem)] font-serif tracking-wide text-[#c9a96e]">
+          <h2 className="text-[clamp(1.5rem,2.5vw,2rem)] font-serif tracking-wide text-[#84cc16]">
             MERCOSUR FIRST AGENCY
           </h2>
-          <div className="w-24 h-px bg-[#c9a96e]/40 mx-auto mt-4" />
+          <div className="w-24 h-px bg-[#84cc16]/40 mx-auto mt-4" />
         </motion.div>
 
         {/* Headline */}
@@ -141,13 +141,13 @@ export default function HeroSunSlider({
         >
           <Link
             href={primaryHref}
-            className="inline-flex items-center justify-center px-10 py-4 bg-[#c9a96e] text-[#0B0B0C] text-[11px] tracking-[0.2em] uppercase font-semibold hover:bg-[#d4b578] transition-colors duration-300"
+            className="inline-flex items-center justify-center px-10 py-4 bg-[#84cc16] text-[#0B0B0C] text-[11px] tracking-[0.2em] uppercase font-semibold hover:bg-[#d4b578] transition-colors duration-300"
           >
             {ctaPrimary}
           </Link>
           <Link
             href={secondaryHref}
-            className="inline-flex items-center justify-center px-10 py-4 border border-[#ededed]/30 text-[#ededed]/90 text-[11px] tracking-[0.2em] uppercase font-medium hover:border-[#c9a96e]/60 hover:text-[#ededed] transition-all duration-300 group backdrop-blur-sm"
+            className="inline-flex items-center justify-center px-10 py-4 border border-[#ededed]/30 text-[#ededed]/90 text-[11px] tracking-[0.2em] uppercase font-medium hover:border-[#84cc16]/60 hover:text-[#ededed] transition-all duration-300 group backdrop-blur-sm"
           >
             {ctaSecondary}
             <span className="ml-3 inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
@@ -168,7 +168,7 @@ export default function HeroSunSlider({
                 onClick={() => setCurrentIndex(idx)}
                 aria-label={`Go to slide ${idx + 1}`}
                 className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                  idx === currentIndex ? "bg-[#c9a96e] w-8" : "bg-white/30 hover:bg-white/50"
+                  idx === currentIndex ? "bg-[#84cc16] w-8" : "bg-white/30 hover:bg-white/50"
                 }`}
               />
             ))}

@@ -125,10 +125,10 @@ export default function HomePage() {
             transition={{ duration: 0.6 }}
             className="mb-6"
           >
-            <span className="text-[10px] tracking-[0.25em] uppercase text-[#c9a96e]">
+            <span className="text-[10px] tracking-[0.25em] uppercase text-[#84cc16]">
               {t("whoWeAre.label")}
             </span>
-            <div className="w-16 h-px bg-[#c9a96e]/40 mt-4" />
+            <div className="w-16 h-px bg-[#84cc16]/40 mt-4" />
           </motion.div>
 
           <motion.p
@@ -156,10 +156,10 @@ export default function HomePage() {
               transition={{ duration: 0.6 }}
               className="mb-6"
             >
-              <span className="text-[10px] tracking-[0.25em] uppercase text-[#c9a96e]">
+              <span className="text-[10px] tracking-[0.25em] uppercase text-[#84cc16]">
                 {t("services.label")}
               </span>
-              <div className="w-16 h-px bg-[#c9a96e]/40 mt-4" />
+              <div className="w-16 h-px bg-[#84cc16]/40 mt-4" />
             </motion.div>
 
             <motion.h2
@@ -191,10 +191,10 @@ export default function HomePage() {
               className="mb-6 flex justify-center"
             >
               <div>
-                <span className="text-[10px] tracking-[0.25em] uppercase text-[#c9a96e]">
+                <span className="text-[10px] tracking-[0.25em] uppercase text-[#84cc16]">
                   {t("proof.label")}
                 </span>
-                <div className="w-16 h-px bg-[#c9a96e]/40 mt-4 mx-auto" />
+                <div className="w-16 h-px bg-[#84cc16]/40 mt-4 mx-auto" />
               </div>
             </motion.div>
 
@@ -302,7 +302,7 @@ export default function HomePage() {
           >
             <Link
               href={`/${locale}/contact`}
-              className="inline-flex items-center justify-center px-12 py-4 bg-[#c9a96e] text-[#0B0B0C] text-[11px] tracking-[0.2em] uppercase font-semibold hover:bg-[#d4b578] transition-colors duration-300"
+              className="inline-flex items-center justify-center px-12 py-4 bg-[#84cc16] text-[#0B0B0C] text-[11px] tracking-[0.2em] uppercase font-semibold hover:bg-[#d4b578] transition-colors duration-300"
             >
               {t("closing.cta")}
             </Link>
