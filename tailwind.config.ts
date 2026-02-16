@@ -48,8 +48,8 @@ const config: Config = {
         "display": ["clamp(2.25rem, 4vw + 0.5rem, 3.75rem)", { lineHeight: "1.12", letterSpacing: "-0.02em" }],
         "display-sm": ["clamp(1.5rem, 2.5vw + 0.25rem, 2.25rem)", { lineHeight: "1.25", letterSpacing: "-0.015em" }],
         "heading": ["clamp(1.5rem, 3vw, 2rem)", { lineHeight: "1.2", letterSpacing: "-0.005em" }],
-        "body-lg": ["clamp(1.25rem, 1.5vw, 1.375rem)", { lineHeight: "1.6", letterSpacing: "-0.01em" }],
-        "body": ["clamp(1.0625rem, 1vw, 1.125rem)", { lineHeight: "1.65", letterSpacing: "-0.005em" }],
+        "body-lg": ["clamp(1.375rem, 1.5vw, 1.5rem)", { lineHeight: "1.6", letterSpacing: "-0.01em" }],
+        "body": ["clamp(1.125rem, 1vw, 1.25rem)", { lineHeight: "1.65", letterSpacing: "-0.005em" }],
         "label": ["0.8125rem", { lineHeight: "1.5", letterSpacing: "0.12em" }],
       },
       spacing: {

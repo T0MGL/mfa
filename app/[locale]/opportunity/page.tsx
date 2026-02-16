@@ -161,20 +161,20 @@ export default function OpportunityPage() {
                                             whileInView={{ opacity: 1, y: 0 }}
                                             viewport={{ once: true }}
                                             transition={{ delay: i * 0.08, duration: 0.6 }}
-                                            className="bg-[#0B0B0C] p-10 md:p-12 group hover:bg-[#0B0B0C] transition-all duration-500 border border-[#ededed]/5 hover:border-amber-600/30 relative overflow-hidden"
+                                            className="bg-[#0B0B0C] p-10 md:p-12 group border border-[#ededed]/5 relative overflow-hidden"
                                         >
                                             {/* Title */}
-                                            <h4 className="text-[clamp(1.35rem,2.2vw,1.65rem)] font-serif text-[#ededed] leading-tight group-hover:text-amber-500 transition-colors duration-300 mb-5">
+                                            <h4 className="text-[clamp(1.35rem,2.2vw,1.65rem)] font-serif text-[#ededed] leading-tight mb-5">
                                                 {t(`services.core.items.${key}.title`)}
                                             </h4>
 
                                             {/* Description */}
-                                            <p className="text-[15px] text-[#ededed]/70 leading-[1.7]">
+                                            <p className="text-[17px] text-[#ededed]/70 leading-[1.7]">
                                                 {t(`services.core.items.${key}.desc`)}
                                             </p>
 
-                                            {/* Hover gradient effect */}
-                                            <div className="absolute inset-0 bg-gradient-to-br from-amber-600/0 via-amber-600/0 to-amber-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+                                            {/* Subtle hover effect */}
+                                            <div className="absolute inset-0 bg-amber-600/[0.02] opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
                                         </motion.div>
                                     ))}
                                 </div>
@@ -198,20 +198,20 @@ export default function OpportunityPage() {
                                             whileInView={{ opacity: 1, y: 0 }}
                                             viewport={{ once: true }}
                                             transition={{ delay: i * 0.06, duration: 0.6 }}
-                                            className="bg-[#0B0B0C] p-8 md:p-10 group hover:bg-[#0B0B0C] transition-all duration-300 border border-[#ededed]/5 hover:border-amber-600/20 relative overflow-hidden"
+                                            className="bg-[#0B0B0C] p-8 md:p-10 group border border-[#ededed]/5 relative overflow-hidden"
                                         >
                                             {/* Title */}
-                                            <h4 className="text-[clamp(1.15rem,1.8vw,1.35rem)] font-serif text-[#ededed] leading-tight mb-4 group-hover:text-amber-500 transition-colors duration-300">
+                                            <h4 className="text-[clamp(1.15rem,1.8vw,1.35rem)] font-serif text-[#ededed] leading-tight mb-4">
                                                 {t(`services.additional.items.${key}.title`)}
                                             </h4>
 
                                             {/* Description */}
-                                            <p className="text-[14px] text-[#ededed]/60 leading-[1.7]">
+                                            <p className="text-[16px] text-[#ededed]/60 leading-[1.7]">
                                                 {t(`services.additional.items.${key}.desc`)}
                                             </p>
 
-                                            {/* Hover effect */}
-                                            <div className="absolute inset-0 bg-gradient-to-br from-amber-600/0 to-amber-600/3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+                                            {/* Subtle hover effect */}
+                                            <div className="absolute inset-0 bg-amber-600/[0.02] opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
                                         </motion.div>
                                     ))}
                                 </div>
@@ -250,7 +250,7 @@ export default function OpportunityPage() {
                                     {[0, 1, 2, 3, 4].map((i) => (
                                         <li key={i} className="flex items-start gap-3">
                                             <span className="text-gold-line mt-0.5 shrink-0">—</span>
-                                            <span className="text-[13px] text-secondary leading-[1.6]">
+                                            <span className="text-[16px] text-secondary leading-[1.6]">
                                                 {t(`benefits.eu.items.${i}`)}
                                             </span>
                                         </li>
@@ -273,7 +273,7 @@ export default function OpportunityPage() {
                                     {[0, 1, 2, 3, 4].map((i) => (
                                         <li key={i} className="flex items-start gap-3">
                                             <span className="text-gold-line mt-0.5 shrink-0">—</span>
-                                            <span className="text-[13px] text-secondary leading-[1.6]">
+                                            <span className="text-[16px] text-secondary leading-[1.6]">
                                                 {t(`benefits.mercosur.items.${i}`)}
                                             </span>
                                         </li>
@@ -349,7 +349,7 @@ export default function OpportunityPage() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.15 }}
-                        className="mt-4 text-[15px] text-white/40 max-w-[500px] mx-auto"
+                        className="mt-4 text-[18px] text-white/40 max-w-[500px] mx-auto"
                     >
                         {t("cta.description")}
                     </motion.p>
@@ -362,7 +362,7 @@ export default function OpportunityPage() {
                     >
                         <Link
                             href={`/${locale}/contact`}
-                            className="inline-flex items-center justify-center px-10 py-4 bg-amber-600 text-black text-[12px] tracking-[0.2em] uppercase font-semibold hover:bg-amber-500 transition-all duration-300 rounded-sm hover:scale-105 hover:shadow-lg hover:shadow-amber-600/20"
+                            className="inline-flex items-center justify-center px-10 py-4 bg-amber-600 text-black text-[12px] tracking-[0.2em] uppercase font-semibold hover:bg-amber-500 transition-colors duration-300 rounded-sm"
                         >
                             {t("cta.button")}
                         </Link>

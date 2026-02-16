@@ -77,7 +77,7 @@ export default function ProofGallery({ items }: ProofGalleryProps) {
           <motion.div
             key={i}
             variants={fadeUp}
-            className="group relative bg-[#0B0B0C] border border-[#ededed]/5 overflow-hidden hover:border-[#c9a96e]/20 transition-colors duration-500"
+            className="relative bg-[#0B0B0C] border border-[#ededed]/5 overflow-hidden"
           >
             {/* Image */}
             <div className="relative w-full aspect-[4/3] overflow-hidden bg-[#0B0B0C]">
@@ -85,7 +85,7 @@ export default function ProofGallery({ items }: ProofGalleryProps) {
                 src={item.image}
                 alt={item.alt}
                 fill
-                className="object-contain group-hover:scale-[1.05] transition-transform duration-700"
+                className="object-contain"
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
               />
             </div>
@@ -99,7 +99,7 @@ export default function ProofGallery({ items }: ProofGalleryProps) {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
                   transition={{ duration: 0.3 }}
-                  className="text-[13px] text-[#ededed]/60 leading-[1.6]"
+                  className="text-[16px] text-[#ededed]/60 leading-[1.6]"
                 >
                   {language === "en" ? item.captionEN : item.captionES}
                 </motion.p>

@@ -213,7 +213,7 @@ export default function HomePage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.25, duration: 0.7 }}
-              className="mt-4 text-[15px] text-[#ededed]/50 max-w-[650px] mx-auto"
+              className="mt-4 text-[18px] text-[#ededed]/50 max-w-[650px] mx-auto"
             >
               {t("proof.subtitle")}
             </motion.p>
@@ -260,7 +260,7 @@ export default function HomePage() {
             className="space-y-6"
           >
             <div className="p-6 border border-[#ededed]/5 bg-[#0B0B0C]/30">
-              <p className="text-[13px] text-[#ededed]/40 leading-relaxed text-center">
+              <p className="text-[17px] text-[#ededed]/40 leading-relaxed text-center">
                 {t("insights.placeholder")}
               </p>
             </div>
@@ -288,7 +288,7 @@ export default function HomePage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2, duration: 0.7 }}
-            className="mt-6 text-[15px] text-[#ededed]/50 max-w-[600px] mx-auto"
+            className="mt-6 text-[18px] text-[#ededed]/50 max-w-[600px] mx-auto"
           >
             {t("closing.description")}
           </motion.p>

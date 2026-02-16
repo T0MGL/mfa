@@ -38,7 +38,7 @@ export default function ServicesGrid({ services }: ServicesGridProps) {
         <motion.div
           key={i}
           variants={fadeUp}
-          className="bg-[#0B0B0C] p-10 md:p-12 group transition-all duration-500 border border-[#ededed]/5 hover:border-[#c9a96e]/20 relative overflow-hidden"
+          className="bg-[#0B0B0C] p-10 md:p-12 group border border-[#ededed]/5 relative overflow-hidden"
         >
           {/* Number indicator */}
           <span className="text-[10px] tracking-[0.2em] uppercase text-[#c9a96e]/50 font-mono">
@@ -46,12 +46,12 @@ export default function ServicesGrid({ services }: ServicesGridProps) {
           </span>
 
           {/* Title */}
-          <h3 className="mt-5 text-[clamp(1.35rem,2.2vw,1.65rem)] font-serif text-[#ededed] leading-tight group-hover:text-[#c9a96e] transition-colors duration-300">
+          <h3 className="mt-5 text-[clamp(1.35rem,2.2vw,1.65rem)] font-serif text-[#ededed] leading-tight">
             {service.title}
           </h3>
 
           {/* Description */}
-          <p className="mt-5 text-[14px] text-[#ededed]/60 leading-[1.75]">
+          <p className="mt-5 text-[17px] text-[#ededed]/60 leading-[1.75]">
             {service.description}
           </p>
 
@@ -63,7 +63,7 @@ export default function ServicesGrid({ services }: ServicesGridProps) {
                 {service.deliverables.map((item, idx) => (
                   <li
                     key={idx}
-                    className="flex items-start gap-3 text-[13px] text-[#ededed]/50 leading-relaxed group-hover:text-[#ededed]/60 transition-colors duration-300"
+                    className="flex items-start gap-3 text-[16px] text-[#ededed]/50 leading-relaxed"
                   >
                     <span className="text-[#c9a96e]/40 mt-0.5 shrink-0">—</span>
                     <span>{item}</span>
@@ -73,8 +73,8 @@ export default function ServicesGrid({ services }: ServicesGridProps) {
             </div>
           )}
 
-          {/* Hover gradient effect */}
-          <div className="absolute inset-0 bg-gradient-to-br from-[#c9a96e]/0 via-[#c9a96e]/0 to-[#c9a96e]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+          {/* Subtle hover effect */}
+          <div className="absolute inset-0 bg-[#c9a96e]/[0.02] opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
         </motion.div>
       ))}
     </motion.div>

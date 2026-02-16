@@ -85,10 +85,10 @@ export default function ContactPage() {
                       </label>
                       <input
                         {...register("name")}
-                        className="w-full bg-transparent border-b border-white/10 pb-3 text-[15px] text-white placeholder-white/20 focus:border-[#c9a96e]/50 focus:outline-none transition-colors duration-300"
+                        className="w-full bg-transparent border-b border-white/10 pb-3 text-[17px] text-white placeholder-white/20 focus:border-[#c9a96e]/50 focus:outline-none transition-colors duration-300"
                       />
                       {errors.name && (
-                        <p className="mt-2 text-[11px] text-red-400/70">{errors.name.message}</p>
+                        <p className="mt-2 text-[14px] text-red-400/70">{errors.name.message}</p>
                       )}
                     </div>
                     <div>
@@ -98,10 +98,10 @@ export default function ContactPage() {
                       <input
                         {...register("email")}
                         type="email"
-                        className="w-full bg-transparent border-b border-white/10 pb-3 text-[15px] text-white placeholder-white/20 focus:border-[#c9a96e]/50 focus:outline-none transition-colors duration-300"
+                        className="w-full bg-transparent border-b border-white/10 pb-3 text-[17px] text-white placeholder-white/20 focus:border-[#c9a96e]/50 focus:outline-none transition-colors duration-300"
                       />
                       {errors.email && (
-                        <p className="mt-2 text-[11px] text-red-400/70">{errors.email.message}</p>
+                        <p className="mt-2 text-[14px] text-red-400/70">{errors.email.message}</p>
                       )}
                     </div>
                   </div>
@@ -114,10 +114,10 @@ export default function ContactPage() {
                       </label>
                       <input
                         {...register("company")}
-                        className="w-full bg-transparent border-b border-white/10 pb-3 text-[15px] text-white placeholder-white/20 focus:border-[#c9a96e]/50 focus:outline-none transition-colors duration-300"
+                        className="w-full bg-transparent border-b border-white/10 pb-3 text-[17px] text-white placeholder-white/20 focus:border-[#c9a96e]/50 focus:outline-none transition-colors duration-300"
                       />
                       {errors.company && (
-                        <p className="mt-2 text-[11px] text-red-400/70">{errors.company.message}</p>
+                        <p className="mt-2 text-[14px] text-red-400/70">{errors.company.message}</p>
                       )}
                     </div>
                     <div>
@@ -126,10 +126,10 @@ export default function ContactPage() {
                       </label>
                       <input
                         {...register("country")}
-                        className="w-full bg-transparent border-b border-white/10 pb-3 text-[15px] text-white placeholder-white/20 focus:border-[#c9a96e]/50 focus:outline-none transition-colors duration-300"
+                        className="w-full bg-transparent border-b border-white/10 pb-3 text-[17px] text-white placeholder-white/20 focus:border-[#c9a96e]/50 focus:outline-none transition-colors duration-300"
                       />
                       {errors.country && (
-                        <p className="mt-2 text-[11px] text-red-400/70">{errors.country.message}</p>
+                        <p className="mt-2 text-[14px] text-red-400/70">{errors.country.message}</p>
                       )}
                     </div>
                   </div>
@@ -145,12 +145,12 @@ export default function ContactPage() {
                       className="w-full bg-transparent border-b border-white/10 pb-3 text-[15px] text-white placeholder-white/20 focus:border-[#c9a96e]/50 focus:outline-none transition-colors duration-300 resize-none"
                     />
                     {errors.message && (
-                      <p className="mt-2 text-[11px] text-red-400/70">{errors.message.message}</p>
+                      <p className="mt-2 text-[14px] text-red-400/70">{errors.message.message}</p>
                     )}
                   </div>
 
                   {error && (
-                    <p className="text-[13px] text-red-400/70">{t("form.error")}</p>
+                    <p className="text-[16px] text-red-400/70">{t("form.error")}</p>
                   )}
 
                   {/* Submit */}
@@ -184,19 +184,19 @@ export default function ContactPage() {
                 <h3 className="text-[15px] font-serif text-white">
                   {t("direct.asuncion.title")}
                 </h3>
-                <p className="mt-1 text-[11px] text-white/30">
+                <p className="mt-1 text-[13px] text-white/30">
                   {t("direct.asuncion.role")}
                 </p>
                 <a
                   href={`mailto:${t("direct.asuncion.email")}`}
-                  className="mt-2 block text-[13px] text-white/50 hover:text-[#c9a96e] transition-colors duration-300"
+                  className="mt-2 block text-[16px] text-white/50 hover:text-[#c9a96e] transition-colors duration-300"
                 >
                   {t("direct.asuncion.email")}
                 </a>
               </div>
 
               <div className="pt-6 border-t border-white/5">
-                <p className="text-[11px] text-white/25 leading-relaxed">
+                <p className="text-[14px] text-white/25 leading-relaxed">
                   {t("note")}
                 </p>
               </div>

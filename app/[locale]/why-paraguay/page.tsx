@@ -51,10 +51,10 @@ function ComparisonChart({
             className="mb-6 last:mb-0"
         >
             <div className="flex justify-between items-end mb-2">
-                <span className={`text-[13px] tracking-[0.1em] uppercase ${isHighlight ? "text-gold-accent font-semibold" : "text-list"}`}>
+                <span className={`text-[15px] tracking-[0.1em] uppercase ${isHighlight ? "text-gold-accent font-semibold" : "text-list"}`}>
                     {country}
                 </span>
-                <span className={`text-[14px] ${isHighlight ? "text-gold-accent" : "text-secondary"}`}>
+                <span className={`text-[16px] ${isHighlight ? "text-gold-accent" : "text-secondary"}`}>
                     {value}
                 </span>
             </div>
@@ -67,7 +67,7 @@ function ComparisonChart({
                     transition={{ delay: delay + 0.2, duration: 1, ease: "easeOut" }}
                     className={`h-full absolute left-0 top-0 ${isHighlight ? "bg-gold-accent" : "bg-white/20"}`}
                 />
-                <span className={`relative z-10 pl-3 text-[11px] ${isHighlight ? "text-background font-semibold" : "text-secondary"}`}>
+                <span className={`relative z-10 pl-3 text-[14px] ${isHighlight ? "text-background font-semibold" : "text-secondary"}`}>
                     {note}
                 </span>
             </div>
@@ -212,10 +212,10 @@ export default function WhyParaguayPage() {
                                         <div className="text-[32px] md:text-[40px] font-serif text-gold-accent mb-1">
                                             {t(`macro.stats.${stat}.value`)}
                                         </div>
-                                        <div className="text-[11px] tracking-[0.1em] uppercase text-list font-semibold mb-2">
+                                        <div className="text-[13px] tracking-[0.1em] uppercase text-list font-semibold mb-2">
                                             {t(`macro.stats.${stat}.label`)}
                                         </div>
-                                        <div className="text-[12px] text-tertiary leading-snug">
+                                        <div className="text-[15px] text-tertiary leading-snug">
                                             {t(`macro.stats.${stat}.desc`)}
                                         </div>
                                     </motion.div>
@@ -231,7 +231,7 @@ export default function WhyParaguayPage() {
                             >
                                 <div className="mb-10">
                                     <h3 className="text-[18px] font-serif text-heading mb-2">{t("macro.climate.title")}</h3>
-                                    <p className="text-[12px] uppercase tracking-[0.1em] text-secondary">{t("macro.climate.label")}</p>
+                                    <p className="text-[14px] uppercase tracking-[0.1em] text-secondary">{t("macro.climate.label")}</p>
                                 </div>
 
                                 <div className="max-w-[800px]">
@@ -570,7 +570,7 @@ export default function WhyParaguayPage() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.15 }}
-                        className="mt-4 text-[15px] text-secondary max-w-[500px] mx-auto"
+                        className="mt-4 text-[18px] text-secondary max-w-[500px] mx-auto"
                     >
                         {t("cta.description")}
                     </motion.p>

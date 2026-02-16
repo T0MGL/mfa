@@ -125,7 +125,7 @@ export default function AboutPage() {
                                     <h3 className="text-[16px] font-serif text-white">
                                         {t(`values.items.${key}.title`)}
                                     </h3>
-                                    <p className="mt-3 text-[13px] text-white/40 leading-[1.7]">
+                                    <p className="mt-3 text-[16px] text-white/40 leading-[1.7]">
                                         {t(`values.items.${key}.description`)}
                                     </p>
                                 </motion.div>
@@ -190,14 +190,14 @@ export default function AboutPage() {
                                         src="/images/Sol Sandt.jpeg"
                                         alt="Sol Sandt"
                                         fill
-                                        className="object-cover transition-transform duration-700 group-hover:scale-105 filter grayscale group-hover:grayscale-0"
+                                        className="object-cover object-cover filter grayscale group-hover:grayscale-0 transition-[filter] duration-500"
                                     />
                                 </div>
                                 <h3 className="text-[24px] font-serif text-white">{t("team.members.sol.name")}</h3>
                                 <p className="mt-2 text-[11px] tracking-[0.15em] uppercase text-[#c9a96e]/70 leading-relaxed">
                                     {t("team.members.sol.role")}
                                 </p>
-                                <p className="mt-4 text-[14px] text-white/40 leading-[1.7]">
+                                <p className="mt-4 text-[17px] text-white/40 leading-[1.7]">
                                     {t("team.members.sol.bio")}
                                 </p>
                             </motion.div>
@@ -215,14 +215,14 @@ export default function AboutPage() {
                                         src="/images/Andre Justin.jpg"
                                         alt="Andre Justin"
                                         fill
-                                        className="object-cover transition-transform duration-700 group-hover:scale-105 filter grayscale group-hover:grayscale-0"
+                                        className="object-cover object-cover filter grayscale group-hover:grayscale-0 transition-[filter] duration-500"
                                     />
                                 </div>
                                 <h3 className="text-[24px] font-serif text-white">{t("team.members.andre.name")}</h3>
                                 <p className="mt-2 text-[11px] tracking-[0.15em] uppercase text-[#c9a96e]/70 leading-relaxed">
                                     {t("team.members.andre.role")}
                                 </p>
-                                <p className="mt-4 text-[14px] text-white/40 leading-[1.7]">
+                                <p className="mt-4 text-[17px] text-white/40 leading-[1.7]">
                                     {t("team.members.andre.bio")}
                                 </p>
                             </motion.div>
@@ -240,14 +240,14 @@ export default function AboutPage() {
                                         src="/images/Julian Sandt.JPG"
                                         alt="Julian Sandt"
                                         fill
-                                        className="object-cover transition-transform duration-700 group-hover:scale-105 filter grayscale group-hover:grayscale-0"
+                                        className="object-cover object-cover filter grayscale group-hover:grayscale-0 transition-[filter] duration-500"
                                     />
                                 </div>
                                 <h3 className="text-[24px] font-serif text-white">{t("team.members.julian.name")}</h3>
                                 <p className="mt-2 text-[11px] tracking-[0.15em] uppercase text-[#c9a96e]/70 leading-relaxed">
                                     {t("team.members.julian.role")}
                                 </p>
-                                <p className="mt-4 text-[14px] text-white/40 leading-[1.7]">
+                                <p className="mt-4 text-[17px] text-white/40 leading-[1.7]">
                                     {t("team.members.julian.bio")}
                                 </p>
                             </motion.div>
@@ -286,7 +286,7 @@ export default function AboutPage() {
                                     <p className="mt-2 text-[12px] tracking-[0.15em] uppercase text-[#c9a96e]/70">
                                         {t(`presence.${office}.role`)}
                                     </p>
-                                    <p className="mt-4 text-[14px] text-white/40 leading-[1.7]">
+                                    <p className="mt-4 text-[17px] text-white/40 leading-[1.7]">
                                         {t(`presence.${office}.description`)}
                                     </p>
                                 </motion.div>

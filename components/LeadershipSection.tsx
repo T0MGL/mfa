@@ -72,7 +72,7 @@ export default function LeadershipSection({ label, title }: LeadershipSectionPro
                 type: "spring",
                 stiffness: 100,
               }}
-              className="group relative"
+              className="relative"
             >
               {/* Image Container */}
               <div className="relative aspect-[3/4] overflow-hidden bg-[#0B0B0C] mb-6">
@@ -80,11 +80,9 @@ export default function LeadershipSection({ label, title }: LeadershipSectionPro
                   src={leader.image}
                   alt={leader.name}
                   fill
-                  className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                  className="object-cover object-center"
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
-                {/* Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0B0B0C]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
 
               {/* Text Content */}
@@ -93,11 +91,11 @@ export default function LeadershipSection({ label, title }: LeadershipSectionPro
                   {leader.name}
                 </h3>
 
-                <p className="text-[13px] font-medium tracking-wide text-[#c9a96e] uppercase leading-relaxed">
+                <p className="text-[15px] font-medium tracking-wide text-[#c9a96e] uppercase leading-relaxed">
                   {leader.title}
                 </p>
 
-                <p className="text-[15px] text-[#ededed]/70 leading-[1.6] pt-2">
+                <p className="text-[17px] text-[#ededed]/70 leading-[1.6] pt-2">
                   {leader.description}
                 </p>
               </div>
