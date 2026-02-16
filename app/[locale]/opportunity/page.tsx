@@ -174,7 +174,7 @@ export default function OpportunityPage() {
                                             </p>
 
                                             {/* Subtle hover effect */}
-                                            <div className="absolute inset-0 bg-amber-600/[0.02] opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+                                            <div className="absolute inset-0 bg-[#c9a96e]/[0.02] opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
                                         </motion.div>
                                     ))}
                                 </div>
@@ -211,7 +211,7 @@ export default function OpportunityPage() {
                                             </p>
 
                                             {/* Subtle hover effect */}
-                                            <div className="absolute inset-0 bg-amber-600/[0.02] opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+                                            <div className="absolute inset-0 bg-[#c9a96e]/[0.02] opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
                                         </motion.div>
                                     ))}
                                 </div>
@@ -362,7 +362,7 @@ export default function OpportunityPage() {
                     >
                         <Link
                             href={`/${locale}/contact`}
-                            className="inline-flex items-center justify-center px-10 py-4 bg-amber-600 text-black text-[12px] tracking-[0.2em] uppercase font-semibold hover:bg-amber-500 transition-colors duration-300 rounded-sm"
+                            className="inline-flex items-center justify-center px-10 py-4 bg-[#c9a96e] text-[#0a0a0f] text-[12px] tracking-[0.2em] uppercase font-semibold hover:bg-[#d4b680] transition-colors duration-300 rounded-sm"
                         >
                             {t("cta.button")}
                         </Link>

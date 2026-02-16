@@ -1,8 +1,10 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { useParams } from "next/navigation";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 const fadeUp = {
     hidden: { opacity: 0, y: 30 },
@@ -15,6 +17,8 @@ const fadeUp = {
 
 export default function AboutPage() {
     const t = useTranslations("about");
+    const params = useParams();
+    const locale = params.locale as string;
 
     return (
         <main className="bg-[#0a0a0f] text-white">
@@ -293,6 +297,43 @@ export default function AboutPage() {
                             ))}
                         </div>
                     </div>
+                </div>
+            </section>
+
+            {/* ── CTA ───────────────────────────────────────── */}
+            <section className="py-28 bg-[#0a0a0a] border-t border-white/5">
+                <div className="max-w-[1400px] mx-auto px-6 md:px-12 text-center">
+                    <motion.h2
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="text-[clamp(2rem,4vw,3.5rem)] font-serif leading-[1.05]"
+                    >
+                        Ready to work with us?
+                    </motion.h2>
+                    <motion.p
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.15 }}
+                        className="mt-4 text-[18px] text-white/40 max-w-[500px] mx-auto"
+                    >
+                        Let's discuss how we can help your business grow in the Mercosur region.
+                    </motion.p>
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.3 }}
+                        className="mt-10"
+                    >
+                        <Link
+                            href={`/${locale}/contact`}
+                            className="inline-flex items-center justify-center px-10 py-4 bg-[#c9a96e] text-[#0a0a0f] text-[12px] tracking-[0.2em] uppercase font-semibold hover:bg-[#d4b680] transition-colors duration-300 rounded-sm"
+                        >
+                            Get in touch
+                        </Link>
+                    </motion.div>
                 </div>
             </section>
         </main>
