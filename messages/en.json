@@ -536,7 +536,13 @@
       "message": "Tell us about your project",
       "submit": "Send Inquiry",
       "success": "Your inquiry has been received. We will respond within 48 hours.",
-      "error": "Submission failed. Contact us directly at contact@mercosurfirstagency.com."
+      "error": "Submission failed. Contact us directly at contact@mercosurfirstagency.com.",
+      "emailSubject": "[MFA] Business Inquiry — {company} ({country})",
+      "emailName": "Name",
+      "emailEmail": "Email",
+      "emailCompany": "Company",
+      "emailCountry": "Country",
+      "emailMessage": "Message"
     },
     "direct": {
       "label": "Direct Contact",

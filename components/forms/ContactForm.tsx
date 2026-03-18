@@ -6,7 +6,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useTranslations } from "next-intl";
 import Confetti from "react-confetti";
 import { contactFormSchema, type ContactFormData } from "@/lib/validations";
-import { submitContactForm } from "@/lib/actions";
 import { Input } from "../ui/Input";
 import { Select } from "../ui/Select";
 import { Textarea } from "../ui/Textarea";
@@ -32,27 +31,32 @@ export function ContactForm() {
     resolver: zodResolver(contactFormSchema),
   });
 
-  const onSubmit = async (data: ContactFormData) => {
+  const onSubmit = (data: ContactFormData) => {
     setIsSubmitting(true);
-    setSubmitStatus({ type: null, message: "" });
 
-    try {
-      const result = await submitContactForm(data);
+    const subject = encodeURIComponent(
+      t("emailSubject", { company: data.company, country: data.country })
+    );
 
-      if (result.success) {
-        setSubmitStatus({ type: "success", message: t("success") });
-        setShowConfetti(true);
-        reset();
-        // Hide confetti after 5 seconds
-        setTimeout(() => setShowConfetti(false), 5000);
-      } else {
-        setSubmitStatus({ type: "error", message: t("error") });
-      }
-    } catch (error) {
-      setSubmitStatus({ type: "error", message: t("error") });
-    } finally {
-      setIsSubmitting(false);
-    }
+    const body = encodeURIComponent(
+      [
+        `${t("emailName")}: ${data.name}`,
+        `${t("emailEmail")}: ${data.email}`,
+        `${t("emailCompany")}: ${data.company}`,
+        `${t("emailCountry")}: ${data.country}`,
+        "",
+        `${t("emailMessage")}:`,
+        data.message,
+      ].join("\n")
+    );
+
+    window.location.href = `mailto:juliansandt@gmail.com?subject=${subject}&body=${body}`;
+
+    setSubmitStatus({ type: "success", message: t("success") });
+    setShowConfetti(true);
+    reset();
+    setIsSubmitting(false);
+    setTimeout(() => setShowConfetti(false), 5000);
   };
 
   return (

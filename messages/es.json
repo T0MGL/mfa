@@ -536,7 +536,13 @@
       "message": "Cuéntanos sobre tu proyecto",
       "submit": "Enviar Consulta",
       "success": "Tu consulta ha sido recibida. Responderemos dentro de 48 horas.",
-      "error": "Error en el envío. Contáctanos directamente en contact@mercosurfirstagency.com."
+      "error": "Error en el envío. Contáctanos directamente en contact@mercosurfirstagency.com.",
+      "emailSubject": "[MFA] Consulta Comercial — {company} ({country})",
+      "emailName": "Nombre",
+      "emailEmail": "Correo",
+      "emailCompany": "Empresa",
+      "emailCountry": "País",
+      "emailMessage": "Mensaje"
     },
     "direct": {
       "label": "Contacto Directo",
