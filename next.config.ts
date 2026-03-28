@@ -12,7 +12,6 @@ const nextConfig: NextConfig = {
       {
         protocol: "https",
         hostname: "pub-70473ebb629c4efb93b99bf2e83117da.r2.dev",
-        pathname: "/MFA/**",
       },
     ],
   },
