@@ -74,6 +74,37 @@
       "title": "Perspectivas más amplias del Mercosur.",
       "placeholder": "Artículos de terceros y perspectivas regionales más amplias aparecerán aquí."
     },
+    "portfolio": {
+      "label": "Portafolio Activo",
+      "title": "Desarrollos inmobiliarios en curso.",
+      "subtitle": "Gestionados por Park Lofts EAS. Tres proyectos activos en Asuncion con unidades disponibles para inversores.",
+      "projects": {
+        "palmanovaLasMercedes": {
+          "title": "Palmanova Las Mercedes",
+          "size": "67 a 110 m², 1 a 2 dormitorios",
+          "units": "128 unidades totales, unidades selectas disponibles",
+          "price": "Desde $165.889 (Unidad 7E referencia)",
+          "status": "Etapa final de construccion"
+        },
+        "palmanovaVillaMorra": {
+          "title": "Palmanova Villa Morra",
+          "size": "59 a 65 m², 1 dormitorio",
+          "units": "37 unidades, disponibilidad selecta",
+          "price": "Desde $102.440 (Unidades 3d/4d referencia)",
+          "status": "95% completado"
+        },
+        "molasDesign": {
+          "title": "Molas Design",
+          "size": "36 a 46 m², monoambiente a 2 dormitorios",
+          "units": "84 unidades totales, 400 m² coworking",
+          "price": "$53.964 a $72.860",
+          "status": "70% completado"
+        }
+      },
+      "downloadPortfolio": "Descargar Portafolio (PDF)",
+      "downloadStrategic": "Proyectos Estrategicos (PDF)",
+      "seePortfolio": "Ver portafolio activo"
+    },
     "closing": {
       "title": "¿Listo para entrar al Mercosur?",
       "description": "Nos encargamos de todo, desde el primer contacto hasta el despliegue operacional completo.",
@@ -209,7 +240,7 @@
         "julian": {
           "name": "Julian Sandt",
           "role": "Presidente, Park Lofts EAS",
-          "bio": "Desarrollador con más de 350 dptos vendidos y en construcción. Gestor de portafolio en bienes raíces e instrumentos financieros."
+          "bio": "Desarrollador con mas de 350 apartamentos vendidos y en construccion en tres proyectos activos (Palmanova Las Mercedes, Palmanova Villa Morra, Molas Design). Gestor de portafolio en bienes raices e instrumentos financieros en Paraguay. Lidera iniciativas de desarrollo estrategico incluyendo proyectos de urbanizacion frente al lago y al rio."
         }
       }
     }
@@ -279,6 +310,65 @@
             "desc": "Recogida en aeropuerto, coordinación de reuniones, alojamiento y soporte turístico en alemán, español e inglés."
           }
         }
+      }
+    },
+    "realEstate": {
+      "label": "Bienes Raices",
+      "title": "Bienes Raices Estrategicos para Inversores Calificados.",
+      "subtitle": "Tres oportunidades de desarrollo para socios y co-desarrolladores que buscan posiciones de alto rendimiento en los mercados urbanos de mayor crecimiento de Paraguay, mas unidades actualmente disponibles en el portafolio de Palmanova y Molas Design.",
+      "strategic": {
+        "label": "Proyectos de Desarrollo Estrategico ($1M+)",
+        "projects": {
+          "aregua": {
+            "title": "Aregua: Apartamentos con Terraza Frente al Lago",
+            "description": "25 km de Asuncion. 7.000 m² frente al lago, 45 apartamentos panoramicos con vista al lago. Nuevo acceso por autopista a 500 m (2030).",
+            "land": "7.000 m² frente al lago",
+            "investment": "Costo de construccion: $3M",
+            "projection": "Valor proyectado de venta: $6M"
+          },
+          "encarnacion": {
+            "title": "Encarnacion: Frente al Rio Parana",
+            "description": "18 hectareas con 1.200 m de frente fluvial. 160 lotes para villas sobre camino pavimentado, a 20 minutos del centro de Encarnacion.",
+            "land": "18 ha, 1.200 m de frente fluvial",
+            "investment": "Costo de construccion: $3M",
+            "projection": "Valor proyectado de venta: $10M"
+          },
+          "nuevaAsuncion": {
+            "title": "Nueva Asuncion: Urbanizacion de 75 Hectareas",
+            "description": "A 15 minutos de Asuncion con vista al skyline. Nuevo puente de 4 carriles (2024), terreno a $10/m², lotes terminados a aproximadamente $49/m².",
+            "land": "75 hectareas, vista al skyline",
+            "investment": "Costo de urbanizacion: $15M (por fases)",
+            "projection": "Terreno a $10/m², lotes terminados a $49/m²"
+          }
+        },
+        "downloadCta": "Descargar Proyectos Estrategicos (PDF)"
+      },
+      "available": {
+        "label": "Unidades Actualmente Disponibles",
+        "units": {
+          "palmanovaLasMercedes": {
+            "title": "Palmanova Las Mercedes",
+            "size": "67 a 110 m², 1 a 2 dormitorios",
+            "units": "128 totales, unidades selectas disponibles",
+            "price": "Desde $165.889",
+            "status": "Etapa final"
+          },
+          "palmanovaVillaMorra": {
+            "title": "Palmanova Villa Morra",
+            "size": "59 a 65 m², 1 dormitorio",
+            "units": "37 unidades, disponibilidad selecta",
+            "price": "Desde $102.440",
+            "status": "95% completado"
+          },
+          "molasDesign": {
+            "title": "Molas Design",
+            "size": "36 a 46 m², monoambiente a 2 dormitorios",
+            "units": "84 unidades, 400 m² coworking incluido",
+            "price": "$53.964 a $72.860",
+            "status": "70% completado"
+          }
+        },
+        "downloadCta": "Descargar Portafolio Completo (PDF)"
       }
     },
     "benefits": {
@@ -553,6 +643,29 @@
       }
     },
     "note": "Contáctenos vía email, WhatsApp (Alemán, Inglés, Español) o en persona. Recibimos consultas de empresas de la UE, socios del Mercosur e inversores institucionales. Respuesta dentro de 48 horas."
+  },
+  "modal": {
+    "triggerLabel": "Ver portafolio de inversiones",
+    "triggerText": "Portafolio de Inversiones",
+    "dialogLabel": "Portafolio de Inversiones Park Lofts",
+    "label": "Oportunidad de Inversion",
+    "title": "Portafolio Inmobiliario Park Lofts",
+    "description": "Mas de 350 apartamentos vendidos y en construccion en Asuncion. Desarrollos activos con unidades disponibles, mas oportunidades de co-desarrollo estrategico para inversores calificados.",
+    "highlightsLabel": "Puntos Destacados del Portafolio",
+    "highlights": {
+      "highlight1": "Tres proyectos residenciales activos en los barrios mas buscados de Asuncion",
+      "highlight2": "Unidades desde $53.964 (Molas Design) hasta $165.889 (Palmanova Las Mercedes)",
+      "highlight3": "Proyectos de desarrollo estrategico desde $3M de costo de construccion con retornos proyectados de 2x a 3,3x"
+    },
+    "documentsLabel": "Documentos Descargables",
+    "portfolioPdf": {
+      "title": "Park Lofts x Palmanova x Molas Design",
+      "description": "Vision completa de unidades disponibles, planos, precios y estado de los tres desarrollos activos."
+    },
+    "strategicPdf": {
+      "title": "3 Proyectos Estrategicos para Socios y Co-Desarrolladores",
+      "description": "Aregua frente al lago, Encarnacion frente al rio, y urbanizacion Nueva Asuncion. Proyecciones de inversion detalladas para socios de $1M+."
+    }
   },
   "common": {
     "learnMore": "Más Información",

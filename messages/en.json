@@ -74,6 +74,37 @@
       "title": "Broader Mercosur perspectives.",
       "placeholder": "Third-party articles and broader regional insights will appear here."
     },
+    "portfolio": {
+      "label": "Active Portfolio",
+      "title": "Current real estate developments.",
+      "subtitle": "Managed by Park Lofts EAS. Three active projects in Asuncion with units currently available for investors.",
+      "projects": {
+        "palmanovaLasMercedes": {
+          "title": "Palmanova Las Mercedes",
+          "size": "67 to 110 m², 1 to 2 bedrooms",
+          "units": "128 total units, select units available",
+          "price": "From $165,889 (Unit 7E reference)",
+          "status": "Final construction stage"
+        },
+        "palmanovaVillaMorra": {
+          "title": "Palmanova Villa Morra",
+          "size": "59 to 65 m², 1 bedroom",
+          "units": "37 units, select availability",
+          "price": "From $102,440 (Units 3d/4d reference)",
+          "status": "95% complete"
+        },
+        "molasDesign": {
+          "title": "Molas Design",
+          "size": "36 to 46 m², studio to 2 bedrooms",
+          "units": "84 total units, 400 m² coworking",
+          "price": "$53,964 to $72,860",
+          "status": "70% complete"
+        }
+      },
+      "downloadPortfolio": "Download Portfolio (PDF)",
+      "downloadStrategic": "Strategic Projects (PDF)",
+      "seePortfolio": "See active portfolio"
+    },
     "closing": {
       "title": "Ready to enter Mercosur?",
       "description": "We handle everything from first contact to full operational deployment.",
@@ -209,7 +240,7 @@
         "julian": {
           "name": "Julian Sandt",
           "role": "President, Park Lofts EAS",
-          "bio": "Developer with 350+ apartments sold/under construction. Portfolio manager in Paraguayan real estate and financial instruments."
+          "bio": "Developer with 350+ apartments sold and under construction across three active projects (Palmanova Las Mercedes, Palmanova Villa Morra, Molas Design). Portfolio manager in Paraguayan real estate and financial instruments. Leads strategic development initiatives including lakefront and riverfront urbanization projects."
         }
       }
     }
@@ -279,6 +310,65 @@
             "desc": "Airport pickup, meeting coordination, accommodation, and sightseeing support in German, Spanish, and English."
           }
         }
+      }
+    },
+    "realEstate": {
+      "label": "Real Estate",
+      "title": "Strategic Real Estate for Qualified Investors.",
+      "subtitle": "Three development opportunities for partners and co-developers seeking high-yield positions in Paraguay's fastest-growing urban markets, plus currently available units across the Palmanova and Molas Design portfolio.",
+      "strategic": {
+        "label": "Strategic Development Projects ($1M+)",
+        "projects": {
+          "aregua": {
+            "title": "Aregua: Lakefront Terrace Apartments",
+            "description": "25 km from Asuncion. 7,000 m² lakefront parcel, 45 panoramic apartments overlooking the lake. New highway access 500 m away (2030).",
+            "land": "7,000 m² lakefront",
+            "investment": "Build cost: $3M",
+            "projection": "Projected sale value: $6M"
+          },
+          "encarnacion": {
+            "title": "Encarnacion: Parana Riverfront",
+            "description": "18 hectares with 1,200 m of river frontage. 160 villa plots on paved road, 20 minutes from Encarnacion center.",
+            "land": "18 ha, 1,200 m river front",
+            "investment": "Build cost: $3M",
+            "projection": "Projected sale value: $10M"
+          },
+          "nuevaAsuncion": {
+            "title": "Nueva Asuncion: 75 Hectare Urbanization",
+            "description": "15 minutes from Asuncion with skyline views. New 4-lane bridge (2024), land at $10/m², finished plots at approximately $49/m².",
+            "land": "75 hectares, skyline views",
+            "investment": "Urbanization cost: $15M (phased)",
+            "projection": "Land at $10/m², finished plots at $49/m²"
+          }
+        },
+        "downloadCta": "Download Strategic Projects (PDF)"
+      },
+      "available": {
+        "label": "Currently Available Units",
+        "units": {
+          "palmanovaLasMercedes": {
+            "title": "Palmanova Las Mercedes",
+            "size": "67 to 110 m², 1 to 2 bedrooms",
+            "units": "128 total, select units available",
+            "price": "From $165,889",
+            "status": "Final stage"
+          },
+          "palmanovaVillaMorra": {
+            "title": "Palmanova Villa Morra",
+            "size": "59 to 65 m², 1 bedroom",
+            "units": "37 units, select availability",
+            "price": "From $102,440",
+            "status": "95% complete"
+          },
+          "molasDesign": {
+            "title": "Molas Design",
+            "size": "36 to 46 m², studio to 2 bedrooms",
+            "units": "84 units, 400 m² coworking included",
+            "price": "$53,964 to $72,860",
+            "status": "70% complete"
+          }
+        },
+        "downloadCta": "Download Full Portfolio (PDF)"
       }
     },
     "benefits": {
@@ -553,6 +643,29 @@
       }
     },
     "note": "Contact us via email, WhatsApp (German, English, Spanish), or in person (German, English, and Spanish). We welcome inquiries from EU companies, Mercosur partners, and institutional investors. Response within 48 hours."
+  },
+  "modal": {
+    "triggerLabel": "View investment portfolio",
+    "triggerText": "Investment Portfolio",
+    "dialogLabel": "Park Lofts Investment Portfolio",
+    "label": "Investment Opportunity",
+    "title": "Park Lofts Real Estate Portfolio",
+    "description": "350+ apartments sold and under construction across Asuncion. Active developments with units currently available, plus strategic co-development opportunities for qualified investors.",
+    "highlightsLabel": "Portfolio Highlights",
+    "highlights": {
+      "highlight1": "Three active residential projects in Asuncion's most sought-after neighborhoods",
+      "highlight2": "Units from $53,964 (Molas Design) to $165,889 (Palmanova Las Mercedes)",
+      "highlight3": "Strategic development projects from $3M build cost with projected returns of 2x to 3.3x"
+    },
+    "documentsLabel": "Downloadable Documents",
+    "portfolioPdf": {
+      "title": "Park Lofts x Palmanova x Molas Design",
+      "description": "Complete overview of available units, floor plans, pricing, and project status across all three active developments."
+    },
+    "strategicPdf": {
+      "title": "3 Strategic Projects for Partners and Co-Developers",
+      "description": "Aregua lakefront, Encarnacion riverfront, and Nueva Asuncion urbanization. Detailed investment projections for $1M+ partners."
+    }
   },
   "common": {
     "learnMore": "Learn More",

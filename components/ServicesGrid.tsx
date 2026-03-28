@@ -6,6 +6,10 @@ interface Service {
   title: string;
   description: string;
   deliverables: string[];
+  portfolioLink?: {
+    label: string;
+    href: string;
+  };
 }
 
 interface ServicesGridProps {
@@ -71,6 +75,17 @@ export default function ServicesGrid({ services }: ServicesGridProps) {
                 ))}
               </ul>
             </div>
+          )}
+
+          {/* Portfolio cross-link */}
+          {service.portfolioLink && (
+            <a
+              href={service.portfolioLink.href}
+              className="mt-6 inline-flex items-center gap-2 text-[12px] tracking-[0.1em] text-[#c9a96e]/60 hover:text-[#c9a96e] transition-colors duration-300"
+            >
+              <span>{service.portfolioLink.label}</span>
+              <span className="inline-block transition-transform duration-300 group-hover:translate-x-0.5">&#8594;</span>
+            </a>
           )}
 
           {/* Subtle hover effect */}

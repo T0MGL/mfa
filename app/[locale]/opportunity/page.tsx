@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { RealEstateSection } from "@/components/RealEstateSection";
 
 const fadeUp = {
     hidden: { opacity: 0, y: 30 },
@@ -173,6 +174,17 @@ export default function OpportunityPage() {
                                                 {t(`services.core.items.${key}.desc`)}
                                             </p>
 
+                                            {/* Portfolio cross-link for investment card */}
+                                            {key === "investment" && (
+                                                <a
+                                                    href="#real-estate"
+                                                    className="mt-5 inline-flex items-center gap-2 text-[12px] tracking-[0.1em] text-[#c9a96e]/60 hover:text-[#c9a96e] transition-colors duration-300"
+                                                >
+                                                    <span>{t("realEstate.available.label")}</span>
+                                                    <span className="inline-block transition-transform duration-300 group-hover:translate-x-0.5">&#8594;</span>
+                                                </a>
+                                            )}
+
                                             {/* Subtle hover effect */}
                                             <div className="absolute inset-0 bg-[#c9a96e]/[0.02] opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
                                         </motion.div>
@@ -220,6 +232,9 @@ export default function OpportunityPage() {
                     </div>
                 </div>
             </section>
+
+            {/* ── REAL ESTATE ─────────────────────────────────── */}
+            <RealEstateSection />
 
             {/* ── BENEFITS ──────────────────────────────────── */}
             <section className="py-24 border-t border-white/5">

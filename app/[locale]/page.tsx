@@ -8,6 +8,8 @@ import HeroSunSlider from "@/components/HeroSunSlider";
 import LeadershipSection from "@/components/LeadershipSection";
 import ServicesGrid from "@/components/ServicesGrid";
 import ProofGallery from "@/components/ProofGallery";
+import { ActivePortfolio } from "@/components/ActivePortfolio";
+import { InvestmentModal } from "@/components/InvestmentModal";
 
 /* ── Animations ───────────────────────────────────────────── */
 const fadeUp = {
@@ -27,6 +29,8 @@ export default function HomePage() {
   const params = useParams();
   const locale = params.locale as string;
 
+  const portfolioLabel = t("portfolio.seePortfolio");
+
   // Services data - 4 core services
   const services = [
     {
@@ -43,6 +47,10 @@ export default function HomePage() {
       title: t("services.investment.title"),
       description: t("services.investment.description"),
       deliverables: t.raw("services.investment.deliverables") || [],
+      portfolioLink: {
+        label: portfolioLabel,
+        href: "#active-portfolio",
+      },
     },
     {
       title: t("services.trade.title"),
@@ -178,6 +186,11 @@ export default function HomePage() {
       </section>
 
       {/* ══════════════════════════════════════════════════════
+          SECTION 4B: ACTIVE PORTFOLIO (Park Lofts)
+          ══════════════════════════════════════════════════ */}
+      <ActivePortfolio />
+
+      {/* ══════════════════════════════════════════════════════
           SECTION 5: PROOF (Data-Driven Evidence)
           ══════════════════════════════════════════════════ */}
       <section className="py-20 md:py-28 bg-gradient-to-b from-[#0B0B0C] via-[#0B0B0C]/80 to-[#0B0B0C]/20 border-t border-[#ededed]/5">
@@ -309,6 +322,8 @@ export default function HomePage() {
           </motion.div>
         </div>
       </section>
+      {/* Investment Portfolio Modal */}
+      <InvestmentModal />
     </main>
   );
 }

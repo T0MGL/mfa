@@ -6,9 +6,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 
+const R2_BASE = "https://pub-70473ebb629c4efb93b99bf2e83117da.r2.dev/MFA";
+
 const SUN_IMAGES = [
   "/images/Sol Sandt.jpeg",
-  // Add more sun images here if available
+  `${R2_BASE}/hero-parklofts-1.jpg`,
+  `${R2_BASE}/hero-parklofts-2.jpg`,
 ];
 
 interface HeroSunSliderProps {
