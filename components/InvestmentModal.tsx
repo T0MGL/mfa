@@ -1,15 +1,19 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
-const R2_BASE = "https://pub-70473ebb629c4efb93b99bf2e83117da.r2.dev/MFA";
+const R2_BASE = "https://pub-70473ebb629c4efb93b99bf2e83117da.r2.dev";
+const MFA_BASE = `${R2_BASE}/MFA`;
 
 const PDF_LINKS = {
-  strategic: `${R2_BASE}/3%20Projekte%20fu%CC%88r%20strategische%20Partner%20und%20Co-Developer.pdf`,
-  portfolio: `${R2_BASE}/Park%20Lofts%20x%20Palmanova%20x%20Molas%20Design.pdf`,
+  strategic: `${MFA_BASE}/3%20Projekte%20fu%CC%88r%20strategische%20Partner%20und%20Co-Developer.pdf`,
+  portfolio: `${MFA_BASE}/Park%20Lofts%20x%20Palmanova%20x%20Molas%20Design.pdf`,
 } as const;
+
+const HERO_IMAGE = `${R2_BASE}/projects/tower/parkloftstowerlobby.jpeg`;
 
 /**
  * Toggle this flag to enable/disable the floating button and modal.
@@ -17,7 +21,8 @@ const PDF_LINKS = {
  */
 const MODAL_ENABLED = true;
 
-const SCROLL_TRIGGER_PX = 600;
+const SESSION_KEY = "mfa-modal-dismissed";
+const AUTO_OPEN_DELAY_MS = 2500;
 
 const backdropVariants = {
   hidden: { opacity: 0 },
@@ -46,19 +51,19 @@ const HIGHLIGHTS = ["highlight1", "highlight2", "highlight3"] as const;
 export function InvestmentModal() {
   const t = useTranslations("modal");
   const [isOpen, setIsOpen] = useState(false);
-  const [showButton, setShowButton] = useState(false);
+  const [wasDismissed, setWasDismissed] = useState(false);
 
-  const handleScroll = useCallback(() => {
-    if (window.scrollY > SCROLL_TRIGGER_PX) {
-      setShowButton(true);
-    }
-  }, []);
-
+  // Auto-open on page load (once per session)
   useEffect(() => {
     if (!MODAL_ENABLED) return;
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [handleScroll]);
+    const dismissed = sessionStorage.getItem(SESSION_KEY);
+    if (dismissed) {
+      setWasDismissed(true);
+      return;
+    }
+    const timer = setTimeout(() => setIsOpen(true), AUTO_OPEN_DELAY_MS);
+    return () => clearTimeout(timer);
+  }, []);
 
   useEffect(() => {
     if (isOpen) {
@@ -71,13 +76,19 @@ export function InvestmentModal() {
     };
   }, [isOpen]);
 
+  const handleClose = () => {
+    setIsOpen(false);
+    setWasDismissed(true);
+    sessionStorage.setItem(SESSION_KEY, "1");
+  };
+
   if (!MODAL_ENABLED) return null;
 
   return (
     <>
-      {/* Floating trigger button */}
+      {/* Floating trigger button (visible after dismissed, so users can re-open) */}
       <AnimatePresence>
-        {showButton && !isOpen && (
+        {wasDismissed && !isOpen && (
           <motion.button
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -108,7 +119,7 @@ export function InvestmentModal() {
               animate="visible"
               exit="exit"
               transition={{ duration: 0.3 }}
-              onClick={() => setIsOpen(false)}
+              onClick={handleClose}
               className="absolute inset-0 bg-[#0B0B0C]/80 backdrop-blur-md"
             />
 
@@ -125,21 +136,36 @@ export function InvestmentModal() {
             >
               {/* Close button */}
               <button
-                onClick={() => setIsOpen(false)}
+                onClick={handleClose}
                 aria-label="Close"
-                className="absolute top-4 right-4 z-20 w-10 h-10 flex items-center justify-center text-[#ededed]/40 hover:text-[#ededed] transition-colors duration-300"
+                className="absolute top-4 right-4 z-20 w-10 h-10 flex items-center justify-center bg-[#0B0B0C]/60 backdrop-blur-sm text-[#ededed]/60 hover:text-[#ededed] transition-colors duration-300"
               >
                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
                   <path d="M4 4l10 10M14 4L4 14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="square" />
                 </svg>
               </button>
 
+              {/* Hero Image */}
+              <div className="relative w-full h-[220px] md:h-[280px] overflow-hidden">
+                <Image
+                  src={HERO_IMAGE}
+                  alt="Park Lofts Tower Lobby"
+                  fill
+                  className="object-cover"
+                  quality={85}
+                  sizes="720px"
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#111012]" />
+                <div className="absolute bottom-6 left-8 md:left-10">
+                  <span className="text-[10px] tracking-[0.25em] uppercase text-[#c9a96e]">
+                    {t("label")}
+                  </span>
+                  <div className="w-12 h-px bg-[#c9a96e]/40 mt-3" />
+                </div>
+              </div>
+
               {/* Header */}
-              <div className="p-8 md:p-10 pb-0">
-                <span className="text-[10px] tracking-[0.25em] uppercase text-[#c9a96e]">
-                  {t("label")}
-                </span>
-                <div className="w-12 h-px bg-[#c9a96e]/40 mt-3 mb-6" />
+              <div className="px-8 md:px-10 pt-4 pb-0">
                 <h2 className="text-[clamp(1.5rem,3vw,2.25rem)] font-serif leading-[1.15] text-[#ededed]">
                   {t("title")}
                 </h2>
@@ -156,8 +182,12 @@ export function InvestmentModal() {
                 <div className="space-y-4">
                   {HIGHLIGHTS.map((key) => (
                     <div key={key} className="flex items-start gap-3 py-2 border-b border-white/5 last:border-b-0">
-                      <span className="text-[#a68a5c] mt-0.5 shrink-0">—</span>
-                      <span className="text-[15px] text-[#ededed]/50 leading-relaxed">
+                      <span className="text-[#a68a5c] mt-0.5 shrink-0">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                          <path d="M2 7h10M7 2v10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="square" />
+                        </svg>
+                      </span>
+                      <span className="text-[15px] text-[#ededed]/60 leading-relaxed">
                         {t(`highlights.${key}`)}
                       </span>
                     </div>
