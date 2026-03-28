@@ -1,9 +1,10 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import { useLenis } from "./providers/SmoothScrollProvider";
 
 const R2_BASE = "https://pub-70473ebb629c4efb93b99bf2e83117da.r2.dev";
 const MFA_BASE = `${R2_BASE}/MFA`;
@@ -50,8 +51,10 @@ const HIGHLIGHTS = ["highlight1", "highlight2", "highlight3"] as const;
 
 export function InvestmentModal() {
   const t = useTranslations("modal");
+  const lenis = useLenis();
   const [isOpen, setIsOpen] = useState(false);
   const [wasDismissed, setWasDismissed] = useState(false);
+  const scrollYRef = useRef(0);
 
   // Auto-open on page load (once per session)
   useEffect(() => {
@@ -67,14 +70,35 @@ export function InvestmentModal() {
 
   useEffect(() => {
     if (isOpen) {
+      scrollYRef.current = window.scrollY;
+      lenis.stop();
+      const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
       document.body.style.overflow = "hidden";
+      document.body.style.position = "fixed";
+      document.body.style.top = `-${scrollYRef.current}px`;
+      document.body.style.left = "0";
+      document.body.style.right = "0";
+      document.body.style.paddingRight = `${scrollbarWidth}px`;
     } else {
       document.body.style.overflow = "";
+      document.body.style.position = "";
+      document.body.style.top = "";
+      document.body.style.left = "";
+      document.body.style.right = "";
+      document.body.style.paddingRight = "";
+      window.scrollTo(0, scrollYRef.current);
+      lenis.start();
     }
     return () => {
       document.body.style.overflow = "";
+      document.body.style.position = "";
+      document.body.style.top = "";
+      document.body.style.left = "";
+      document.body.style.right = "";
+      document.body.style.paddingRight = "";
+      lenis.start();
     };
-  }, [isOpen]);
+  }, [isOpen, lenis]);
 
   const handleClose = () => {
     setIsOpen(false);
@@ -132,7 +156,7 @@ export function InvestmentModal() {
               role="dialog"
               aria-modal="true"
               aria-label={t("dialogLabel")}
-              className="relative z-10 w-full max-w-[720px] max-h-[90vh] overflow-y-auto bg-[#111012] border border-[#ededed]/8"
+              className="relative z-10 w-full max-w-[720px] max-h-[90vh] overflow-y-auto overscroll-contain bg-[#111012] border border-[#ededed]/8"
             >
               {/* Close button */}
               <button

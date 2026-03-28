@@ -1,18 +1,30 @@
 "use client";
 
-import { useEffect, ReactNode } from "react";
+import { useEffect, ReactNode, createContext, useContext, useRef, useCallback } from "react";
 import Lenis from "lenis";
+
+type LenisControl = {
+  stop: () => void;
+  start: () => void;
+};
+
+const LenisContext = createContext<LenisControl>({ stop: () => {}, start: () => {} });
+
+export function useLenis() {
+  return useContext(LenisContext);
+}
 
 interface SmoothScrollProviderProps {
   children: ReactNode;
 }
 
 export function SmoothScrollProvider({ children }: SmoothScrollProviderProps) {
+  const lenisRef = useRef<Lenis | null>(null);
+
   useEffect(() => {
-    // Initialize Lenis with optimal settings
     const lenis = new Lenis({
       duration: 1.2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Custom easing function
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       orientation: "vertical",
       gestureOrientation: "vertical",
       smoothWheel: true,
@@ -21,7 +33,8 @@ export function SmoothScrollProvider({ children }: SmoothScrollProviderProps) {
       infinite: false,
     });
 
-    // Request animation frame loop for smooth scrolling
+    lenisRef.current = lenis;
+
     function raf(time: number) {
       lenis.raf(time);
       requestAnimationFrame(raf);
@@ -29,11 +42,18 @@ export function SmoothScrollProvider({ children }: SmoothScrollProviderProps) {
 
     requestAnimationFrame(raf);
 
-    // Cleanup
     return () => {
       lenis.destroy();
+      lenisRef.current = null;
     };
   }, []);
 
-  return <>{children}</>;
+  const stop = useCallback(() => lenisRef.current?.stop(), []);
+  const start = useCallback(() => lenisRef.current?.start(), []);
+
+  return (
+    <LenisContext.Provider value={{ stop, start }}>
+      {children}
+    </LenisContext.Provider>
+  );
 }
