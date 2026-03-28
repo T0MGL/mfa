@@ -135,7 +135,11 @@ export function InvestmentModal() {
       {/* Modal */}
       <AnimatePresence>
         {isOpen && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 md:p-8">
+          <div
+            className="fixed inset-0 z-50 flex items-center justify-center p-4 md:p-8"
+            onWheel={(e) => e.stopPropagation()}
+            onTouchMove={(e) => e.stopPropagation()}
+          >
             {/* Backdrop */}
             <motion.div
               variants={backdropVariants}
