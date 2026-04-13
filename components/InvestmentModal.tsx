@@ -12,6 +12,7 @@ const MFA_BASE = `${R2_BASE}/MFA`;
 const PDF_LINKS = {
   strategic: `${MFA_BASE}/3%20Projekte%20fu%CC%88r%20strategische%20Partner%20und%20Co-Developer.pdf`,
   portfolio: `${MFA_BASE}/Park%20Lofts%20x%20Palmanova%20x%20Molas%20Design.pdf`,
+  parkLoftsLosArboles: `${MFA_BASE}/Broschu%CC%88re%20Park%20Lofts%20Los%20Arboles%20(DE)-comp.pdf`,
 } as const;
 
 const HERO_IMAGE = `${R2_BASE}/projects/tower/parkloftstowerlobby.jpeg`;
@@ -269,6 +270,33 @@ export function InvestmentModal() {
                     </p>
                     <p className="mt-1.5 text-[13px] text-[#ededed]/40 leading-relaxed">
                       {t("strategicPdf.description")}
+                    </p>
+                  </div>
+                </a>
+
+                {/* Park Lofts Los Arboles PDF (DE) */}
+                <a
+                  href={PDF_LINKS.parkLoftsLosArboles}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start gap-4 p-5 border border-[#ededed]/8 hover:border-[#c9a96e]/30 transition-colors duration-300 group"
+                >
+                  <div className="w-10 h-10 shrink-0 flex items-center justify-center border border-[#c9a96e]/30 text-[#c9a96e] group-hover:bg-[#c9a96e] group-hover:text-[#0B0B0C] transition-all duration-300">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M8 1v10m0 0l3-3m-3 3L5 8M2 13h12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="square" />
+                    </svg>
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center gap-2">
+                      <p className="text-[15px] text-[#ededed]/80 font-medium leading-tight">
+                        {t("parkLoftsLosArbolesPdf.title")}
+                      </p>
+                      <span className="shrink-0 text-[10px] tracking-[0.15em] uppercase px-1.5 py-0.5 border border-[#c9a96e]/40 text-[#c9a96e]/70">
+                        DE
+                      </span>
+                    </div>
+                    <p className="mt-1.5 text-[13px] text-[#ededed]/40 leading-relaxed">
+                      {t("parkLoftsLosArbolesPdf.description")}
                     </p>
                   </div>
                 </a>
