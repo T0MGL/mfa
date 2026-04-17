@@ -121,7 +121,7 @@ export function InvestmentModal() {
             transition={{ duration: 0.4 }}
             onClick={() => setIsOpen(true)}
             aria-label={t("triggerLabel")}
-            className="fixed bottom-6 right-6 z-40 flex items-center gap-2.5 px-5 py-3 bg-[#c9a96e] text-[#0B0B0C] text-[10px] tracking-[0.2em] uppercase font-semibold hover:bg-[#d4b578] transition-colors duration-300 shadow-lg shadow-black/40"
+            className="fixed bottom-6 right-6 z-40 flex items-center gap-2.5 px-5 py-3 bg-[#c9a96e] text-[#0B0B0C] text-[10px] tracking-[0.2em] uppercase font-semibold hover:bg-[#d4b578] transition-colors duration-300 shadow-lg shadow-black/40 rounded-full"
           >
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="shrink-0">
               <rect x="1" y="2" width="14" height="12" rx="1" stroke="currentColor" strokeWidth="1.5" />
@@ -161,13 +161,13 @@ export function InvestmentModal() {
               role="dialog"
               aria-modal="true"
               aria-label={t("dialogLabel")}
-              className="relative z-10 w-full max-w-[720px] max-h-[90vh] overflow-y-auto overscroll-contain bg-[#111012] border border-[#ededed]/8"
+              className="relative z-10 w-full max-w-[720px] max-h-[90vh] overflow-y-auto overscroll-contain bg-[#111012] rounded-[32px] shadow-2xl shadow-black/60"
             >
               {/* Close button */}
               <button
                 onClick={handleClose}
                 aria-label="Close"
-                className="absolute top-4 right-4 z-20 w-10 h-10 flex items-center justify-center bg-[#0B0B0C]/60 backdrop-blur-sm text-[#ededed]/60 hover:text-[#ededed] transition-colors duration-300"
+                className="absolute top-4 right-4 z-20 w-10 h-10 flex items-center justify-center bg-[#0B0B0C]/60 backdrop-blur-sm text-[#ededed]/60 hover:text-[#ededed] hover:bg-[#0B0B0C]/80 transition-colors duration-300 rounded-full"
               >
                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
                   <path d="M4 4l10 10M14 4L4 14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="square" />
@@ -235,11 +235,11 @@ export function InvestmentModal() {
                   href={PDF_LINKS.portfolio}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-start gap-4 p-5 border border-[#ededed]/8 hover:border-[#c9a96e]/30 transition-colors duration-300 group"
+                  className="flex items-start gap-4 p-5 bg-white/[0.025] hover:bg-white/[0.05] transition-colors duration-300 group rounded-[24px]"
                 >
-                  <div className="w-10 h-10 shrink-0 flex items-center justify-center border border-[#c9a96e]/30 text-[#c9a96e] group-hover:bg-[#c9a96e] group-hover:text-[#0B0B0C] transition-all duration-300">
+                  <div className="w-11 h-11 shrink-0 flex items-center justify-center bg-[#c9a96e]/10 text-[#c9a96e] group-hover:bg-[#c9a96e] group-hover:text-[#0B0B0C] transition-colors duration-300 rounded-2xl">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                      <path d="M8 1v10m0 0l3-3m-3 3L5 8M2 13h12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="square" />
+                      <path d="M8 1v10m0 0l3-3m-3 3L5 8M2 13h12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </div>
                   <div>
@@ -257,11 +257,11 @@ export function InvestmentModal() {
                   href={PDF_LINKS.strategic}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-start gap-4 p-5 border border-[#ededed]/8 hover:border-[#c9a96e]/30 transition-colors duration-300 group"
+                  className="flex items-start gap-4 p-5 bg-white/[0.025] hover:bg-white/[0.05] transition-colors duration-300 group rounded-[24px]"
                 >
-                  <div className="w-10 h-10 shrink-0 flex items-center justify-center border border-[#c9a96e]/30 text-[#c9a96e] group-hover:bg-[#c9a96e] group-hover:text-[#0B0B0C] transition-all duration-300">
+                  <div className="w-11 h-11 shrink-0 flex items-center justify-center bg-[#c9a96e]/10 text-[#c9a96e] group-hover:bg-[#c9a96e] group-hover:text-[#0B0B0C] transition-colors duration-300 rounded-2xl">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                      <path d="M8 1v10m0 0l3-3m-3 3L5 8M2 13h12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="square" />
+                      <path d="M8 1v10m0 0l3-3m-3 3L5 8M2 13h12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </div>
                   <div>
@@ -279,11 +279,11 @@ export function InvestmentModal() {
                   href={PDF_LINKS.parkLoftsLosArboles}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-start gap-4 p-5 border border-[#ededed]/8 hover:border-[#c9a96e]/30 transition-colors duration-300 group"
+                  className="flex items-start gap-4 p-5 bg-white/[0.025] hover:bg-white/[0.05] transition-colors duration-300 group rounded-[24px]"
                 >
-                  <div className="w-10 h-10 shrink-0 flex items-center justify-center border border-[#c9a96e]/30 text-[#c9a96e] group-hover:bg-[#c9a96e] group-hover:text-[#0B0B0C] transition-all duration-300">
+                  <div className="w-11 h-11 shrink-0 flex items-center justify-center bg-[#c9a96e]/10 text-[#c9a96e] group-hover:bg-[#c9a96e] group-hover:text-[#0B0B0C] transition-colors duration-300 rounded-2xl">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                      <path d="M8 1v10m0 0l3-3m-3 3L5 8M2 13h12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="square" />
+                      <path d="M8 1v10m0 0l3-3m-3 3L5 8M2 13h12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </div>
                   <div className="flex-1 min-w-0">
@@ -291,7 +291,7 @@ export function InvestmentModal() {
                       <p className="text-[15px] text-[#ededed]/80 font-medium leading-tight">
                         {t("parkLoftsLosArbolesPdf.title")}
                       </p>
-                      <span className="shrink-0 text-[10px] tracking-[0.15em] uppercase px-1.5 py-0.5 border border-[#c9a96e]/40 text-[#c9a96e]/70">
+                      <span className="shrink-0 text-[10px] tracking-[0.15em] uppercase px-2.5 py-1 bg-[#c9a96e]/10 text-[#c9a96e]/80 rounded-full">
                         DE
                       </span>
                     </div>
