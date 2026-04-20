@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -46,6 +46,7 @@ const panelVariants = {
 export function InvestmentModal() {
   const t = useTranslations("modal");
   const params = useParams();
+  const router = useRouter();
   const locale = (params?.locale as string) ?? "en";
   const lenis = useLenis();
   const [isOpen, setIsOpen] = useState(false);
@@ -100,6 +101,19 @@ export function InvestmentModal() {
     setIsOpen(false);
     setWasDismissed(true);
     sessionStorage.setItem(SESSION_KEY, "1");
+  };
+
+  const handleViewProjects = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    sessionStorage.setItem(SESSION_KEY, "1");
+    document.body.style.overflow = "";
+    document.body.style.position = "";
+    document.body.style.top = "";
+    document.body.style.left = "";
+    document.body.style.right = "";
+    document.body.style.paddingRight = "";
+    lenis.start();
+    router.push(`/${locale}/proyectos`);
   };
 
   if (!MODAL_ENABLED) return null;
@@ -202,7 +216,7 @@ export function InvestmentModal() {
               <div className="px-7 md:px-8 pt-6">
                 <Link
                   href={`/${locale}/proyectos`}
-                  onClick={handleClose}
+                  onClick={handleViewProjects}
                   className="w-full inline-flex items-center justify-center gap-2 px-5 py-3.5 bg-[#c9a96e] text-[#0B0B0C] text-[11px] tracking-[0.2em] uppercase font-semibold hover:bg-[#d4b578] transition-colors duration-300 rounded-full"
                 >
                   {t("viewProjectsCta")}
