@@ -657,18 +657,35 @@
       "highlight2": "Unidades desde $53.964 (Molas Design) hasta $165.889 (Palmanova Las Mercedes)",
       "highlight3": "Proyectos de desarrollo estrategico desde $3M de costo de construccion con retornos proyectados de 2x a 3,3x"
     },
-    "documentsLabel": "Documentos Descargables",
-    "portfolioPdf": {
-      "title": "Park Lofts x Palmanova x Molas Design",
-      "description": "Vision completa de unidades disponibles, planos, precios y estado de los tres desarrollos activos."
+    "viewProjectsCta": "Ver Proyectos",
+    "downloadPdfCta": "Descargar PDF",
+    "continueBrowsingCta": "Continuar al sitio"
+  },
+  "projects": {
+    "hero": {
+      "tagline": "Portafolio Park Lofts",
+      "title": "Bienes raices con grado de inversion en Paraguay.",
+      "subtitle": "Tres dossiers que cubren mas de 350 apartamentos en desarrollo en Asuncion, mas oportunidades de co-desarrollo estrategico para socios calificados."
     },
-    "strategicPdf": {
-      "title": "3 Proyectos Estrategicos para Socios y Co-Desarrolladores",
-      "description": "Aregua frente al lago, Encarnacion frente al rio, y urbanizacion Nueva Asuncion. Proyecciones de inversion detalladas para socios de $1M+."
+    "items": {
+      "portfolio": {
+        "title": "Park Lofts x Palmanova x Molas Design",
+        "description": "Vision completa de unidades disponibles, planos, precios y estado de los tres desarrollos activos."
+      },
+      "strategic": {
+        "title": "3 Proyectos Estrategicos para Socios y Co-Desarrolladores",
+        "description": "Aregua frente al lago, Encarnacion frente al rio, y urbanizacion Nueva Asuncion. Proyecciones de inversion detalladas para socios de $1M+."
+      },
+      "parkLoftsLosArboles": {
+        "title": "Park Lofts Los Arboles Broschüre",
+        "description": "Broschüre completa del proyecto Park Lofts Los Arboles. En alemán."
+      }
     },
-    "parkLoftsLosArbolesPdf": {
-      "title": "Park Lofts Los Arboles — Broschüre",
-      "description": "Broschüre completa del proyecto Park Lofts Los Arboles. En alemán."
+    "downloadCta": "Descargar PDF",
+    "cta": {
+      "title": "¿Listo para invertir?",
+      "description": "Acompanamos a inversores calificados a traves de unidades, proyecciones y due diligence en terreno.",
+      "button": "Hablar con el equipo"
     }
   },
   "common": {

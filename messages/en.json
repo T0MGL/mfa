@@ -657,18 +657,35 @@
       "highlight2": "Units from $53,964 (Molas Design) to $165,889 (Palmanova Las Mercedes)",
       "highlight3": "Strategic development projects from $3M build cost with projected returns of 2x to 3.3x"
     },
-    "documentsLabel": "Downloadable Documents",
-    "portfolioPdf": {
-      "title": "Park Lofts x Palmanova x Molas Design",
-      "description": "Complete overview of available units, floor plans, pricing, and project status across all three active developments."
+    "viewProjectsCta": "See Projects",
+    "downloadPdfCta": "Download PDF",
+    "continueBrowsingCta": "Continue to site"
+  },
+  "projects": {
+    "hero": {
+      "tagline": "Park Lofts Portfolio",
+      "title": "Investment-grade real estate in Paraguay.",
+      "subtitle": "Three dossiers covering 350+ apartments under development in Asuncion, plus strategic co-development opportunities for qualified partners."
     },
-    "strategicPdf": {
-      "title": "3 Strategic Projects for Partners and Co-Developers",
-      "description": "Aregua lakefront, Encarnacion riverfront, and Nueva Asuncion urbanization. Detailed investment projections for $1M+ partners."
+    "items": {
+      "portfolio": {
+        "title": "Park Lofts x Palmanova x Molas Design",
+        "description": "Complete overview of available units, floor plans, pricing, and project status across all three active developments."
+      },
+      "strategic": {
+        "title": "3 Strategic Projects for Partners and Co-Developers",
+        "description": "Aregua lakefront, Encarnacion riverfront, and Nueva Asuncion urbanization. Detailed investment projections for $1M+ partners."
+      },
+      "parkLoftsLosArboles": {
+        "title": "Park Lofts Los Arboles Broschüre",
+        "description": "Complete project brochure for Park Lofts Los Arboles. In German."
+      }
     },
-    "parkLoftsLosArbolesPdf": {
-      "title": "Park Lofts Los Arboles — Broschüre",
-      "description": "Complete project brochure for Park Lofts Los Arboles. In German."
+    "downloadCta": "Download PDF",
+    "cta": {
+      "title": "Ready to invest?",
+      "description": "We walk qualified investors through units, projections, and on-the-ground due diligence.",
+      "button": "Talk to our team"
     }
   },
   "common": {
