@@ -9,9 +9,6 @@ import Link from "next/link";
 import { useLenis } from "./providers/SmoothScrollProvider";
 
 const R2_BASE = "https://pub-70473ebb629c4efb93b99bf2e83117da.r2.dev";
-const MFA_BASE = `${R2_BASE}/MFA`;
-
-const PORTFOLIO_PDF = `${MFA_BASE}/Park%20Lofts%20x%20Palmanova%20x%20Molas%20Design.pdf`;
 
 const HERO_IMAGE = `${R2_BASE}/projects/tower/parkloftstowerlobby.jpeg`;
 
@@ -45,8 +42,6 @@ const panelVariants = {
     transition: { duration: 0.25 },
   },
 };
-
-const HIGHLIGHTS = ["highlight1", "highlight2", "highlight3"] as const;
 
 export function InvestmentModal() {
   const t = useTranslations("modal");
@@ -203,50 +198,18 @@ export function InvestmentModal() {
                 </p>
               </div>
 
-              {/* Project Highlights */}
+              {/* Primary CTA */}
               <div className="px-7 md:px-8 pt-6">
-                <h3 className="text-[10px] tracking-[0.2em] uppercase text-[#c9a96e]/60 font-semibold mb-3.5">
-                  {t("highlightsLabel")}
-                </h3>
-                <div className="space-y-2.5">
-                  {HIGHLIGHTS.map((key) => (
-                    <div key={key} className="flex items-start gap-3 py-1.5 border-b border-white/5 last:border-b-0">
-                      <span className="text-[#a68a5c] mt-0.5 shrink-0">
-                        <svg width="12" height="12" viewBox="0 0 14 14" fill="none">
-                          <path d="M2 7h10M7 2v10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="square" />
-                        </svg>
-                      </span>
-                      <span className="text-[13.5px] text-[#ededed]/60 leading-relaxed">
-                        {t(`highlights.${key}`)}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* CTAs */}
-              <div className="px-7 md:px-8 pt-6 flex flex-col sm:flex-row gap-3">
                 <Link
                   href={`/${locale}/proyectos`}
                   onClick={handleClose}
-                  className="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3.5 bg-[#c9a96e] text-[#0B0B0C] text-[11px] tracking-[0.2em] uppercase font-semibold hover:bg-[#d4b578] transition-colors duration-300 rounded-full"
+                  className="w-full inline-flex items-center justify-center gap-2 px-5 py-3.5 bg-[#c9a96e] text-[#0B0B0C] text-[11px] tracking-[0.2em] uppercase font-semibold hover:bg-[#d4b578] transition-colors duration-300 rounded-full"
                 >
                   {t("viewProjectsCta")}
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="shrink-0">
                     <path d="M2 7h10m0 0L8 3m4 4L8 11" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </Link>
-                <a
-                  href={PORTFOLIO_PDF}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3.5 border border-[#ededed]/15 text-[#ededed]/80 text-[11px] tracking-[0.2em] uppercase font-medium hover:border-[#c9a96e]/60 hover:text-[#ededed] transition-colors duration-300 rounded-full"
-                >
-                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none" className="shrink-0">
-                    <path d="M8 1v10m0 0l3-3m-3 3L5 8M2 13h12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                  {t("downloadPdfCta")}
-                </a>
               </div>
 
               {/* Tertiary: dismiss modal */}
