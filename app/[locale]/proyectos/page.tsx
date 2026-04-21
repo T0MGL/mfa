@@ -35,7 +35,7 @@ const PROJECTS: Project[] = [
   {
     key: "parkLoftsLosArboles",
     pdf: `${MFA_BASE}/Broschu%CC%88re%20Park%20Lofts%20Los%20Arboles%20(DE)-comp.pdf`,
-    hero: `${R2_BASE}/projects/tower/parkloftstowerlobby.jpeg`,
+    hero: "https://www.parkloftsparaguay.com/wp-content/uploads/2025/07/pl-losarboles-004.jpg",
     heroAlt: "Park Lofts Los Arboles",
     badge: "DE",
   },

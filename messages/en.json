@@ -81,23 +81,23 @@
       "projects": {
         "palmanovaLasMercedes": {
           "title": "Palmanova Las Mercedes",
-          "size": "67 to 110 m², 1 to 2 bedrooms",
-          "units": "128 total units, select units available",
-          "price": "From $165,889 (Unit 7E reference)",
+          "size": "67 to 110 m², 1 and 2 bedrooms",
+          "units": "128 units, 18,205 m² built",
+          "price": "Unit 7E: $165,889 (110 m², 2 bed, parking)",
           "status": "Final construction stage"
         },
         "palmanovaVillaMorra": {
           "title": "Palmanova Villa Morra",
-          "size": "59 to 65 m², 1 bedroom",
-          "units": "37 units, select availability",
-          "price": "From $102,440 (Units 3d/4d reference)",
+          "size": "59 to 65 m², 1 bedroom and penthouse",
+          "units": "37 units, 600 m² of amenities",
+          "price": "Units 3d and 4d: $102,440 (59 m², parking)",
           "status": "95% complete"
         },
         "molasDesign": {
           "title": "Molas Design",
-          "size": "36 to 46 m², studio to 2 bedrooms",
-          "units": "84 total units, 400 m² coworking",
-          "price": "$53,964 to $72,860",
+          "size": "36 to 46 m², studios and 1 bedroom",
+          "units": "84 units, level 19 amenities, 400 m² coworking",
+          "price": "5 units from $53,964 to $72,860",
           "status": "70% complete"
         }
       },
@@ -348,23 +348,23 @@
         "units": {
           "palmanovaLasMercedes": {
             "title": "Palmanova Las Mercedes",
-            "size": "67 to 110 m², 1 to 2 bedrooms",
-            "units": "128 total, select units available",
-            "price": "From $165,889",
+            "size": "67 to 110 m², 1 and 2 bedrooms",
+            "units": "128 units, 18,205 m² built",
+            "price": "Unit 7E: $165,889 (110 m², 2 bed, parking)",
             "status": "Final stage"
           },
           "palmanovaVillaMorra": {
             "title": "Palmanova Villa Morra",
-            "size": "59 to 65 m², 1 bedroom",
-            "units": "37 units, select availability",
-            "price": "From $102,440",
+            "size": "59 to 65 m², 1 bedroom and penthouse",
+            "units": "37 units, 600 m² of amenities",
+            "price": "Units 3d and 4d: $102,440 (59 m², parking)",
             "status": "95% complete"
           },
           "molasDesign": {
             "title": "Molas Design",
-            "size": "36 to 46 m², studio to 2 bedrooms",
-            "units": "84 units, 400 m² coworking included",
-            "price": "$53,964 to $72,860",
+            "size": "36 to 46 m², studios and 1 bedroom",
+            "units": "84 units, level 19 amenities, 400 m² coworking",
+            "price": "5 units from $53,964 to $72,860",
             "status": "70% complete"
           }
         },
@@ -663,15 +663,15 @@
     "items": {
       "portfolio": {
         "title": "Park Lofts x Palmanova x Molas Design",
-        "description": "Complete overview of available units, floor plans, pricing, and project status across all three active developments."
+        "description": "249 apartments across three active buildings in Asuncion. Palmanova Las Mercedes (128 units, 67 to 110 m², Unit 7E from $165,889), Palmanova Villa Morra (37 units, 59 to 65 m², 3d and 4d at $102,440), and Molas Design (84 units, 36 to 46 m², 5 units from $53,964). Includes floor plans, amenities, and available units."
       },
       "strategic": {
         "title": "3 Strategic Projects for Partners and Co-Developers",
-        "description": "Aregua lakefront, Encarnacion riverfront, and Nueva Asuncion urbanization. Detailed investment projections for $1M+ partners."
+        "description": "Aregua lakefront (7,000 m², 45 panoramic apartments, projected value $6M), Encarnacion on the Paraná river (18 hectares, 1,200 m of waterfront, projected $10M), and Nueva Asuncion (75-hectare urbanization, land at $10/m²). Detailed projections for $1M+ partners."
       },
       "parkLoftsLosArboles": {
-        "title": "Park Lofts Los Arboles Broschüre",
-        "description": "Complete project brochure for Park Lofts Los Arboles. In German."
+        "title": "Park Lofts Los Arboles",
+        "description": "Technical and commercial documentation for Park Lofts Los Arboles. Complete brochure in German, targeted at DACH investors."
       }
     },
     "downloadCta": "Download PDF",

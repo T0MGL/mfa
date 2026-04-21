@@ -81,24 +81,24 @@
       "projects": {
         "palmanovaLasMercedes": {
           "title": "Palmanova Las Mercedes",
-          "size": "67 a 110 m², 1 a 2 dormitorios",
-          "units": "128 unidades totales, unidades selectas disponibles",
-          "price": "Desde $165.889 (Unidad 7E referencia)",
-          "status": "Etapa final de construccion"
+          "size": "67 a 110 m², 1 y 2 dormitorios",
+          "units": "128 unidades, 18.205 m² construidos",
+          "price": "Unidad 7E: $165.889 (110 m², 2 dorm., cochera)",
+          "status": "Etapa final de construcción"
         },
         "palmanovaVillaMorra": {
           "title": "Palmanova Villa Morra",
-          "size": "59 a 65 m², 1 dormitorio",
-          "units": "37 unidades, disponibilidad selecta",
-          "price": "Desde $102.440 (Unidades 3d/4d referencia)",
-          "status": "95% completado"
+          "size": "59 a 65 m², 1 dormitorio y penthouse",
+          "units": "37 unidades, 600 m² de amenidades",
+          "price": "Unidades 3d y 4d: $102.440 (59 m², cochera)",
+          "status": "95% terminado"
         },
         "molasDesign": {
           "title": "Molas Design",
-          "size": "36 a 46 m², monoambiente a 2 dormitorios",
-          "units": "84 unidades totales, 400 m² coworking",
-          "price": "$53.964 a $72.860",
-          "status": "70% completado"
+          "size": "36 a 46 m², monoambientes y 1 dormitorio",
+          "units": "84 unidades, amenidades en piso 19, coworking 400 m²",
+          "price": "5 unidades desde $53.964 hasta $72.860",
+          "status": "70% terminado"
         }
       },
       "downloadPortfolio": "Descargar Portafolio (PDF)",
@@ -348,24 +348,24 @@
         "units": {
           "palmanovaLasMercedes": {
             "title": "Palmanova Las Mercedes",
-            "size": "67 a 110 m², 1 a 2 dormitorios",
-            "units": "128 totales, unidades selectas disponibles",
-            "price": "Desde $165.889",
+            "size": "67 a 110 m², 1 y 2 dormitorios",
+            "units": "128 unidades, 18.205 m² construidos",
+            "price": "Unidad 7E: $165.889 (110 m², 2 dorm., cochera)",
             "status": "Etapa final"
           },
           "palmanovaVillaMorra": {
             "title": "Palmanova Villa Morra",
-            "size": "59 a 65 m², 1 dormitorio",
-            "units": "37 unidades, disponibilidad selecta",
-            "price": "Desde $102.440",
-            "status": "95% completado"
+            "size": "59 a 65 m², 1 dormitorio y penthouse",
+            "units": "37 unidades, 600 m² de amenidades",
+            "price": "Unidades 3d y 4d: $102.440 (59 m², cochera)",
+            "status": "95% terminado"
           },
           "molasDesign": {
             "title": "Molas Design",
-            "size": "36 a 46 m², monoambiente a 2 dormitorios",
-            "units": "84 unidades, 400 m² coworking incluido",
-            "price": "$53.964 a $72.860",
-            "status": "70% completado"
+            "size": "36 a 46 m², monoambientes y 1 dormitorio",
+            "units": "84 unidades, piso 19 de amenidades, coworking 400 m²",
+            "price": "5 unidades desde $53.964 hasta $72.860",
+            "status": "70% terminado"
           }
         },
         "downloadCta": "Descargar Portafolio Completo (PDF)"
@@ -663,15 +663,15 @@
     "items": {
       "portfolio": {
         "title": "Park Lofts x Palmanova x Molas Design",
-        "description": "Vision completa de unidades disponibles, planos, precios y estado de los tres desarrollos activos."
+        "description": "249 apartamentos en tres edificios activos en Asunción. Palmanova Las Mercedes (128 uds., 67 a 110 m², unidad 7E desde $165.889), Palmanova Villa Morra (37 uds., 59 a 65 m², 3d y 4d a $102.440) y Molas Design (84 uds., 36 a 46 m², 5 unidades desde $53.964). Incluye planos, amenidades y unidades disponibles."
       },
       "strategic": {
-        "title": "3 Proyectos Estrategicos para Socios y Co-Desarrolladores",
-        "description": "Aregua frente al lago, Encarnacion frente al rio, y urbanizacion Nueva Asuncion. Proyecciones de inversion detalladas para socios de $1M+."
+        "title": "3 Proyectos Estratégicos para Socios y Co-Desarrolladores",
+        "description": "Aregua frente al lago (7.000 m², 45 apartamentos panorámicos, valor proyectado $6M), Encarnación frente al río Paraná (18 hectáreas, 1.200 m de costa, proyectado $10M) y Nueva Asunción (urbanización de 75 hectáreas, terreno a $10/m²). Proyecciones detalladas para socios desde $1M."
       },
       "parkLoftsLosArboles": {
-        "title": "Park Lofts Los Arboles Broschüre",
-        "description": "Broschüre completa del proyecto Park Lofts Los Arboles. En alemán."
+        "title": "Park Lofts Los Árboles",
+        "description": "Documentación técnica y comercial del proyecto Park Lofts Los Árboles. Broschüre completa en alemán, orientada a inversores DACH."
       }
     },
     "downloadCta": "Descargar PDF",
