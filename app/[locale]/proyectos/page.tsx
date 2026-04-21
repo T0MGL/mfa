@@ -16,6 +16,7 @@ type Project = {
   pdf: string;
   hero: string;
   heroAlt: string;
+  heroPosition?: string;
   badge?: string;
 };
 
@@ -29,8 +30,9 @@ const PROJECTS: Project[] = [
   {
     key: "strategic",
     pdf: `${MFA_BASE}/3%20Projekte%20fu%CC%88r%20strategische%20Partner%20und%20Co-Developer.pdf`,
-    hero: "https://upload.wikimedia.org/wikipedia/commons/d/d0/Asuncion_skyline_P5200221.jpg",
-    heroAlt: "Asunción skyline",
+    hero: "/images/asuncion-rooftop-skyline.jpeg",
+    heroAlt: "Vista de Asunción desde la rooftop de Palmanova",
+    heroPosition: "center 35%",
   },
   {
     key: "parkLoftsLosArboles",
@@ -109,6 +111,7 @@ export default function ProyectosPage() {
                     alt={project.heroAlt}
                     fill
                     className="object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.03]"
+                    style={{ objectPosition: project.heroPosition ?? "center" }}
                     quality={85}
                     sizes="(min-width: 1024px) 420px, (min-width: 768px) 50vw, 100vw"
                   />
