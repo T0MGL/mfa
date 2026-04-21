@@ -29,8 +29,8 @@ const PROJECTS: Project[] = [
   {
     key: "strategic",
     pdf: `${MFA_BASE}/3%20Projekte%20fu%CC%88r%20strategische%20Partner%20und%20Co-Developer.pdf`,
-    hero: `${R2_BASE}/projects/tower/parkloftstowerlobby.jpeg`,
-    heroAlt: "Strategic Projects for Partners and Co-Developers",
+    hero: "https://upload.wikimedia.org/wikipedia/commons/d/d0/Asuncion_skyline_P5200221.jpg",
+    heroAlt: "Asunción skyline",
   },
   {
     key: "parkLoftsLosArboles",
