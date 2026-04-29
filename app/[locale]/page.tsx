@@ -9,7 +9,6 @@ import LeadershipSection from "@/components/LeadershipSection";
 import ServicesGrid from "@/components/ServicesGrid";
 import ProofGallery from "@/components/ProofGallery";
 import { ActivePortfolio } from "@/components/ActivePortfolio";
-import { InvestmentModal } from "@/components/InvestmentModal";
 
 /* ── Animations ───────────────────────────────────────────── */
 const fadeUp = {
@@ -191,6 +190,28 @@ export default function HomePage() {
       <ActivePortfolio />
 
       {/* ══════════════════════════════════════════════════════
+          PORTFOLIO CTA
+          ══════════════════════════════════════════════════ */}
+      <section className="py-14 border-t border-[#ededed]/5">
+        <div className="max-w-[1200px] mx-auto px-6 md:px-12 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+          >
+            <Link
+              href={`/${locale}/proyectos`}
+              className="inline-flex items-center gap-3 px-10 py-4 border border-[#c9a96e]/50 text-[#c9a96e] text-[11px] tracking-[0.2em] uppercase font-semibold hover:bg-[#c9a96e] hover:text-[#0B0B0C] transition-colors duration-300 group"
+            >
+              {t("portfolio.seePortfolio")}
+              <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
+            </Link>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════════════════
           SECTION 5: PROOF (Data-Driven Evidence)
           ══════════════════════════════════════════════════ */}
       <section className="py-20 md:py-28 bg-gradient-to-b from-[#0B0B0C] via-[#0B0B0C]/80 to-[#0B0B0C]/20 border-t border-[#ededed]/5">
@@ -322,8 +343,6 @@ export default function HomePage() {
           </motion.div>
         </div>
       </section>
-      {/* Investment Portfolio Modal */}
-      <InvestmentModal />
     </main>
   );
 }
